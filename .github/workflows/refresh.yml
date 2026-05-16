@@ -1,0 +1,39 @@
+name: Refresh dashboard
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # daily at 07:00 UTC
+  workflow_dispatch: {}    # allow manual trigger from the Actions tab
+
+concurrency:
+  group: refresh-dashboard
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run refresh.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./refresh.sh
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/metrics.json data/snapshots.jsonl
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "auto-refresh: $(date -u +%F)"
+            git push
+          fi
