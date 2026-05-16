@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-16T20:23:16.488Z",
+  "generatedAt": "2026-05-16T20:55:36.227Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1133,
-    "stars": 10530,
-    "forks": 968,
+    "prs": 1135,
+    "stars": 10564,
+    "forks": 971,
     "uniqueContributors": 43,
     "externalContributors": 38,
     "externalPrAuthors": 55,
     "issuesNonPr": 726,
     "externalIssueAuthors": 57,
     "weeks": 13,
-    "stargazersWithCompany": 1789,
-    "tier1Stargazers": 100
+    "stargazersWithCompany": 1797,
+    "tier1Stargazers": 101
   },
   "forkBreakdown": {
-    "total": 968,
+    "total": 971,
     "contributing": 56,
-    "standalone": 24,
-    "driveBy": 888,
+    "standalone": 25,
+    "driveBy": 890,
     "samples": {
       "contributing": [
         {
@@ -82,6 +82,11 @@
       ],
       "standalone": [
         {
+          "owner": "IA-optimist",
+          "stars": 1,
+          "url": "https://github.com/IA-optimist/openhuman"
+        },
+        {
           "owner": "MSAIGlobal",
           "stars": 1,
           "url": "https://github.com/MSAIGlobal/openhuman"
@@ -125,11 +130,6 @@
           "owner": "stophobia",
           "stars": 1,
           "url": "https://github.com/stophobia/openhuman"
-        },
-        {
-          "owner": "allinbsv",
-          "stars": 1,
-          "url": "https://github.com/allinbsv/openhuman"
         }
       ],
       "driveby": []
@@ -254,7 +254,7 @@
       192,
       104,
       204,
-      293
+      295
     ],
     "prsExternal": [
       0,
@@ -269,7 +269,7 @@
       129,
       39,
       80,
-      188
+      189
     ],
     "prsFounders": [
       0,
@@ -284,7 +284,7 @@
       63,
       65,
       124,
-      105
+      106
     ],
     "stars": [
       0,
@@ -299,7 +299,7 @@
       116,
       98,
       502,
-      9730
+      9764
     ],
     "newContributors": [
       0,
@@ -344,7 +344,7 @@
       14,
       15,
       70,
-      781
+      784
     ],
     "goodForks": [
       0,
@@ -451,7 +451,7 @@
       64,
       56,
       54,
-      34
+      36
     ],
     "prsExternal": [
       0,
@@ -541,7 +541,7 @@
       36,
       41,
       43,
-      19
+      20
     ],
     "prsFounders": [
       0,
@@ -631,7 +631,7 @@
       28,
       15,
       11,
-      15
+      16
     ],
     "stars": [
       0,
@@ -721,7 +721,7 @@
       2756,
       2317,
       1295,
-      1533
+      1567
     ],
     "newContributors": [
       0,
@@ -991,7 +991,7 @@
       194,
       168,
       135,
-      143
+      146
     ],
     "goodForks": [
       0,
@@ -1098,7 +1098,7 @@
       532,
       636,
       840,
-      1133
+      1135
     ],
     "stars": [
       0,
@@ -1113,7 +1113,7 @@
       200,
       298,
       800,
-      10530
+      10564
     ],
     "contributors": [
       0,
@@ -1158,7 +1158,7 @@
       102,
       117,
       187,
-      968
+      971
     ],
     "goodForks": [
       0,
@@ -1265,7 +1265,7 @@
       989,
       1045,
       1099,
-      1133
+      1135
     ],
     "prsExternal": [
       0,
@@ -1355,7 +1355,7 @@
       421,
       462,
       505,
-      524
+      525
     ],
     "prsFounders": [
       0,
@@ -1445,7 +1445,7 @@
       568,
       583,
       594,
-      609
+      610
     ],
     "stars": [
       0,
@@ -1535,7 +1535,7 @@
       5385,
       7702,
       8997,
-      10530
+      10564
     ],
     "newContributors": [
       0,
@@ -1805,7 +1805,7 @@
       522,
       690,
       825,
-      968
+      971
     ],
     "goodForks": [
       0,
@@ -2077,7 +2077,7 @@
       2756,
       2317,
       1295,
-      1533
+      1567
     ],
     "rolling7DayAvg": [
       0,
@@ -2167,10 +2167,10 @@
       718.5714285714286,
       1040,
       1223.142857142857,
-      1428.7142857142858
+      1433.5714285714287
     ],
     "spikeWeek": "2026-05-11",
-    "spikeStars": 9730,
+    "spikeStars": 9764,
     "preSpikeAvg": 66.66666666666667,
     "postSpikeAvg": null,
     "retentionPct": null,
@@ -2188,7 +2188,7 @@
       3766.6666666666665,
       -15.517241379310345,
       412.2448979591836,
-      1838.2470119521913
+      1845.0199203187249
     ],
     "wowPrsPct": [
       null,
@@ -2203,11 +2203,20 @@
       190.9090909090909,
       -45.83333333333333,
       96.15384615384616,
-      43.627450980392155
+      44.6078431372549
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "TengByte",
+        "name": "Teng",
+        "company": "Alibaba 2 ZOOM",
+        "location": "HeFei",
+        "bio": "code my life",
+        "starredAt": "2026-05-16T20:28:58Z",
+        "url": "https://github.com/TengByte"
+      },
       {
         "login": "jimmycarry",
         "name": "jimmy ye",
