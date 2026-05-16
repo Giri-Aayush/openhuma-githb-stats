@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>openhuman — GitHub growth dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #141821;
+    --panel2: #1a1f2b;
+    --border: #232836;
+    --text: #e6e8ee;
+    --muted: #8a93a6;
+    --good: #6ee7b7;
+    --info: #93c5fd;
+    --warn: #fcd34d;
+    --bad: #fca5a5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px;
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  header { margin-bottom: 20px; }
+  h1 { margin: 0 0 4px; font-size: 22px; font-weight: 600; }
+  h2.section {
+    margin: 28px 0 12px; font-size: 13px; font-weight: 600;
+    color: var(--muted); text-transform: uppercase; letter-spacing: .08em;
+  }
+  .sub { color: var(--muted); font-size: 13px; }
+  .sub a { color: var(--info); text-decoration: none; }
+  .grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px;
+  }
+  .kpi .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+  .kpi .value { font-size: 26px; font-weight: 600; margin-top: 4px; line-height: 1.1; }
+  .kpi .hint  { color: var(--muted); font-size: 11px; margin-top: 4px; }
+  .kpi.good .value { color: var(--good); }
+  .kpi.info .value { color: var(--info); }
+  .kpi.warn .value { color: var(--warn); }
+  .kpi.bad  .value { color: var(--bad); }
+  .chart { grid-column: span 2; }
+  .chart .chart-body { position: relative; height: 260px; }
+  .chart h3 { margin: 0; font-size: 14px; font-weight: 500; color: var(--text); }
+  .chart .desc { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .chart-header { display: flex; align-items: flex-start; margin-bottom: 12px; gap: 12px; }
+  .chart-header > div:first-child { flex: 1; min-width: 0; }
+  .full { grid-column: span 4; }
+  .third { grid-column: span 1; }
+  .toggle {
+    display: inline-flex; gap: 4px; background: var(--panel2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 3px;
+    font-size: 12px; flex-shrink: 0;
+  }
+  .toggle button {
+    background: transparent; color: var(--muted); border: 0;
+    padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  }
+  .toggle button.active { background: #2a3242; color: var(--text); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    text-align: left; color: var(--muted); font-weight: 500;
+    padding: 8px 10px; border-bottom: 1px solid var(--border);
+    text-transform: uppercase; font-size: 11px; letter-spacing: .05em;
+  }
+  tbody td { padding: 8px 10px; border-bottom: 1px solid #1d2230; }
+  tbody tr:hover { background: #181d28; }
+  tbody td a { color: var(--info); text-decoration: none; }
+  .scroll-table { max-height: 420px; overflow-y: auto; }
+  .pill {
+    display: inline-block; padding: 1px 7px; border-radius: 99px;
+    background: #1f2532; color: var(--muted); font-size: 11px;
+  }
+  .pill.good { background: rgba(110,231,183,.15); color: var(--good); }
+  .pill.bad  { background: rgba(252,165,165,.15); color: var(--bad); }
+  .pill.info { background: rgba(147,197,253,.15); color: var(--info); }
+
+  .stat-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 6px 0; border-bottom: 1px solid #1d2230; font-size: 13px; }
+  .stat-row:last-child { border-bottom: 0; }
+  .stat-row .key { color: var(--text); }
+  .stat-row .val { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+
+  footer { margin-top: 32px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 1000px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .chart, .full { grid-column: span 2; }
+    .third { grid-column: span 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>tinyhumansai/openhuman — growth dashboard</h1>
+  <div class="sub">
+    Public genesis: <span id="genesis"></span> ·
+    <a href="https://github.com/tinyhumansai/openhuman" target="_blank" rel="noopener">github.com/tinyhumansai/openhuman</a>
+    · generated <span id="genAt"></span>
+  </div>
+</header>
+
+<!-- ============================================================== -->
+<h2 class="section">Top-line</h2>
+<div class="grid">
+  <div class="card kpi good"><div class="label">Total stars</div><div class="value" id="kpiStars">–</div><div class="hint" id="kpiStarsHint"></div></div>
+  <div class="card kpi info"><div class="label">Total PRs</div><div class="value" id="kpiPRs">–</div><div class="hint" id="kpiPRsHint"></div></div>
+  <div class="card kpi info"><div class="label">External PR authors</div><div class="value" id="kpiExtPR">–</div><div class="hint">vs founders</div></div>
+  <div class="card kpi warn"><div class="label">Tier-1 stargazers</div><div class="value" id="kpiTier1">–</div><div class="hint">FAANG / notable orgs</div></div>
+
+  <div class="card kpi"><div class="label">Forks total</div><div class="value" id="kpiForks">–</div><div class="hint" id="kpiForkRatio"></div></div>
+  <div class="card kpi good"><div class="label">Contributing forks</div><div class="value" id="kpiGoodForks">–</div><div class="hint">forked &amp; sent a PR</div></div>
+  <div class="card kpi"><div class="label">Unique external contribs</div><div class="value" id="kpiExtContrib">–</div><div class="hint">≥1 merged commit, not founders</div></div>
+  <div class="card kpi"><div class="label">External issue authors</div><div class="value" id="kpiExtIssue">–</div><div class="hint">opened non-PR issues</div></div>
+</div>
+
+<!-- ============================================================== -->
+<h2 class="section">Weekly growth</h2>
+<div class="grid">
+  <div class="card chart">
+    <div class="chart-header">
+      <div><h3>Stars</h3><div class="desc">Net new per day/week, or running total.</div></div>
+      <div class="toggle" data-target="stars">
+        <button data-mode="daily">Daily</button>
+        <button data-mode="weekly" class="active">Weekly</button>
+        <button data-mode="cumulative">Cumulative</button>
+      </div>
+    </div>
+    <div class="chart-body"><canvas id="starsChart"></canvas></div>
+  </div>
+
+  <div class="card chart">
+    <div class="chart-header">
+      <div><h3>PRs — external vs founders</h3><div class="desc">Stacked. External PRs = community signal.</div></div>
+      <div class="toggle" data-target="prs">
+        <button data-mode="daily">Daily</button>
+        <button data-mode="weekly" class="active">Weekly</button>
+        <button data-mode="cumulative">Cumulative</button>
+      </div>
+    </div>
+    <div class="chart-body"><canvas id="prsChart"></canvas></div>
+  </div>
+
+  <div class="card chart">
+    <div class="chart-header">
+      <div><h3>External contributors</h3><div class="desc">Excludes founders &amp; bots.</div></div>
+      <div class="toggle" data-target="contrib">
+        <button data-mode="daily">Daily</button>
+        <button data-mode="weekly">New / week</button>
+        <button data-mode="cumulative" class="active">Cumulative</button>
+      </div>
+    </div>
+    <div class="chart-body"><canvas id="contribChart"></canvas></div>
+  </div>
+
+  <div class="card chart">
+    <div class="chart-header">
+      <div><h3>Forks: all vs good</h3><div class="desc">"Good fork" = fork owner also filed a PR.</div></div>
+      <div class="toggle" data-target="forks">
+        <button data-mode="daily">Daily</button>
+        <button data-mode="weekly" class="active">Weekly</button>
+        <button data-mode="cumulative">Cumulative</button>
+      </div>
+    </div>
+    <div class="chart-body"><canvas id="forksChart"></canvas></div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<h2 class="section">Momentum &amp; spike retention</h2>
+<div class="grid">
+  <div class="card chart">
+    <div class="chart-header"><div><h3>Daily stars — 7-day rolling average</h3><div class="desc">Smoothed velocity. Watch the slope after the spike.</div></div></div>
+    <div class="chart-body"><canvas id="momentumChart"></canvas></div>
+  </div>
+
+  <div class="card third">
+    <div class="chart-header"><div><h3>Spike snapshot</h3><div class="desc" id="spikeDesc"></div></div></div>
+    <div id="spikeStats"></div>
+  </div>
+
+  <div class="card third">
+    <div class="chart-header"><div><h3>Fork quality</h3><div class="desc">Breakdown of all-time forks.</div></div></div>
+    <div id="forkQualityStats"></div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<h2 class="section">Premium pipeline — who's watching</h2>
+<div class="grid">
+  <div class="card chart">
+    <div class="chart-header"><div><h3>Top companies (by stargazers with `company` field set)</h3><div class="desc">Substring-matched on the GitHub profile `company` field.</div></div></div>
+    <div class="chart-body" style="height: 360px;"><canvas id="companiesChart"></canvas></div>
+  </div>
+
+  <div class="card chart">
+    <div class="chart-header"><div><h3>Top stargazer locations</h3><div class="desc">Self-reported on the profile.</div></div></div>
+    <div class="chart-body" style="height: 360px;"><canvas id="locationsChart"></canvas></div>
+  </div>
+
+  <div class="card full">
+    <div class="chart-header"><div><h3>Notable stargazers (tier-1 orgs) — newest first</h3><div class="desc">Filtered to GitHub profiles whose `company` matches a curated list (FAANG, top labs, top funds, etc.). Treat as an outbound shortlist.</div></div></div>
+    <div class="scroll-table">
+      <table>
+        <thead><tr><th>Login</th><th>Name</th><th>Company</th><th>Location</th><th>Starred</th></tr></thead>
+        <tbody id="tier1Table"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Data: GitHub REST + GraphQL APIs. Weekly buckets start Monday (UTC). Founders treated as: <span id="founderList"></span>.
+  <br />Traffic data (clones / unique visitors / referrers) requires a `gh` session with push access — currently not configured.
+</footer>
+
+</div>
+<script>
+const DATA = __METRICS__;
+
+// ===== headers + KPIs =====
+document.getElementById('genesis').textContent = DATA.genesisPublic;
+document.getElementById('genAt').textContent = new Date(DATA.generatedAt).toLocaleString();
+document.getElementById('founderList').textContent = DATA.founders.join(', ');
+
+const fmt = n => Number(n).toLocaleString();
+const pct = n => (n == null ? '—' : n.toFixed(1) + '%');
+
+document.getElementById('kpiStars').textContent     = fmt(DATA.totals.stars);
+document.getElementById('kpiStarsHint').textContent = `+${fmt(DATA.weekly.stars.at(-1))} last week`;
+document.getElementById('kpiPRs').textContent       = fmt(DATA.totals.prs);
+document.getElementById('kpiPRsHint').textContent   = `+${fmt(DATA.weekly.prs.at(-1))} last week`;
+document.getElementById('kpiExtPR').textContent     = fmt(DATA.totals.externalPrAuthors);
+document.getElementById('kpiTier1').textContent     = fmt(DATA.totals.tier1Stargazers);
+document.getElementById('kpiForks').textContent     = fmt(DATA.totals.forks);
+const goodForkPct = (DATA.forkBreakdown.contributing / DATA.forkBreakdown.total) * 100;
+document.getElementById('kpiForkRatio').textContent = `${pct(goodForkPct)} contributing`;
+document.getElementById('kpiGoodForks').textContent = fmt(DATA.forkBreakdown.contributing);
+document.getElementById('kpiExtContrib').textContent= fmt(DATA.totals.externalContributors);
+document.getElementById('kpiExtIssue').textContent  = fmt(DATA.totals.externalIssueAuthors);
+
+// ===== palette =====
+const C = {
+  stars:    { line: '#6ee7b7', fill: 'rgba(110,231,183,.15)' },
+  prs:      { line: '#93c5fd', fill: 'rgba(147,197,253,.15)' },
+  founders: { line: '#fcd34d', fill: 'rgba(252,211,77,.6)'  },
+  external: { line: '#93c5fd', fill: 'rgba(147,197,253,.7)' },
+  contrib:  { line: '#fca5a5', fill: 'rgba(252,165,165,.15)' },
+  forksAll: { line: '#7d8597', fill: 'rgba(125,133,151,.5)' },
+  forksGood:{ line: '#6ee7b7', fill: 'rgba(110,231,183,.7)' },
+};
+
+const baseOpts = (extra = {}) => ({
+  responsive: true, maintainAspectRatio: false,
+  interaction: { mode: 'index', intersect: false },
+  plugins: {
+    legend: { display: false },
+    tooltip: { backgroundColor: '#0b0d12', borderColor: '#2a3242', borderWidth: 1 },
+  },
+  scales: {
+    x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6', maxRotation: 0, autoSkipPadding: 12 } },
+    y: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+  },
+  ...extra,
+});
+
+// ===== chart configs (3-mode: daily / weekly / cumulative) =====
+// Cumulative mode uses daily granularity for a smooth line.
+
+function legendOpts() {
+  return {
+    plugins: {
+      legend: { display: true, position: 'bottom', labels: { color: '#8a93a6', boxWidth: 10, font: { size: 11 } } },
+      tooltip: { backgroundColor: '#0b0d12', borderColor: '#2a3242', borderWidth: 1 },
+    },
+  };
+}
+
+const CHART_BUILDERS = {
+  stars: (mode) => {
+    const labels = mode === 'weekly' ? DATA.weeks : DATA.days;
+    if (mode === 'cumulative') {
+      return {
+        type: 'line',
+        data: { labels, datasets: [{ data: DATA.dailyCumulative.stars,
+          borderColor: C.stars.line, backgroundColor: C.stars.fill,
+          fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 }] },
+        options: baseOpts(),
+      };
+    }
+    const data = mode === 'daily' ? DATA.daily.stars : DATA.weekly.stars;
+    return {
+      type: 'bar',
+      data: { labels, datasets: [{ data,
+        backgroundColor: C.stars.line, borderColor: C.stars.line, borderWidth: 1 }] },
+      options: baseOpts(),
+    };
+  },
+
+  prs: (mode) => {
+    const labels = mode === 'weekly' ? DATA.weeks : DATA.days;
+    if (mode === 'cumulative') {
+      return {
+        type: 'line',
+        data: { labels, datasets: [
+          { label: 'External', data: DATA.dailyCumulative.prsExternal,
+            borderColor: C.external.line, backgroundColor: 'rgba(147,197,253,.25)',
+            fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2, stack: 's' },
+          { label: 'Founders', data: DATA.dailyCumulative.prsFounders,
+            borderColor: C.founders.line, backgroundColor: 'rgba(252,211,77,.25)',
+            fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2, stack: 's' },
+        ] },
+        options: baseOpts({
+          ...legendOpts(),
+          scales: {
+            x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6', maxRotation: 0, autoSkipPadding: 12 } },
+            y: { stacked: true, grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+          },
+        }),
+      };
+    }
+    const ext = mode === 'daily' ? DATA.daily.prsExternal : DATA.weekly.prsExternal;
+    const fnd = mode === 'daily' ? DATA.daily.prsFounders : DATA.weekly.prsFounders;
+    return {
+      type: 'bar',
+      data: { labels, datasets: [
+        { label: 'External', data: ext, backgroundColor: C.external.fill, borderColor: C.external.line, borderWidth: 1, stack: 's' },
+        { label: 'Founders', data: fnd, backgroundColor: C.founders.fill, borderColor: C.founders.line, borderWidth: 1, stack: 's' },
+      ] },
+      options: baseOpts({
+        ...legendOpts(),
+        scales: {
+          x: { stacked: true, grid: { color: '#1f2532' }, ticks: { color: '#8a93a6', maxRotation: 0, autoSkipPadding: 12 } },
+          y: { stacked: true, grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+        },
+      }),
+    };
+  },
+
+  contrib: (mode) => {
+    const labels = mode === 'weekly' ? DATA.weeks : DATA.days;
+    if (mode === 'cumulative') {
+      return {
+        type: 'line',
+        data: { labels, datasets: [{ data: DATA.dailyCumulative.newExternalContributors,
+          borderColor: C.contrib.line, backgroundColor: C.contrib.fill,
+          fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 }] },
+        options: baseOpts(),
+      };
+    }
+    const data = mode === 'daily' ? DATA.daily.newExternalContributors : DATA.weekly.newExternalContributors;
+    return {
+      type: 'bar',
+      data: { labels, datasets: [{ data,
+        backgroundColor: C.contrib.line, borderColor: C.contrib.line, borderWidth: 1 }] },
+      options: baseOpts(),
+    };
+  },
+
+  forks: (mode) => {
+    const labels = mode === 'weekly' ? DATA.weeks : DATA.days;
+    if (mode === 'cumulative') {
+      return {
+        type: 'line',
+        data: { labels, datasets: [
+          { label: 'All forks',                data: DATA.dailyCumulative.forks,     borderColor: C.forksAll.line,  backgroundColor: 'rgba(125,133,151,.15)', fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 },
+          { label: 'Good forks (gave a PR)',   data: DATA.dailyCumulative.goodForks, borderColor: C.forksGood.line, backgroundColor: 'rgba(110,231,183,.2)',  fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 },
+        ] },
+        options: baseOpts(legendOpts()),
+      };
+    }
+    const all  = mode === 'daily' ? DATA.daily.forks     : DATA.weekly.forks;
+    const good = mode === 'daily' ? DATA.daily.goodForks : DATA.weekly.goodForks;
+    return {
+      type: 'bar',
+      data: { labels, datasets: [
+        { label: 'All forks',              data: all,  backgroundColor: C.forksAll.fill,  borderColor: C.forksAll.line,  borderWidth: 1 },
+        { label: 'Good forks (gave a PR)', data: good, backgroundColor: C.forksGood.fill, borderColor: C.forksGood.line, borderWidth: 1 },
+      ] },
+      options: baseOpts(legendOpts()),
+    };
+  },
+};
+
+const CANVAS_ID = { stars: 'starsChart', prs: 'prsChart', contrib: 'contribChart', forks: 'forksChart' };
+const charts = {};
+function setMode(key, mode) {
+  if (charts[key]) charts[key].destroy();
+  const cfg = CHART_BUILDERS[key](mode);
+  charts[key] = new Chart(document.getElementById(CANVAS_ID[key]).getContext('2d'), cfg);
+}
+setMode('stars', 'weekly');
+setMode('prs', 'weekly');
+setMode('contrib', 'cumulative');
+setMode('forks', 'weekly');
+
+for (const group of document.querySelectorAll('.toggle')) {
+  const target = group.dataset.target;
+  if (!CHART_BUILDERS[target]) continue;
+  for (const btn of group.querySelectorAll('button')) {
+    btn.addEventListener('click', () => {
+      for (const b of group.querySelectorAll('button')) b.classList.remove('active');
+      btn.classList.add('active');
+      setMode(target, btn.dataset.mode);
+    });
+  }
+}
+
+// ===== momentum chart (daily stars + 7d rolling avg) =====
+new Chart(document.getElementById('momentumChart').getContext('2d'), {
+  type: 'line',
+  data: {
+    labels: DATA.momentum.days,
+    datasets: [
+      { label: 'Daily stars', data: DATA.momentum.dailyStars, borderColor: 'rgba(110,231,183,.4)', backgroundColor: 'rgba(110,231,183,.05)', borderWidth: 1, pointRadius: 0, fill: true },
+      { label: '7-day avg',   data: DATA.momentum.rolling7DayAvg, borderColor: '#fcd34d', backgroundColor: 'transparent', borderWidth: 2, pointRadius: 0, fill: false, tension: 0.3 },
+    ],
+  },
+  options: baseOpts({
+    plugins: {
+      legend: { display: true, position: 'bottom', labels: { color: '#8a93a6', boxWidth: 10, font: { size: 11 } } },
+      tooltip: { backgroundColor: '#0b0d12', borderColor: '#2a3242', borderWidth: 1 },
+    },
+    scales: {
+      x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6', maxRotation: 0, autoSkipPadding: 24 } },
+      y: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true, type: 'logarithmic' },
+    },
+  }),
+});
+
+// ===== spike stats panel =====
+const m = DATA.momentum;
+const spikeIsLatest = m.spikeWeek === DATA.weeks.at(-1);
+document.getElementById('spikeDesc').textContent = spikeIsLatest
+  ? 'Spike is the most recent week — retention unknown until next week.'
+  : 'Comparing post-spike weeks to spike + pre-spike baseline.';
+
+const rows = [
+  ['Spike week', m.spikeWeek],
+  ['Stars in spike', fmt(m.spikeStars)],
+  ['Pre-spike weekly avg', m.preSpikeAvg.toFixed(1)],
+  ['Post-spike weekly avg', m.postSpikeAvg == null ? '— (TBD)' : m.postSpikeAvg.toFixed(1)],
+  ['Spike retention %', m.retentionPct == null ? '— (TBD)' : pct(m.retentionPct)],
+  ['Lift vs pre-spike', m.liftVsPreSpike == null ? '— (TBD)' : m.liftVsPreSpike.toFixed(1) + 'x'],
+];
+document.getElementById('spikeStats').innerHTML = rows.map(([k, v]) =>
+  `<div class="stat-row"><div class="key">${k}</div><div class="val">${v}</div></div>`
+).join('');
+
+// ===== fork quality panel =====
+const fb = DATA.forkBreakdown;
+const forkRows = [
+  ['Total forks', fmt(fb.total)],
+  ['Contributing (good)', `<span class="pill good">${fmt(fb.contributing)}</span> ${pct(fb.contributing/fb.total*100)}`],
+  ['Standalone (own stars)', `<span class="pill info">${fmt(fb.standalone)}</span> ${pct(fb.standalone/fb.total*100)}`],
+  ['Drive-by (no signal)', `<span class="pill bad">${fmt(fb.driveBy)}</span> ${pct(fb.driveBy/fb.total*100)}`],
+];
+document.getElementById('forkQualityStats').innerHTML = forkRows.map(([k, v]) =>
+  `<div class="stat-row"><div class="key">${k}</div><div class="val">${v}</div></div>`
+).join('');
+
+// ===== top companies bar chart =====
+const tc = DATA.pipeline.topCompanies;
+new Chart(document.getElementById('companiesChart').getContext('2d'), {
+  type: 'bar',
+  data: {
+    labels: tc.map(x => x.company),
+    datasets: [{ data: tc.map(x => x.count), backgroundColor: C.stars.line, borderRadius: 4 }],
+  },
+  options: baseOpts({
+    indexAxis: 'y',
+    scales: {
+      x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+      y: { grid: { display: false }, ticks: { color: '#e6e8ee', font: { size: 11 } } },
+    },
+  }),
+});
+
+// ===== top locations bar chart =====
+const tl = DATA.pipeline.topLocations;
+new Chart(document.getElementById('locationsChart').getContext('2d'), {
+  type: 'bar',
+  data: {
+    labels: tl.map(x => x.location),
+    datasets: [{ data: tl.map(x => x.count), backgroundColor: C.prs.line, borderRadius: 4 }],
+  },
+  options: baseOpts({
+    indexAxis: 'y',
+    scales: {
+      x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+      y: { grid: { display: false }, ticks: { color: '#e6e8ee', font: { size: 11 } } },
+    },
+  }),
+});
+
+// ===== tier-1 stargazer table =====
+const tier1 = DATA.pipeline.tier1Stargazers;
+document.getElementById('tier1Table').innerHTML = tier1.map(s => `
+  <tr>
+    <td><a href="${s.url}" target="_blank" rel="noopener">@${s.login}</a></td>
+    <td>${s.name || ''}</td>
+    <td>${s.company || ''}</td>
+    <td>${s.location || ''}</td>
+    <td>${(s.starredAt || '').slice(0,10)}</td>
+  </tr>
+`).join('');
+</script>
+</body>
+</html>
