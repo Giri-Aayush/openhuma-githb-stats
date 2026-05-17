@@ -35,5 +35,12 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "auto-refresh: $(date -u +%F)"
-            git push
+            git push || {
+              echo "Push rejected — remote moved during this run. Pulling and retrying..."
+              git pull --rebase origin main || {
+                echo "Rebase conflict (concurrent auto-refresh likely). Skipping push; next cron will catch up."
+                exit 0
+              }
+              git push
+            }
           fi
