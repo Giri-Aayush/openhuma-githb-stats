@@ -13,12 +13,13 @@ const GENESIS_PUBLIC = '2026-02-18'; // repo went public
 const GENESIS_CODE = '2026-01-26';   // first commit (pre-existing private repo)
 
 // --- helpers ----------------------------------------------------
+// Weeks run Friday -> Thursday. weekKey returns the YYYY-MM-DD of the Friday.
 function weekKey(isoDate) {
   const d = new Date(isoDate);
-  const day = d.getUTCDay();
-  const diff = (day + 6) % 7;
-  const monday = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - diff));
-  return monday.toISOString().slice(0, 10);
+  const day = d.getUTCDay();        // 0=Sun..6=Sat
+  const diff = (day + 2) % 7;       // days since most recent Friday (day=5)
+  const friday = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - diff));
+  return friday.toISOString().slice(0, 10);
 }
 function allWeeks(startIso, endIso) {
   const out = [];
