@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-17T19:09:00.417Z",
+  "generatedAt": "2026-05-17T21:56:37.868Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,25 +10,30 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1180,
-    "stars": 12685,
-    "forks": 1155,
+    "prs": 1183,
+    "stars": 12939,
+    "forks": 1176,
     "uniqueContributors": 49,
     "externalContributors": 44,
-    "externalPrAuthors": 66,
+    "externalPrAuthors": 67,
     "issuesNonPr": 737,
     "externalIssueAuthors": 67,
     "weeks": 14,
-    "stargazersWithCompany": 2116,
-    "tier1Stargazers": 120
+    "stargazersWithCompany": 2172,
+    "tier1Stargazers": 123
   },
   "forkBreakdown": {
-    "total": 1155,
-    "contributing": 68,
-    "standalone": 34,
-    "driveBy": 1053,
+    "total": 1176,
+    "contributing": 69,
+    "standalone": 35,
+    "driveBy": 1072,
     "samples": {
       "contributing": [
+        {
+          "owner": "lyashenkomaxim01-gif",
+          "stars": 0,
+          "url": "https://github.com/lyashenkomaxim01-gif/openhuman"
+        },
         {
           "owner": "amiitt001",
           "stars": 0,
@@ -73,11 +78,6 @@
           "owner": "NikhilDhaliya",
           "stars": 0,
           "url": "https://github.com/NikhilDhaliya/openhuman"
-        },
-        {
-          "owner": "xuruiray",
-          "stars": 0,
-          "url": "https://github.com/xuruiray/openhuman"
         }
       ],
       "standalone": [
@@ -257,7 +257,7 @@
       114,
       179,
       283,
-      135
+      138
     ],
     "prsExternal": [
       0,
@@ -273,7 +273,7 @@
       59,
       76,
       139,
-      92
+      94
     ],
     "prsFounders": [
       0,
@@ -289,7 +289,7 @@
       55,
       103,
       144,
-      43
+      44
     ],
     "stars": [
       0,
@@ -304,8 +304,8 @@
       24,
       172,
       144,
-      7270,
-      4993
+      7269,
+      5248
     ],
     "newContributors": [
       0,
@@ -350,10 +350,10 @@
       1,
       1,
       4,
-      21,
+      20,
       12,
       566,
-      465
+      487
     ],
     "goodForks": [
       0,
@@ -369,7 +369,7 @@
       2,
       2,
       31,
-      23
+      24
     ]
   },
   "daily": {
@@ -462,7 +462,7 @@
       56,
       54,
       45,
-      36
+      39
     ],
     "prsExternal": [
       0,
@@ -553,7 +553,7 @@
       41,
       43,
       23,
-      26
+      28
     ],
     "prsFounders": [
       0,
@@ -644,7 +644,7 @@
       15,
       11,
       22,
-      10
+      11
     ],
     "stars": [
       0,
@@ -731,11 +731,11 @@
       271,
       615,
       1210,
-      2751,
+      2750,
       2317,
       1294,
       1678,
-      2021
+      2276
     ],
     "newContributors": [
       0,
@@ -987,7 +987,7 @@
       1,
       8,
       1,
-      2,
+      1,
       2,
       3,
       4,
@@ -1008,7 +1008,7 @@
       168,
       135,
       160,
-      170
+      192
     ],
     "goodForks": [
       0,
@@ -1099,7 +1099,7 @@
       13,
       7,
       4,
-      12
+      13
     ]
   },
   "cumulative": {
@@ -1117,7 +1117,7 @@
       583,
       762,
       1045,
-      1180
+      1183
     ],
     "stars": [
       0,
@@ -1132,8 +1132,8 @@
       106,
       278,
       422,
-      7692,
-      12685
+      7691,
+      12939
     ],
     "contributors": [
       0,
@@ -1178,10 +1178,10 @@
       86,
       87,
       91,
-      112,
-      124,
-      690,
-      1155
+      111,
+      123,
+      689,
+      1176
     ],
     "goodForks": [
       0,
@@ -1197,7 +1197,7 @@
       12,
       14,
       45,
-      68
+      69
     ]
   },
   "dailyCumulative": {
@@ -1290,7 +1290,7 @@
       1045,
       1099,
       1144,
-      1180
+      1183
     ],
     "prsExternal": [
       0,
@@ -1381,7 +1381,7 @@
       462,
       505,
       528,
-      554
+      556
     ],
     "prsFounders": [
       0,
@@ -1472,7 +1472,7 @@
       583,
       594,
       616,
-      626
+      627
     ],
     "stars": [
       0,
@@ -1559,11 +1559,11 @@
       799,
       1414,
       2624,
-      5375,
-      7692,
-      8986,
-      10664,
-      12685
+      5374,
+      7691,
+      8985,
+      10663,
+      12939
     ],
     "newContributors": [
       0,
@@ -1815,28 +1815,28 @@
       91,
       99,
       100,
-      102,
-      104,
-      107,
+      101,
+      103,
+      106,
+      110,
       111,
       112,
-      113,
+      115,
       116,
-      117,
+      119,
       120,
-      121,
-      124,
-      124,
-      124,
-      139,
-      187,
-      252,
-      328,
-      522,
-      690,
-      825,
-      985,
-      1155
+      123,
+      123,
+      123,
+      138,
+      186,
+      251,
+      327,
+      521,
+      689,
+      824,
+      984,
+      1176
     ],
     "goodForks": [
       0,
@@ -1927,7 +1927,7 @@
       45,
       52,
       56,
-      68
+      69
     ]
   },
   "momentum": {
@@ -2107,11 +2107,11 @@
       271,
       615,
       1210,
-      2751,
+      2750,
       2317,
       1294,
       1678,
-      2021
+      2276
     ],
     "rolling7DayAvg": [
       0,
@@ -2198,18 +2198,18 @@
       71.57142857142857,
       157.57142857142858,
       327,
-      717.1428571428571,
-      1038.5714285714287,
-      1221.5714285714287,
-      1448,
-      1698
+      717,
+      1038.4285714285713,
+      1221.4285714285713,
+      1447.857142857143,
+      1734.2857142857142
     ],
     "spikeWeek": "2026-05-08",
-    "spikeStars": 7270,
+    "spikeStars": 7269,
     "preSpikeAvg": 35.166666666666664,
-    "postSpikeAvg": 4993,
-    "retentionPct": 68.67950481430537,
-    "liftVsPreSpike": 141.98104265402844,
+    "postSpikeAvg": 5248,
+    "retentionPct": 72.19700096299353,
+    "liftVsPreSpike": 149.23222748815166,
     "wowStarsPct": [
       null,
       null,
@@ -2223,8 +2223,8 @@
       118.18181818181819,
       616.6666666666667,
       -16.27906976744186,
-      4948.611111111111,
-      -31.320495185694636
+      4947.916666666666,
+      -27.802999037006465
     ],
     "wowPrsPct": [
       null,
@@ -2240,11 +2240,38 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      -52.29681978798587
+      -51.23674911660777
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "gorkemblm",
+        "name": "Gorkem Bilim",
+        "company": "IOIntelligence",
+        "location": null,
+        "bio": "",
+        "starredAt": "2026-05-17T21:38:28Z",
+        "url": "https://github.com/gorkemblm"
+      },
+      {
+        "login": "ErickOF",
+        "name": "Erick Andrés Obregón Fonseca",
+        "company": "Intel Corporation",
+        "location": "Cartago, Costa Rica",
+        "bio": "Computer Engineering.\r\nMSc. in Electronics student.\r\nSoC Design Engineer. AI enthusiast.",
+        "starredAt": "2026-05-17T20:14:44Z",
+        "url": "https://github.com/ErickOF"
+      },
+      {
+        "login": "marceloboeira",
+        "name": "MB",
+        "company": "$[ @SeatGeek |=>      @aws,        @airbnb,       @hey-car,       @movinga,      @globocom ]",
+        "location": "$[🇪🇺 |=> 🇩🇪, 🇮🇹, 🇧🇷, 🇲🇹]",
+        "bio": "Distributed systems, centralised code-base",
+        "starredAt": "2026-05-17T19:49:00Z",
+        "url": "https://github.com/marceloboeira"
+      },
       {
         "login": "CrownKira",
         "name": "KarWi",
@@ -3455,15 +3482,15 @@
       },
       {
         "location": "India",
-        "count": 78
+        "count": 81
+      },
+      {
+        "location": "Germany",
+        "count": 48
       },
       {
         "location": "Beijing",
         "count": 47
-      },
-      {
-        "location": "Germany",
-        "count": 46
       },
       {
         "location": "Shanghai",
@@ -3479,27 +3506,27 @@
       },
       {
         "location": "France",
-        "count": 34
+        "count": 37
       },
       {
         "location": "Taiwan",
         "count": 33
       },
       {
-        "location": "Bangalore",
+        "location": "Earth",
+        "count": 31
+      },
+      {
+        "location": "London",
         "count": 30
       },
       {
-        "location": "Earth",
+        "location": "Bangalore",
         "count": 30
       },
       {
         "location": "Beijing, China",
         "count": 30
-      },
-      {
-        "location": "London",
-        "count": 29
       },
       {
         "location": "Canada",
@@ -3510,20 +3537,20 @@
         "count": 24
       },
       {
+        "location": "Indonesia",
+        "count": 23
+      },
+      {
         "location": "Vietnam",
         "count": 23
       },
       {
-        "location": "Indonesia",
+        "location": "Brazil",
         "count": 22
       },
       {
-        "location": "Brazil",
-        "count": 21
-      },
-      {
         "location": "Berlin",
-        "count": 20
+        "count": 21
       },
       {
         "location": "United States",
