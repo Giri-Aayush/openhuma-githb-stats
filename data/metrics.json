@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-18T19:47:40.017Z",
+  "generatedAt": "2026-05-18T22:06:00.249Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,25 +10,35 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1260,
-    "stars": 16688,
-    "forks": 1521,
+    "prs": 1267,
+    "stars": 16930,
+    "forks": 1536,
     "uniqueContributors": 61,
     "externalContributors": 56,
-    "externalPrAuthors": 86,
-    "issuesNonPr": 779,
-    "externalIssueAuthors": 85,
+    "externalPrAuthors": 88,
+    "issuesNonPr": 789,
+    "externalIssueAuthors": 87,
     "weeks": 14,
-    "stargazersWithCompany": 2805,
-    "tier1Stargazers": 173
+    "stargazersWithCompany": 2856,
+    "tier1Stargazers": 179
   },
   "forkBreakdown": {
-    "total": 1521,
-    "contributing": 88,
+    "total": 1536,
+    "contributing": 90,
     "standalone": 47,
-    "driveBy": 1386,
+    "driveBy": 1399,
     "samples": {
       "contributing": [
+        {
+          "owner": "flitzrrr",
+          "stars": 0,
+          "url": "https://github.com/flitzrrr/openhuman"
+        },
+        {
+          "owner": "emixor",
+          "stars": 0,
+          "url": "https://github.com/emixor/openhuman"
+        },
         {
           "owner": "blu1606",
           "stars": 0,
@@ -68,19 +78,14 @@
           "owner": "kunci115",
           "stars": 0,
           "url": "https://github.com/kunci115/openhuman"
-        },
-        {
-          "owner": "Alex-yang00",
-          "stars": 0,
-          "url": "https://github.com/Alex-yang00/openhuman"
-        },
-        {
-          "owner": "moningbird",
-          "stars": 0,
-          "url": "https://github.com/moningbird/openhuman"
         }
       ],
       "standalone": [
+        {
+          "owner": "gigantsc",
+          "stars": 1,
+          "url": "https://github.com/gigantsc/openhuman"
+        },
         {
           "owner": "vedant29-code",
           "stars": 1,
@@ -125,11 +130,6 @@
           "owner": "erickgrau",
           "stars": 1,
           "url": "https://github.com/erickgrau/openhuman"
-        },
-        {
-          "owner": "ariannamethod",
-          "stars": 1,
-          "url": "https://github.com/ariannamethod/openhuman"
         }
       ],
       "driveby": []
@@ -258,7 +258,7 @@
       114,
       179,
       283,
-      215
+      222
     ],
     "prsExternal": [
       0,
@@ -274,7 +274,7 @@
       59,
       76,
       139,
-      149
+      154
     ],
     "prsFounders": [
       0,
@@ -290,7 +290,7 @@
       55,
       103,
       144,
-      66
+      68
     ],
     "stars": [
       0,
@@ -306,7 +306,7 @@
       172,
       144,
       7256,
-      9010
+      9252
     ],
     "newContributors": [
       0,
@@ -353,8 +353,8 @@
       4,
       20,
       12,
-      566,
-      832
+      565,
+      848
     ],
     "goodForks": [
       0,
@@ -370,7 +370,7 @@
       2,
       2,
       31,
-      43
+      45
     ]
   },
   "daily": {
@@ -464,7 +464,7 @@
       54,
       45,
       39,
-      77
+      84
     ],
     "prsExternal": [
       0,
@@ -556,7 +556,7 @@
       43,
       23,
       28,
-      55
+      60
     ],
     "prsFounders": [
       0,
@@ -648,7 +648,7 @@
       11,
       22,
       11,
-      22
+      24
     ],
     "stars": [
       0,
@@ -740,7 +740,7 @@
       1293,
       1673,
       2427,
-      3617
+      3859
     ],
     "newContributors": [
       0,
@@ -1012,11 +1012,11 @@
       65,
       76,
       194,
-      168,
+      167,
       135,
       160,
       212,
-      325
+      341
     ],
     "goodForks": [
       0,
@@ -1108,7 +1108,7 @@
       7,
       4,
       14,
-      18
+      20
     ]
   },
   "cumulative": {
@@ -1126,7 +1126,7 @@
       583,
       762,
       1045,
-      1260
+      1267
     ],
     "stars": [
       0,
@@ -1142,7 +1142,7 @@
       278,
       422,
       7678,
-      16688
+      16930
     ],
     "contributors": [
       0,
@@ -1189,8 +1189,8 @@
       91,
       111,
       123,
-      689,
-      1521
+      688,
+      1536
     ],
     "goodForks": [
       0,
@@ -1206,7 +1206,7 @@
       12,
       14,
       45,
-      88
+      90
     ]
   },
   "dailyCumulative": {
@@ -1300,7 +1300,7 @@
       1099,
       1144,
       1183,
-      1260
+      1267
     ],
     "prsExternal": [
       0,
@@ -1392,7 +1392,7 @@
       505,
       528,
       556,
-      611
+      616
     ],
     "prsFounders": [
       0,
@@ -1484,7 +1484,7 @@
       594,
       616,
       627,
-      649
+      651
     ],
     "stars": [
       0,
@@ -1576,7 +1576,7 @@
       8971,
       10644,
       13071,
-      16688
+      16930
     ],
     "newContributors": [
       0,
@@ -1848,11 +1848,11 @@
       251,
       327,
       521,
-      689,
-      824,
-      984,
-      1196,
-      1521
+      688,
+      823,
+      983,
+      1195,
+      1536
     ],
     "goodForks": [
       0,
@@ -1944,7 +1944,7 @@
       52,
       56,
       70,
-      88
+      90
     ]
   },
   "momentum": {
@@ -2130,7 +2130,7 @@
       1293,
       1673,
       2427,
-      3617
+      3859
     ],
     "rolling7DayAvg": [
       0,
@@ -2222,10 +2222,10 @@
       1219.4285714285713,
       1445.142857142857,
       1753.142857142857,
-      2182
+      2216.5714285714284
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 9010,
+    "spikeStars": 9252,
     "preSpikeAvg": 590.6153846153846,
     "postSpikeAvg": null,
     "retentionPct": null,
@@ -2244,7 +2244,7 @@
       616.6666666666667,
       -16.27906976744186,
       4938.888888888889,
-      24.173098125689087
+      27.50826901874311
     ],
     "wowPrsPct": [
       null,
@@ -2260,11 +2260,65 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      -24.02826855123675
+      -21.554770318021202
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "wzhudev",
+        "name": "Wenzhao Hu",
+        "company": "NVIDIA",
+        "location": "Beijing",
+        "bio": "Senior Software Engineer @NVIDIA. Prev @bytedance, @tencent, @dream-num. Intern @alibaba.",
+        "starredAt": "2026-05-18T21:52:57Z",
+        "url": "https://github.com/wzhudev"
+      },
+      {
+        "login": "donefear",
+        "name": "DoneFear",
+        "company": "https://discord.gg/rm5Mbyu",
+        "location": "Belgium",
+        "bio": "just a guy trying to learn new programming languages and making small projects",
+        "starredAt": "2026-05-18T21:27:41Z",
+        "url": "https://github.com/donefear"
+      },
+      {
+        "login": "jfroy",
+        "name": "Jean-François Roy",
+        "company": "NVIDIA",
+        "location": "San Francisco, CA",
+        "bio": "@nvidia\r\n working on GFN. Previously \r\n@google and \r\n@apple. New dad, training for Half-IRONMAN and gaming in my spare time. My opinions are my own.",
+        "starredAt": "2026-05-18T21:27:13Z",
+        "url": "https://github.com/jfroy"
+      },
+      {
+        "login": "Dr-T0-Jerzys-solve-all",
+        "name": "Lucas Souza Sarmento",
+        "company": "github",
+        "location": "104.28.161.254",
+        "bio": "Owner of internet",
+        "starredAt": "2026-05-18T20:41:00Z",
+        "url": "https://github.com/Dr-T0-Jerzys-solve-all"
+      },
+      {
+        "login": "humansakhini-gif",
+        "name": "Lucas Souza Sarmento Rodrigues Vicentini",
+        "company": "https://discord.com/",
+        "location": "Vila Velha, Espírito Santo, Edifício Camará III Apartamento 201",
+        "bio": "I'm the owner of github",
+        "starredAt": "2026-05-18T20:16:07Z",
+        "url": "https://github.com/humansakhini-gif"
+      },
+      {
+        "login": "Tautorn",
+        "name": "Bruno Carneiro",
+        "company": "TautornTech / @neospace-ai / @DevCUberlandia /",
+        "location": "Uberlândia",
+        "bio": "Entrepreneur and Staff Software Engineer ",
+        "starredAt": "2026-05-18T20:11:05Z",
+        "url": "https://github.com/Tautorn"
+      },
       {
         "login": "ofek",
         "name": "Ofek Lev",
@@ -3838,7 +3892,7 @@
       },
       {
         "company": "freelancer",
-        "count": 12
+        "count": 13
       },
       {
         "company": "bytedance",
@@ -3862,7 +3916,7 @@
       },
       {
         "company": "freelance",
-        "count": 7
+        "count": 8
       },
       {
         "company": "baidu",
@@ -3878,6 +3932,10 @@
       },
       {
         "company": "xidian university",
+        "count": 5
+      },
+      {
+        "company": "huawei",
         "count": 5
       },
       {
@@ -3917,15 +3975,15 @@
         "count": 4
       },
       {
+        "company": "github",
+        "count": 4
+      },
+      {
         "company": "aws",
         "count": 4
       },
       {
         "company": "fudan university",
-        "count": 4
-      },
-      {
-        "company": "huawei",
         "count": 4
       },
       {
@@ -3937,12 +3995,8 @@
         "count": 4
       },
       {
-        "company": "intel",
-        "count": 3
-      },
-      {
-        "company": "university of science and technology of china",
-        "count": 3
+        "company": "nvidia",
+        "count": 4
       }
     ],
     "topLocations": [
@@ -3952,15 +4006,15 @@
       },
       {
         "location": "India",
-        "count": 101
+        "count": 103
       },
       {
         "location": "Beijing",
-        "count": 68
+        "count": 69
       },
       {
         "location": "Germany",
-        "count": 58
+        "count": 60
       },
       {
         "location": "Shanghai",
@@ -3968,7 +4022,7 @@
       },
       {
         "location": "Italy",
-        "count": 47
+        "count": 49
       },
       {
         "location": "Beijing, China",
@@ -3987,7 +4041,15 @@
         "count": 39
       },
       {
+        "location": "London",
+        "count": 37
+      },
+      {
         "location": "Earth",
+        "count": 37
+      },
+      {
+        "location": "Brazil",
         "count": 37
       },
       {
@@ -3999,14 +4061,6 @@
         "count": 35
       },
       {
-        "location": "London",
-        "count": 34
-      },
-      {
-        "location": "Brazil",
-        "count": 34
-      },
-      {
         "location": "Canada",
         "count": 33
       },
@@ -4015,16 +4069,16 @@
         "count": 30
       },
       {
+        "location": "United States",
+        "count": 29
+      },
+      {
         "location": "Shanghai, China",
         "count": 28
       },
       {
-        "location": "United States",
-        "count": 27
-      },
-      {
         "location": "Berlin",
-        "count": 26
+        "count": 27
       }
     ]
   }
