@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-19T06:56:01.028Z",
+  "generatedAt": "2026-05-19T12:15:47.956Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,25 +10,50 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1281,
-    "stars": 18432,
-    "forks": 1686,
+    "prs": 1300,
+    "stars": 19452,
+    "forks": 1772,
     "uniqueContributors": 61,
     "externalContributors": 56,
-    "externalPrAuthors": 93,
-    "issuesNonPr": 791,
-    "externalIssueAuthors": 89,
+    "externalPrAuthors": 98,
+    "issuesNonPr": 801,
+    "externalIssueAuthors": 91,
     "weeks": 14,
-    "stargazersWithCompany": 3099,
-    "tier1Stargazers": 194
+    "stargazersWithCompany": 3282,
+    "tier1Stargazers": 202
   },
   "forkBreakdown": {
-    "total": 1686,
-    "contributing": 95,
-    "standalone": 50,
-    "driveBy": 1541,
+    "total": 1772,
+    "contributing": 100,
+    "standalone": 51,
+    "driveBy": 1621,
     "samples": {
       "contributing": [
+        {
+          "owner": "esadomer",
+          "stars": 0,
+          "url": "https://github.com/esadomer/openhuman"
+        },
+        {
+          "owner": "Watermelcn",
+          "stars": 0,
+          "url": "https://github.com/Watermelcn/openhuman"
+        },
+        {
+          "owner": "usadev0813",
+          "stars": 0,
+          "url": "https://github.com/usadev0813/openhuman"
+        },
+        {
+          "owner": "xiekailian",
+          "stars": 0,
+          "url": "https://github.com/xiekailian/openhuman"
+        },
+        {
+          "owner": "xilema2",
+          "stars": 0,
+          "url": "https://github.com/xilema2/openhuman"
+        },
         {
           "owner": "YUHAO-corn",
           "stars": 0,
@@ -53,34 +78,14 @@
           "owner": "HariNayan",
           "stars": 0,
           "url": "https://github.com/HariNayan/openhuman"
-        },
-        {
-          "owner": "flitzrrr",
-          "stars": 0,
-          "url": "https://github.com/flitzrrr/openhuman"
-        },
-        {
-          "owner": "emixor",
-          "stars": 0,
-          "url": "https://github.com/emixor/openhuman"
-        },
-        {
-          "owner": "SATYAM-PRATIBHAN",
-          "stars": 0,
-          "url": "https://github.com/SATYAM-PRATIBHAN/openhuman"
-        },
-        {
-          "owner": "blu1606",
-          "stars": 0,
-          "url": "https://github.com/blu1606/openhuman"
-        },
-        {
-          "owner": "Minoo7",
-          "stars": 0,
-          "url": "https://github.com/Minoo7/openhuman"
         }
       ],
       "standalone": [
+        {
+          "owner": "harishpiyer",
+          "stars": 1,
+          "url": "https://github.com/harishpiyer/openhuman"
+        },
         {
           "owner": "Koringa-1",
           "stars": 1,
@@ -125,11 +130,6 @@
           "owner": "MantisWare",
           "stars": 1,
           "url": "https://github.com/MantisWare/openhuman"
-        },
-        {
-          "owner": "jackypanster",
-          "stars": 1,
-          "url": "https://github.com/jackypanster/openhuman"
         }
       ],
       "driveby": []
@@ -259,7 +259,7 @@
       114,
       179,
       283,
-      236
+      255
     ],
     "prsExternal": [
       0,
@@ -275,7 +275,7 @@
       59,
       76,
       139,
-      165
+      180
     ],
     "prsFounders": [
       0,
@@ -291,7 +291,7 @@
       55,
       103,
       144,
-      71
+      75
     ],
     "stars": [
       0,
@@ -306,8 +306,8 @@
       24,
       172,
       144,
-      7256,
-      10754
+      7253,
+      11777
     ],
     "newContributors": [
       0,
@@ -355,7 +355,7 @@
       20,
       12,
       564,
-      999
+      1085
     ],
     "goodForks": [
       0,
@@ -371,7 +371,7 @@
       2,
       2,
       31,
-      50
+      55
     ]
   },
   "daily": {
@@ -466,7 +466,7 @@
       45,
       39,
       85,
-      13
+      32
     ],
     "prsExternal": [
       0,
@@ -559,7 +559,7 @@
       23,
       28,
       61,
-      10
+      25
     ],
     "prsFounders": [
       0,
@@ -652,7 +652,7 @@
       22,
       11,
       24,
-      3
+      7
     ],
     "stars": [
       0,
@@ -737,15 +737,15 @@
       13,
       93,
       271,
-      615,
+      614,
       1209,
       2745,
-      2310,
-      1291,
-      1668,
-      2426,
-      4045,
-      1324
+      2308,
+      1290,
+      1667,
+      2425,
+      4039,
+      2356
     ],
     "newContributors": [
       0,
@@ -1023,8 +1023,8 @@
       135,
       160,
       211,
-      364,
-      129
+      362,
+      217
     ],
     "goodForks": [
       0,
@@ -1117,7 +1117,7 @@
       4,
       13,
       21,
-      5
+      10
     ]
   },
   "cumulative": {
@@ -1135,7 +1135,7 @@
       583,
       762,
       1045,
-      1281
+      1300
     ],
     "stars": [
       0,
@@ -1150,8 +1150,8 @@
       106,
       278,
       422,
-      7678,
-      18432
+      7675,
+      19452
     ],
     "contributors": [
       0,
@@ -1199,7 +1199,7 @@
       111,
       123,
       687,
-      1686
+      1772
     ],
     "goodForks": [
       0,
@@ -1215,7 +1215,7 @@
       12,
       14,
       45,
-      95
+      100
     ]
   },
   "dailyCumulative": {
@@ -1310,7 +1310,7 @@
       1144,
       1183,
       1268,
-      1281
+      1300
     ],
     "prsExternal": [
       0,
@@ -1403,7 +1403,7 @@
       528,
       556,
       617,
-      627
+      642
     ],
     "prsFounders": [
       0,
@@ -1496,7 +1496,7 @@
       616,
       627,
       651,
-      654
+      658
     ],
     "stars": [
       0,
@@ -1581,15 +1581,15 @@
       435,
       528,
       799,
-      1414,
-      2623,
-      5368,
-      7678,
-      8969,
-      10637,
-      13063,
-      17108,
-      18432
+      1413,
+      2622,
+      5367,
+      7675,
+      8965,
+      10632,
+      13057,
+      17096,
+      19452
     ],
     "newContributors": [
       0,
@@ -1867,8 +1867,8 @@
       822,
       982,
       1193,
-      1557,
-      1686
+      1555,
+      1772
     ],
     "goodForks": [
       0,
@@ -1961,7 +1961,7 @@
       56,
       69,
       90,
-      95
+      100
     ]
   },
   "momentum": {
@@ -2141,15 +2141,15 @@
       13,
       93,
       271,
-      615,
+      614,
       1209,
       2745,
-      2310,
-      1291,
-      1668,
-      2426,
-      4045,
-      1324
+      2308,
+      1290,
+      1667,
+      2425,
+      4039,
+      2356
     ],
     "rolling7DayAvg": [
       0,
@@ -2234,19 +2234,19 @@
       21.571428571428573,
       34,
       71.57142857142857,
-      157.57142857142858,
-      326.85714285714283,
-      716.1428571428571,
-      1036.5714285714287,
-      1219.142857142857,
-      1444.142857142857,
-      1752,
-      2242,
-      2258.4285714285716
+      157.42857142857142,
+      326.7142857142857,
+      716,
+      1036.142857142857,
+      1218.5714285714287,
+      1443.4285714285713,
+      1751.142857142857,
+      2240.4285714285716,
+      2404.285714285714
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 10754,
-    "preSpikeAvg": 590.6153846153846,
+    "spikeStars": 11777,
+    "preSpikeAvg": 590.3846153846154,
     "postSpikeAvg": null,
     "retentionPct": null,
     "liftVsPreSpike": null,
@@ -2263,8 +2263,8 @@
       118.18181818181819,
       616.6666666666667,
       -16.27906976744186,
-      4938.888888888889,
-      48.208379272326354
+      4936.805555555556,
+      62.37418999034882
     ],
     "wowPrsPct": [
       null,
@@ -2280,11 +2280,83 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      -16.607773851590103
+      -9.89399293286219
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "kiritoxkiriko",
+        "name": "Xinmeng Wang",
+        "company": "Bytedance Inc.",
+        "location": "Shanghai, China",
+        "bio": "Gopher, focus on AI/LLM infra, currently live and work in Shanghai.",
+        "starredAt": "2026-05-19T12:01:36Z",
+        "url": "https://github.com/kiritoxkiriko"
+      },
+      {
+        "login": "salirmo",
+        "name": "Mohammad Reza",
+        "company": "AirBnb",
+        "location": "UAE",
+        "bio": "Front-End Developer",
+        "starredAt": "2026-05-19T11:42:46Z",
+        "url": "https://github.com/salirmo"
+      },
+      {
+        "login": "Vishnubathala",
+        "name": "Vishnu Bathala",
+        "company": "AWS",
+        "location": "New Zealand",
+        "bio": "",
+        "starredAt": "2026-05-19T11:18:02Z",
+        "url": "https://github.com/Vishnubathala"
+      },
+      {
+        "login": "horsley",
+        "name": "Horsley Lee",
+        "company": "Tencent",
+        "location": "China, Guangdong, Shenzhen",
+        "bio": "iOS / Web / Go / NodeJS developer @Tencent",
+        "starredAt": "2026-05-19T09:30:11Z",
+        "url": "https://github.com/horsley"
+      },
+      {
+        "login": "kulukami",
+        "name": "A.z fan",
+        "company": "ByteDance",
+        "location": "China",
+        "bio": "Creativity comes with Arts.",
+        "starredAt": "2026-05-19T09:04:42Z",
+        "url": "https://github.com/kulukami"
+      },
+      {
+        "login": "franckchen",
+        "name": "Franck Chan",
+        "company": "Baidu",
+        "location": "Beijing,China",
+        "bio": "I dont like code.Forced by life.\r\nA passionate geek of advanced open-source technology & Business-Driven Developer",
+        "starredAt": "2026-05-19T08:15:36Z",
+        "url": "https://github.com/franckchen"
+      },
+      {
+        "login": "tanghaodong25",
+        "name": "Haodong Tang",
+        "company": "Antfin,Intel",
+        "location": "shanghai china",
+        "bio": "Software Engineer at Antfin",
+        "starredAt": "2026-05-19T07:49:18Z",
+        "url": "https://github.com/tanghaodong25"
+      },
+      {
+        "login": "wurongle",
+        "name": "rock506",
+        "company": "Tencent",
+        "location": "Guang Zhou",
+        "bio": null,
+        "starredAt": "2026-05-19T07:25:38Z",
+        "url": "https://github.com/wurongle"
+      },
       {
         "login": "tosone",
         "name": "Tosone",
@@ -4035,7 +4107,7 @@
     "topCompanies": [
       {
         "company": "tencent",
-        "count": 21
+        "count": 23
       },
       {
         "company": "alibaba",
@@ -4055,15 +4127,15 @@
       },
       {
         "company": "bytedance",
-        "count": 12
+        "count": 13
       },
       {
         "company": "none",
-        "count": 10
+        "count": 12
       },
       {
         "company": "student",
-        "count": 8
+        "count": 10
       },
       {
         "company": "home",
@@ -4075,11 +4147,15 @@
       },
       {
         "company": "baidu",
-        "count": 7
+        "count": 8
       },
       {
         "company": "china",
         "count": 7
+      },
+      {
+        "company": "xidian university",
+        "count": 6
       },
       {
         "company": "ibm",
@@ -4094,15 +4170,23 @@
         "count": 6
       },
       {
-        "company": "xidian university",
-        "count": 5
-      },
-      {
         "company": "university of science and technology of china",
         "count": 5
       },
       {
+        "company": "tsinghua university",
+        "count": 5
+      },
+      {
+        "company": "aws",
+        "count": 5
+      },
+      {
         "company": "meituan",
+        "count": 5
+      },
+      {
+        "company": "huazhong university of science and technology",
         "count": 5
       },
       {
@@ -4140,80 +4224,68 @@
       {
         "company": "self",
         "count": 4
-      },
-      {
-        "company": "github",
-        "count": 4
-      },
-      {
-        "company": "aws",
-        "count": 4
-      },
-      {
-        "company": "fudan university",
-        "count": 4
       }
     ],
     "topLocations": [
       {
         "location": "China",
-        "count": 158
+        "count": 172
       },
       {
         "location": "India",
-        "count": 108
+        "count": 113
       },
       {
         "location": "Beijing",
-        "count": 83
+        "count": 85
       },
       {
         "location": "Germany",
-        "count": 65
+        "count": 72
       },
       {
         "location": "Shanghai",
-        "count": 61
+        "count": 64
       },
       {
         "location": "Italy",
-        "count": 49
+        "count": 53
       },
       {
         "location": "Beijing, China",
-        "count": 47
+        "count": 49
       },
       {
         "location": "France",
-        "count": 43
+        "count": 48
       },
       {
         "location": "Singapore",
-        "count": 43
-      },
-      {
-        "location": "Bangalore",
-        "count": 41
+        "count": 47
       },
       {
         "location": "Earth",
+        "count": 45
+      },
+      {
+        "location": "Bangalore",
+        "count": 42
+      },
+      {
+        "location": "Indonesia",
         "count": 41
       },
       {
         "location": "Brazil",
-        "count": 39
-      },
-      {
-        "location": "London",
-        "count": 38
-      },
-      {
-        "location": "Indonesia",
-        "count": 38
+        "count": 40
       },
       {
         "location": "Taiwan",
-        "count": 38
+        "count": 40
+      },
+      {
+        "location": "London",
+        "count": 39
       },
       {
         "location": "beijing",
@@ -4221,19 +4293,19 @@
       },
       {
         "location": "Canada",
-        "count": 33
-      },
-      {
-        "location": "United States",
-        "count": 31
+        "count": 35
       },
       {
         "location": "Shanghai, China",
-        "count": 31
+        "count": 34
       },
       {
-        "location": "USA",
-        "count": 27
+        "location": "United States",
+        "count": 32
+      },
+      {
+        "location": "Berlin",
+        "count": 30
       }
     ]
   }
