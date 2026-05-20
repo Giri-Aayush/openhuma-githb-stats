@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-20T06:57:15.172Z",
+  "generatedAt": "2026-05-20T11:10:44.258Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,126 +10,126 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1355,
-    "stars": 22217,
-    "forks": 2055,
+    "prs": 1390,
+    "stars": 22996,
+    "forks": 2111,
     "uniqueContributors": 84,
     "externalContributors": 79,
-    "externalPrAuthors": 107,
-    "issuesNonPr": 827,
-    "externalIssueAuthors": 105,
+    "externalPrAuthors": 108,
+    "issuesNonPr": 837,
+    "externalIssueAuthors": 110,
     "weeks": 14,
-    "stargazersWithCompany": 3767,
-    "tier1Stargazers": 223
+    "stargazersWithCompany": 3875,
+    "tier1Stargazers": 231
   },
   "forkBreakdown": {
-    "total": 2055,
-    "contributing": 108,
-    "standalone": 50,
-    "driveBy": 1897,
+    "total": 2111,
+    "contributing": 110,
+    "standalone": 47,
+    "driveBy": 1954,
     "samples": {
       "contributing": [
         {
-          "owner": "EvanCarson",
-          "stars": 0,
-          "url": "https://github.com/EvanCarson/openhuman"
+          "owner": "senamakel",
+          "stars": 2,
+          "url": "https://github.com/senamakel/openhuman"
         },
         {
-          "owner": "antfleet-ops",
+          "owner": "M3gA-Mind",
           "stars": 0,
-          "url": "https://github.com/antfleet-ops/openhuman"
+          "url": "https://github.com/M3gA-Mind/openhuman"
         },
         {
-          "owner": "leighstillard",
+          "owner": "oxoxDev",
           "stars": 0,
-          "url": "https://github.com/leighstillard/openhuman"
+          "url": "https://github.com/oxoxDev/openhuman"
         },
         {
-          "owner": "Kymi808",
+          "owner": "CodeGhost21",
           "stars": 0,
-          "url": "https://github.com/Kymi808/openhuman"
+          "url": "https://github.com/CodeGhost21/openhuman"
         },
         {
-          "owner": "DeadlySilent",
+          "owner": "sanil-23",
           "stars": 0,
-          "url": "https://github.com/DeadlySilent/openhuman"
+          "url": "https://github.com/sanil-23/openhuman"
         },
         {
-          "owner": "srikaanthh",
+          "owner": "graycyrus",
           "stars": 0,
-          "url": "https://github.com/srikaanthh/openhuman"
+          "url": "https://github.com/graycyrus/openhuman"
         },
         {
-          "owner": "navneet-singh2907",
+          "owner": "YellowSnnowmann",
           "stars": 0,
-          "url": "https://github.com/navneet-singh2907/openhuman"
+          "url": "https://github.com/YellowSnnowmann/openhuman"
         },
         {
-          "owner": "Alexxigang",
+          "owner": "olatundefaruk88-svg",
           "stars": 0,
-          "url": "https://github.com/Alexxigang/openhuman"
+          "url": "https://github.com/olatundefaruk88-svg/openhuman"
         },
         {
-          "owner": "esadomer",
+          "owner": "jwalin-shah",
           "stars": 0,
-          "url": "https://github.com/esadomer/openhuman"
+          "url": "https://github.com/jwalin-shah/openhuman"
         },
         {
-          "owner": "Watermelcn",
+          "owner": "VectorJet",
           "stars": 0,
-          "url": "https://github.com/Watermelcn/openhuman"
+          "url": "https://github.com/VectorJet/openhuman"
         }
       ],
       "standalone": [
         {
-          "owner": "internetcityhd",
+          "owner": "BiG-sLiM300",
           "stars": 1,
-          "url": "https://github.com/internetcityhd/openhuman"
+          "url": "https://github.com/BiG-sLiM300/openhuman"
         },
         {
-          "owner": "harishpiyer",
+          "owner": "arthrod",
           "stars": 1,
-          "url": "https://github.com/harishpiyer/openhuman"
+          "url": "https://github.com/arthrod/openhuman"
         },
         {
-          "owner": "Grapes-AI-Lab",
+          "owner": "manthony111123-marko",
           "stars": 1,
-          "url": "https://github.com/Grapes-AI-Lab/openhuman"
+          "url": "https://github.com/manthony111123-marko/openhuman"
         },
         {
-          "owner": "gigantsc",
+          "owner": "harishvagjiyani",
           "stars": 1,
-          "url": "https://github.com/gigantsc/openhuman"
+          "url": "https://github.com/harishvagjiyani/openhuman"
         },
         {
-          "owner": "vedant29-code",
+          "owner": "cliffinn",
           "stars": 1,
-          "url": "https://github.com/vedant29-code/openhuman"
+          "url": "https://github.com/cliffinn/openhuman"
         },
         {
-          "owner": "Tssolo21",
+          "owner": "ibuysqft",
           "stars": 1,
-          "url": "https://github.com/Tssolo21/openhuman"
+          "url": "https://github.com/ibuysqft/openhuman"
         },
         {
-          "owner": "dorucioclea",
+          "owner": "srasgod",
           "stars": 1,
-          "url": "https://github.com/dorucioclea/openhuman"
+          "url": "https://github.com/srasgod/openhuman"
         },
         {
-          "owner": "Azuresword",
+          "owner": "Aokio",
           "stars": 1,
-          "url": "https://github.com/Azuresword/openhuman"
+          "url": "https://github.com/Aokio/openhuman"
         },
         {
-          "owner": "nextgenFresHZ",
+          "owner": "Bryant-Tech",
           "stars": 1,
-          "url": "https://github.com/nextgenFresHZ/openhuman-personalAIAgent_Localy"
+          "url": "https://github.com/Bryant-Tech/openhuman"
         },
         {
-          "owner": "MantisWare",
+          "owner": "longheloer",
           "stars": 1,
-          "url": "https://github.com/MantisWare/openhuman"
+          "url": "https://github.com/longheloer/openhuman"
         }
       ],
       "driveby": []
@@ -260,7 +260,7 @@
       114,
       179,
       283,
-      310
+      345
     ],
     "prsExternal": [
       0,
@@ -276,7 +276,7 @@
       59,
       76,
       139,
-      220
+      253
     ],
     "prsFounders": [
       0,
@@ -292,7 +292,7 @@
       55,
       103,
       144,
-      90
+      92
     ],
     "stars": [
       0,
@@ -307,8 +307,8 @@
       24,
       172,
       144,
-      7242,
-      14553
+      7280,
+      15294
     ],
     "newContributors": [
       0,
@@ -353,10 +353,10 @@
       1,
       1,
       4,
-      20,
+      21,
       12,
-      561,
-      1371
+      566,
+      1421
     ],
     "goodForks": [
       0,
@@ -371,8 +371,8 @@
       2,
       2,
       2,
-      30,
-      64
+      31,
+      65
     ]
   },
   "daily": {
@@ -468,7 +468,7 @@
       39,
       85,
       74,
-      13
+      48
     ],
     "prsExternal": [
       0,
@@ -562,7 +562,7 @@
       28,
       61,
       54,
-      11
+      44
     ],
     "prsFounders": [
       0,
@@ -656,7 +656,7 @@
       11,
       24,
       20,
-      2
+      4
     ],
     "stars": [
       0,
@@ -739,18 +739,18 @@
       20,
       67,
       13,
-      93,
+      94,
       271,
-      614,
-      1207,
-      2740,
-      2304,
-      1289,
-      1663,
+      616,
+      1213,
+      2756,
+      2317,
+      1295,
+      1682,
       2419,
-      4035,
+      4033,
       4040,
-      1107
+      1825
     ],
     "newContributors": [
       0,
@@ -1008,7 +1008,7 @@
       1,
       8,
       1,
-      1,
+      2,
       2,
       3,
       4,
@@ -1025,14 +1025,14 @@
       48,
       65,
       76,
-      192,
-      165,
+      194,
+      168,
       135,
-      160,
-      210,
+      162,
+      209,
       362,
-      377,
-      127
+      376,
+      177
     ],
     "goodForks": [
       0,
@@ -1120,13 +1120,13 @@
       1,
       3,
       12,
-      12,
+      13,
       7,
       4,
       13,
       22,
       16,
-      2
+      3
     ]
   },
   "cumulative": {
@@ -1144,7 +1144,7 @@
       583,
       762,
       1045,
-      1355
+      1390
     ],
     "stars": [
       0,
@@ -1159,8 +1159,8 @@
       106,
       278,
       422,
-      7664,
-      22217
+      7702,
+      22996
     ],
     "contributors": [
       0,
@@ -1205,10 +1205,10 @@
       86,
       87,
       91,
-      111,
-      123,
-      684,
-      2055
+      112,
+      124,
+      690,
+      2111
     ],
     "goodForks": [
       0,
@@ -1223,8 +1223,8 @@
       10,
       12,
       14,
-      44,
-      108
+      45,
+      110
     ]
   },
   "dailyCumulative": {
@@ -1320,7 +1320,7 @@
       1183,
       1268,
       1342,
-      1355
+      1390
     ],
     "prsExternal": [
       0,
@@ -1414,7 +1414,7 @@
       556,
       617,
       671,
-      682
+      715
     ],
     "prsFounders": [
       0,
@@ -1508,7 +1508,7 @@
       627,
       651,
       671,
-      673
+      675
     ],
     "stars": [
       0,
@@ -1591,18 +1591,18 @@
       355,
       422,
       435,
-      528,
-      799,
-      1413,
-      2620,
-      5360,
-      7664,
-      8953,
-      10616,
-      13035,
-      17070,
-      21110,
-      22217
+      529,
+      800,
+      1416,
+      2629,
+      5385,
+      7702,
+      8997,
+      10679,
+      13098,
+      17131,
+      21171,
+      22996
     ],
     "newContributors": [
       0,
@@ -1860,31 +1860,31 @@
       91,
       99,
       100,
-      101,
-      103,
-      106,
-      110,
+      102,
+      104,
+      107,
       111,
       112,
-      115,
+      113,
       116,
-      119,
+      117,
       120,
-      123,
-      123,
-      123,
-      138,
-      186,
-      251,
-      327,
-      519,
-      684,
-      819,
-      979,
-      1189,
-      1551,
-      1928,
-      2055
+      121,
+      124,
+      124,
+      124,
+      139,
+      187,
+      252,
+      328,
+      522,
+      690,
+      825,
+      987,
+      1196,
+      1558,
+      1934,
+      2111
     ],
     "goodForks": [
       0,
@@ -1972,13 +1972,13 @@
       17,
       20,
       32,
-      44,
-      51,
-      55,
-      68,
-      90,
-      106,
-      108
+      45,
+      52,
+      56,
+      69,
+      91,
+      107,
+      110
     ]
   },
   "momentum": {
@@ -2157,18 +2157,18 @@
       20,
       67,
       13,
-      93,
+      94,
       271,
-      614,
-      1207,
-      2740,
-      2304,
-      1289,
-      1663,
+      616,
+      1213,
+      2756,
+      2317,
+      1295,
+      1682,
       2419,
-      4035,
+      4033,
       4040,
-      1107
+      1825
     ],
     "rolling7DayAvg": [
       0,
@@ -2251,22 +2251,22 @@
       14.571428571428571,
       20.571428571428573,
       21.571428571428573,
-      34,
-      71.57142857142857,
-      157.42857142857142,
-      326.42857142857144,
-      715,
-      1034.5714285714287,
-      1216.857142857143,
-      1441.142857142857,
-      1748,
-      2236.714285714286,
-      2641.4285714285716,
-      2408.1428571428573
+      34.142857142857146,
+      71.71428571428571,
+      157.85714285714286,
+      327.7142857142857,
+      718.5714285714286,
+      1040,
+      1223.142857142857,
+      1450,
+      1756.857142857143,
+      2245,
+      2648.8571428571427,
+      2515.8571428571427
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 14553,
-    "preSpikeAvg": 589.5384615384615,
+    "spikeStars": 15294,
+    "preSpikeAvg": 592.4615384615385,
     "postSpikeAvg": null,
     "retentionPct": null,
     "liftVsPreSpike": null,
@@ -2283,8 +2283,8 @@
       118.18181818181819,
       616.6666666666667,
       -16.27906976744186,
-      4929.166666666666,
-      100.95277547638774
+      4955.555555555556,
+      110.08241758241759
     ],
     "wowPrsPct": [
       null,
@@ -2300,11 +2300,56 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      9.540636042402827
+      21.908127208480565
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "deusyu",
+        "name": "Rainman",
+        "company": "baidu",
+        "location": "Beijing",
+        "bio": "Keep learning. Keep shipping.\r\nEx-Kuaishou & Xiaohongshu → now @Baidu.\r\nInterned @Dell & @SAP.",
+        "starredAt": "2026-05-20T10:09:11Z",
+        "url": "https://github.com/deusyu"
+      },
+      {
+        "login": "yvoilee",
+        "name": "Leo",
+        "company": "bytedance",
+        "location": "HangZhou, China",
+        "bio": "",
+        "starredAt": "2026-05-20T09:47:01Z",
+        "url": "https://github.com/yvoilee"
+      },
+      {
+        "login": "view2future",
+        "name": "Wang Yu",
+        "company": "BAIDU Inc",
+        "location": "Chengdu,China",
+        "bio": "Once a coder",
+        "starredAt": "2026-05-20T08:40:13Z",
+        "url": "https://github.com/view2future"
+      },
+      {
+        "login": "anikesh-rathour",
+        "name": "Anikesh Rathour",
+        "company": "Microsoft",
+        "location": "India",
+        "bio": "B. Tech CSE (1st Year) | Learning Data  Structures , Python & Web Development | Aspiring AI Engineer & Cyber security Engineer",
+        "starredAt": "2026-05-20T08:20:12Z",
+        "url": "https://github.com/anikesh-rathour"
+      },
+      {
+        "login": "JerryWu-code",
+        "name": "Jerry Wu",
+        "company": "Tongyi Lab, Alibaba",
+        "location": "Hangzhou",
+        "bio": "Image/Video Gen, RL, LLMs, VLA.",
+        "starredAt": "2026-05-20T07:04:06Z",
+        "url": "https://github.com/JerryWu-code"
+      },
       {
         "login": "coetzeexu",
         "name": "Coetzee",
@@ -3431,15 +3476,6 @@
         "url": "https://github.com/miaow1988"
       },
       {
-        "login": "Spacebody",
-        "name": "Spacebody",
-        "company": "Alibaba Group",
-        "location": "Hangzhou, China",
-        "bio": "Nobody in the world.",
-        "starredAt": "2026-05-17T02:09:12Z",
-        "url": "https://github.com/Spacebody"
-      },
-      {
         "login": "TengByte",
         "name": "Teng",
         "company": "Alibaba 2 ZOOM",
@@ -3845,6 +3881,15 @@
         "url": "https://github.com/rufatkiu"
       },
       {
+        "login": "sumitroajiprabowo",
+        "name": "Sumitro Aji Prabowo",
+        "company": "Google",
+        "location": "Metaverse",
+        "bio": "🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏",
+        "starredAt": "2026-05-14T03:58:59Z",
+        "url": "https://github.com/sumitroajiprabowo"
+      },
+      {
         "login": "gowithrain",
         "name": "Feng",
         "company": "ByteDance",
@@ -3944,6 +3989,15 @@
         "url": "https://github.com/almogtavor"
       },
       {
+        "login": "Night-Ride-395",
+        "name": "☆Jean Contreras☆",
+        "company": "TikTok México Tecnología, S. de R.L. de C.V",
+        "location": "México, Cuautitlán Izcalli, Valle Esmeralda, 54769.",
+        "bio": "Crux Sancta sit mihi lux,\r\nNon draco sit mihi dux,\r\nVade retro, Satana,\r\nNumquam suade mihi vana,\r\nSunt mala quae libas,\r\nIpse venena bibas.",
+        "starredAt": "2026-05-13T18:39:02Z",
+        "url": "https://github.com/Night-Ride-395"
+      },
+      {
         "login": "mrowan137",
         "name": "Michael E. Rowan",
         "company": "AMD",
@@ -3953,6 +4007,15 @@
         "url": "https://github.com/mrowan137"
       },
       {
+        "login": "imshashwataggarwal",
+        "name": "Shashwat Aggarwal",
+        "company": "Microsoft",
+        "location": "Earth",
+        "bio": "",
+        "starredAt": "2026-05-13T18:17:17Z",
+        "url": "https://github.com/imshashwataggarwal"
+      },
+      {
         "login": "ginglis13",
         "name": "Gavin Inglis",
         "company": "aws",
@@ -3960,6 +4023,15 @@
         "bio": "",
         "starredAt": "2026-05-13T18:08:07Z",
         "url": "https://github.com/ginglis13"
+      },
+      {
+        "login": "Spacebody",
+        "name": "Spacebody",
+        "company": "Alibaba Group",
+        "location": "Hangzhou, China",
+        "bio": "Nobody in the world.",
+        "starredAt": "2026-05-13T17:39:24Z",
+        "url": "https://github.com/Spacebody"
       },
       {
         "login": "baoxiaopan",
@@ -4261,9 +4333,9 @@
       {
         "login": "Lemniscate-world",
         "name": "Kuro",
-        "company": "LambdaSection @BioX-I  @Quant-Search @ParanoidXLife  @AI8-Algorithm-Intelligence-Section-8",
+        "company": "LambdaSection  @Quant-Search @ParanoidXLife  @AI8-Algorithm-Intelligence-Section-8",
         "location": "Dark Matter",
-        "bio": "Renaissance Mad Man / Hyperactivity /  Undiagnosed OCD or Autism ? /  Yeah Synesthesia /  Discipline, Solitude, Silence & Founding λ-section.\r\nDemeter Dev.",
+        "bio": "Founding λ-Section - PARANOID - Quant-Search - AI8 - Hackin'Life - N-Hypatia - NetworkEuler - Sagittarius",
         "starredAt": "2026-05-11T15:39:01Z",
         "url": "https://github.com/Lemniscate-world"
       },
@@ -4327,16 +4399,16 @@
         "count": 17
       },
       {
+        "company": "microsoft",
+        "count": 17
+      },
+      {
         "company": "freelancer",
         "count": 16
       },
       {
-        "company": "microsoft",
-        "count": 15
-      },
-      {
         "company": "bytedance",
-        "count": 14
+        "count": 15
       },
       {
         "company": "none",
@@ -4347,11 +4419,15 @@
         "count": 10
       },
       {
-        "company": "freelance",
-        "count": 9
+        "company": "home",
+        "count": 10
       },
       {
         "company": "baidu",
+        "count": 10
+      },
+      {
+        "company": "freelance",
         "count": 9
       },
       {
@@ -4359,8 +4435,8 @@
         "count": 9
       },
       {
-        "company": "home",
-        "count": 8
+        "company": "huawei",
+        "count": 7
       },
       {
         "company": "meituan",
@@ -4375,11 +4451,11 @@
         "count": 6
       },
       {
-        "company": "amazon",
+        "company": "didi",
         "count": 6
       },
       {
-        "company": "huawei",
+        "company": "amazon",
         "count": 6
       },
       {
@@ -4391,7 +4467,7 @@
         "count": 5
       },
       {
-        "company": "didi",
+        "company": "wuhan university",
         "count": 5
       },
       {
@@ -4423,77 +4499,77 @@
         "count": 4
       },
       {
+        "company": "google",
+        "count": 4
+      },
+      {
         "company": "sichuan university",
-        "count": 4
-      },
-      {
-        "company": "buaa",
-        "count": 4
-      },
-      {
-        "company": "accenture",
         "count": 4
       }
     ],
     "topLocations": [
       {
         "location": "China",
-        "count": 186
+        "count": 190
       },
       {
         "location": "India",
-        "count": 129
+        "count": 133
       },
       {
         "location": "Beijing",
-        "count": 99
+        "count": 104
       },
       {
         "location": "Germany",
-        "count": 76
+        "count": 82
       },
       {
         "location": "Shanghai",
-        "count": 73
+        "count": 76
       },
       {
         "location": "Italy",
-        "count": 57
-      },
-      {
-        "location": "Beijing, China",
-        "count": 54
+        "count": 58
       },
       {
         "location": "France",
-        "count": 53
+        "count": 56
       },
       {
-        "location": "Earth",
-        "count": 52
+        "location": "Beijing, China",
+        "count": 56
       },
       {
         "location": "Brazil",
+        "count": 54
+      },
+      {
+        "location": "Earth",
+        "count": 53
+      },
+      {
+        "location": "Indonesia",
         "count": 52
       },
       {
         "location": "Singapore",
-        "count": 51
-      },
-      {
-        "location": "Indonesia",
-        "count": 48
-      },
-      {
-        "location": "London",
-        "count": 44
+        "count": 52
       },
       {
         "location": "Bangalore",
-        "count": 44
+        "count": 46
+      },
+      {
+        "location": "London",
+        "count": 45
       },
       {
         "location": "Taiwan",
+        "count": 44
+      },
+      {
+        "location": "beijing",
         "count": 44
       },
       {
@@ -4501,20 +4577,16 @@
         "count": 41
       },
       {
-        "location": "beijing",
-        "count": 41
-      },
-      {
         "location": "Canada",
-        "count": 38
+        "count": 39
       },
       {
         "location": "Shanghai, China",
-        "count": 36
+        "count": 38
       },
       {
         "location": "Berlin",
-        "count": 34
+        "count": 35
       }
     ]
   }

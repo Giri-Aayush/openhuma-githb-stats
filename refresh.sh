@@ -14,23 +14,11 @@ echo "==== $(date -u +%FT%TZ)  refresh started" | tee -a "$LOG"
 #    capture the moment-in-time state before any other API calls might race.
 node snapshot.js | tee -a "$LOG"
 
-# 2. Refetch historical data (these endpoints preserve history, but new
-#    rows accumulate, so we re-pull the full lists each run).
-echo "--- refetching PRs"          | tee -a "$LOG"
-gh api -X GET "repos/$REPO/pulls?state=all&per_page=100" --paginate > data/prs.json
-echo "--- refetching stargazers"   | tee -a "$LOG"
-gh api -H "Accept: application/vnd.github.v3.star+json" \
-       -X GET "repos/$REPO/stargazers?per_page=100" --paginate > data/stars.json
-echo "--- refetching commits"      | tee -a "$LOG"
-gh api -X GET "repos/$REPO/commits?per_page=100" --paginate > data/commits.json
-echo "--- refetching forks"        | tee -a "$LOG"
-gh api -X GET "repos/$REPO/forks?per_page=100&sort=newest" --paginate > data/forks.json
-echo "--- refetching issues+PRs"   | tee -a "$LOG"
-gh api -X GET "repos/$REPO/issues?state=all&per_page=100" --paginate > data/issues.json
-
-# 3. Stargazer profile enrichment (GraphQL, ~30s for 10K stargazers).
-echo "--- refreshing stargazer profiles (GraphQL)" | tee -a "$LOG"
-node fetch_stargazer_profiles.js | tail -3 | tee -a "$LOG"
+# 2. Incremental sync of openhuman data (stars, PRs, commits, forks, issues,
+#    stargazer profiles). Each data type fetches only records since the last
+#    known timestamp / id, then appends to its JSONL file.
+echo "--- incremental sync (openhuman)" | tee -a "$LOG"
+node sync.js | tee -a "$LOG"
 
 # 4. Competitor refresh: headlines (cheap) + incremental star fetch (skipped if no JSONL).
 echo "--- refreshing competitor headlines" | tee -a "$LOG"

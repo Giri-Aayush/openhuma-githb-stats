@@ -27,7 +27,10 @@ function readStarsJsonl(file) {
 function processRepo(headline) {
   const [owner, name] = headline.full_name.split('/');
   const slug = `${owner}_${name}`;
-  const starsPath  = path.join(DIR, `${slug}_stars.jsonl`);
+  // openhuman shares the same JSONL the main dashboard uses
+  const starsPath = headline.full_name === 'tinyhumansai/openhuman'
+    ? path.join(__dirname, 'data', 'stars.jsonl')
+    : path.join(DIR, `${slug}_stars.jsonl`);
   const cursorPath = path.join(DIR, `${slug}_stars.cursor`);
 
   const created = new Date(headline.created_at);

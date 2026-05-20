@@ -1,12 +1,15 @@
 // Aggregate weekly + business metrics from GitHub data
 const fs = require('fs');
 
-const prs = JSON.parse(fs.readFileSync('data/prs.json', 'utf8'));
-const stars = JSON.parse(fs.readFileSync('data/stars.json', 'utf8'));
-const commits = JSON.parse(fs.readFileSync('data/commits.json', 'utf8'));
-const forks = JSON.parse(fs.readFileSync('data/forks.json', 'utf8'));
-const issuesAndPrs = JSON.parse(fs.readFileSync('data/issues.json', 'utf8'));
-const starProfiles = JSON.parse(fs.readFileSync('data/stargazer_profiles.json', 'utf8'));
+function readJsonl(p) {
+  return fs.readFileSync(p, 'utf8').split('\n').filter(Boolean).map(JSON.parse);
+}
+const prs = readJsonl('data/prs.jsonl');
+const stars = readJsonl('data/stars.jsonl');
+const commits = readJsonl('data/commits.jsonl');
+const forks = readJsonl('data/forks.jsonl');
+const issuesAndPrs = readJsonl('data/issues.jsonl');
+const starProfiles = readJsonl('data/stargazer_profiles.jsonl');
 
 const FOUNDERS = new Set(['senamakel', 'graycyrus', 'M3gA-Mind', 'CodeGhost21']);
 const GENESIS_PUBLIC = '2026-02-18'; // repo went public
@@ -60,10 +63,10 @@ for (const pr of prs) {
 const starByWeek = zeroByWeek(weeks);
 const starByDay  = zeroByDay(days);
 for (const s of stars) {
-  if (!s.starred_at) continue;
-  const w = weekKey(s.starred_at);
+  if (!s.starredAt) continue;
+  const w = weekKey(s.starredAt);
   if (w in starByWeek) starByWeek[w]++;
-  const d = s.starred_at.slice(0, 10);
+  const d = s.starredAt.slice(0, 10);
   if (d in starByDay) starByDay[d]++;
 }
 
@@ -71,7 +74,7 @@ for (const s of stars) {
 const firstSeenWeek = {};
 const firstSeenDay  = {};
 const sortedCommits = commits
-  .map(c => ({ login: c.author?.login || c.commit?.author?.name || 'unknown', date: c.commit?.author?.date }))
+  .map(c => ({ login: c.author_login || 'unknown', date: c.date }))
   .filter(c => c.date)
   .sort((a, b) => new Date(a.date) - new Date(b.date));
 for (const c of sortedCommits) {
@@ -102,7 +105,7 @@ const externalPrAuthors = new Set();
 for (const pr of prs) {
   const w = weekKey(pr.created_at);
   const d = pr.created_at.slice(0, 10);
-  const login = pr.user?.login;
+  const login = pr.user;
   if (!login) continue;
   if (FOUNDERS.has(login)) {
     if (w in prsByWeekFounders) prsByWeekFounders[w]++;
@@ -115,7 +118,7 @@ for (const pr of prs) {
 }
 
 // --- forks: good vs bad ------------------------------------------
-const prAuthors = new Set(prs.map(p => p.user?.login).filter(Boolean));
+const prAuthors = new Set(prs.map(p => p.user).filter(Boolean));
 let contributingForks = 0;
 let standaloneForks = 0; // fork has its own stargazers (>=1)
 let driveByForks = 0;
@@ -129,7 +132,7 @@ for (const f of forks) {
   const d = f.created_at.slice(0, 10);
   if (w in forksByWeek) forksByWeek[w]++;
   if (d in forksByDay)  forksByDay[d]++;
-  const owner = f.owner?.login;
+  const owner = f.owner;
   const ownStars = f.stargazers_count || 0;
   const isContributing = owner && prAuthors.has(owner);
   if (isContributing) {
@@ -242,8 +245,8 @@ const topLocations = Object.entries(locTally)
 
 // --- issue authors (from issues.json) ----------------------------
 // Filter to actual issues (no PR), check author profiles for company
-const onlyIssues = issuesAndPrs.filter(i => !i.pull_request);
-const issueAuthorLogins = new Set(onlyIssues.map(i => i.user?.login).filter(Boolean));
+const onlyIssues = issuesAndPrs.filter(i => !i.is_pr);
+const issueAuthorLogins = new Set(onlyIssues.map(i => i.user).filter(Boolean));
 const externalIssueAuthors = [...issueAuthorLogins].filter(l => !FOUNDERS.has(l));
 
 // --- build output -------------------------------------------------
