@@ -48,6 +48,12 @@
     padding: 4px 10px; border-radius: 6px; cursor: pointer;
   }
   .toggle button.active { background: #2a3242; color: var(--text); }
+  input[type="date"].dpicker {
+    background: var(--panel2); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 5px 10px; font: inherit; font-size: 12px;
+    color-scheme: dark;
+  }
 
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -143,6 +149,20 @@
     </div>
   </div>
   <div class="chart-body"><canvas id="calendarChart"></canvas></div>
+</div>
+
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<h2 class="section">Momentum view — everyone starts from 0 on a chosen date</h2>
+<div class="card chart">
+  <div class="chart-header">
+    <div>
+      <h3>New stars since <span id="momentumDateLabel"></span></h3>
+      <div class="desc">Strips away the head-start effect — shows which repos are gaining stars fastest <em>right now</em>, on equal footing.</div>
+    </div>
+    <input type="date" id="momentumDate" class="dpicker" />
+  </div>
+  <div class="chart-body" style="height: 320px;"><canvas id="momentumChart"></canvas></div>
 </div>
 
 <!-- ============================================================== -->
@@ -349,6 +369,66 @@ const calendarChart = new Chart(document.getElementById('calendarChart').getCont
       y: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true, type: 'logarithmic' },
     },
   }),
+});
+
+// ----- Momentum chart (everyone resets to 0 on a chosen date)
+// Built once with a default cutoff, then re-bucketed in place when the date changes.
+const DEFAULT_CUTOFF = '2026-04-20';
+const momentumDateInput = document.getElementById('momentumDate');
+const momentumDateLabel = document.getElementById('momentumDateLabel');
+momentumDateInput.value = DEFAULT_CUTOFF;
+
+function computeMomentumSeries(cutoffIso) {
+  // Universe of weeks across all repos, sorted asc, starting at the cutoff
+  const cutoffMs = new Date(cutoffIso).getTime();
+  const weekSet = new Set();
+  for (const r of DATA.repos) {
+    for (const w of r.history.calendar.weeks) {
+      if (new Date(w).getTime() >= cutoffMs) weekSet.add(w);
+    }
+  }
+  const weeks = [...weekSet].sort();
+
+  const datasets = DATA.repos.map(r => {
+    const c = colorOf(r.fullName);
+    const map = new Map();
+    r.history.calendar.weeks.forEach((w, i) => map.set(w, r.history.calendar.weekly[i]));
+    let cum = 0;
+    const data = weeks.map(w => {
+      cum += (map.get(w) || 0);
+      return cum;
+    });
+    return {
+      label: r.fullName,
+      data,
+      borderColor: c.hex, backgroundColor: c.fill,
+      fill: false, tension: 0.3, pointRadius: 0, borderWidth: 2.5,
+    };
+  });
+  return { labels: weeks, datasets };
+}
+
+const initialMomentum = computeMomentumSeries(DEFAULT_CUTOFF);
+momentumDateLabel.textContent = DEFAULT_CUTOFF;
+const momentumChart = new Chart(document.getElementById('momentumChart').getContext('2d'), {
+  type: 'line',
+  data: initialMomentum,
+  options: baseOpts({
+    scales: {
+      x: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6', maxRotation: 0, autoSkipPadding: 18 } },
+      y: { grid: { color: '#1f2532' }, ticks: { color: '#8a93a6' }, beginAtZero: true },
+    },
+  }),
+});
+
+momentumDateInput.addEventListener('change', () => {
+  const v = momentumDateInput.value;
+  if (!v) return;
+  const series = computeMomentumSeries(v);
+  momentumChart.data.labels = series.labels;
+  momentumChart.data.datasets.forEach((ds, i) => { ds.data = series.datasets[i].data; });
+  momentumChart.update();
+  momentumDateLabel.textContent = v;
 });
 
 // Log/Linear toggle for the two large cumulative charts
