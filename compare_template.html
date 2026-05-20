@@ -95,7 +95,7 @@
     </div>
     <div class="freshness">
       <div class="line1">Updated <span id="freshAgo"></span></div>
-      <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 4h</div>
+      <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 6h</div>
     </div>
   </div>
 </header>
@@ -184,7 +184,7 @@ document.getElementById('genAt').textContent = new Date(DATA.generatedAt).toLoca
 
 // Countdown to next CI refresh
 {
-  const CI_HOURS_UTC = [0, 4, 8, 12, 16, 20];
+  const CI_HOURS_UTC = [0, 6, 12, 18];
   const el = document.getElementById('countdown');
   function msToNextRun() {
     const now = new Date();

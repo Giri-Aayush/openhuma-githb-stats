@@ -2,8 +2,14 @@ name: Refresh dashboard
 
 on:
   schedule:
-    - cron: '0 */4 * * *'   # every 4 hours (00, 04, 08, 12, 16, 20 UTC)
+    - cron: '0 */6 * * *'   # every 6 hours (00, 06, 12, 18 UTC)
   workflow_dispatch: {}      # allow manual trigger from the Actions tab
+  push:
+    branches: [main]
+    paths-ignore:           # avoid loops: bot commits only touch these
+      - 'index.html'
+      - 'compare.html'
+      - 'data/**'
 
 concurrency:
   group: refresh-dashboard
