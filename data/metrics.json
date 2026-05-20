@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-20T14:04:27.054Z",
+  "generatedAt": "2026-05-20T14:09:25.035Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "prs": 1406,
-    "stars": 23209,
+    "stars": 23214,
     "forks": 2139,
     "uniqueContributors": 84,
     "externalContributors": 79,
@@ -308,7 +308,7 @@
       172,
       144,
       7280,
-      15507
+      15512
     ],
     "newContributors": [
       0,
@@ -750,7 +750,7 @@
       2419,
       4033,
       4040,
-      2038
+      2043
     ],
     "newContributors": [
       0,
@@ -1160,7 +1160,7 @@
       278,
       422,
       7702,
-      23209
+      23214
     ],
     "contributors": [
       0,
@@ -1602,7 +1602,7 @@
       13098,
       17131,
       21171,
-      23209
+      23214
     ],
     "newContributors": [
       0,
@@ -2168,7 +2168,7 @@
       2419,
       4033,
       4040,
-      2038
+      2043
     ],
     "rolling7DayAvg": [
       0,
@@ -2262,10 +2262,10 @@
       1756.857142857143,
       2245,
       2648.8571428571427,
-      2546.285714285714
+      2547
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 15507,
+    "spikeStars": 15512,
     "preSpikeAvg": 592.4615384615385,
     "postSpikeAvg": null,
     "retentionPct": null,
@@ -2284,7 +2284,7 @@
       616.6666666666667,
       -16.27906976744186,
       4955.555555555556,
-      113.00824175824175
+      113.07692307692308
     ],
     "wowPrsPct": [
       null,
