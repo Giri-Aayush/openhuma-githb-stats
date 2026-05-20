@@ -66,6 +66,18 @@
   .repo-card .age  { color: var(--muted); font-size: 11px; margin-top: 8px; }
   .repo-card .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
 
+  .spike-card .spike-row {
+    display: grid; grid-template-columns: auto 1fr auto;
+    gap: 10px; padding: 8px 0; border-bottom: 1px solid #1d2230;
+    font-size: 13px; align-items: baseline;
+  }
+  .spike-card .spike-row:last-child { border-bottom: 0; }
+  .spike-card .rank { color: var(--muted); font-size: 11px; min-width: 18px; }
+  .spike-card .week { color: var(--text); font-variant-numeric: tabular-nums; }
+  .spike-card .meta { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .spike-card .stars { color: var(--good); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .spike-card h4 { margin: 0 0 10px; font-size: 14px; font-weight: 600; }
+
   .kpi-row { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; margin-top: 12px; }
   .kpi-row .label { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .05em; }
   .kpi-row .value { font-size: 18px; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
@@ -164,6 +176,10 @@
   </div>
   <div class="chart-body" style="height: 320px;"><canvas id="momentumChart"></canvas></div>
 </div>
+
+<!-- ============================================================== -->
+<h2 class="section">Spike weeks — top 5 by stars gained, per repo</h2>
+<div class="grid" id="spikesGrid"></div>
 
 <!-- ============================================================== -->
 <h2 class="section">Side-by-side numbers</h2>
@@ -270,6 +286,34 @@ document.getElementById('repoCards').innerHTML = DATA.repos.map(r => {
         <div><div class="label">Watchers</div><div class="value">${fmt(r.current.watchers)}</div></div>
         <div><div class="label">Open</div><div class="value">${fmt(r.current.openIssues)}</div></div>
       </div>
+    </div>
+  `;
+}).join('');
+
+// ----- Spike weeks (top 5 stars-gained weeks per repo)
+function fmtDateRange(weekIso) {
+  const start = new Date(weekIso);
+  const end = new Date(start.getTime() + 6 * 86400000);
+  const opts = { month: 'short', day: 'numeric' };
+  return start.toLocaleDateString('en-US', opts) + ' – ' + end.toLocaleDateString('en-US', opts);
+}
+
+document.getElementById('spikesGrid').innerHTML = DATA.repos.map(r => {
+  const c = colorOf(r.fullName);
+  const rows = (r.topSpikes || []).map((s, idx) => `
+    <div class="spike-row">
+      <div class="rank">#${idx + 1}</div>
+      <div>
+        <div class="week">${fmtDateRange(s.weekIso)}</div>
+        <div class="meta">w${s.weeksSinceGenesis} since genesis · ${s.pctOfTotal.toFixed(1)}% of total</div>
+      </div>
+      <div class="stars">+${fmt(s.stars)}</div>
+    </div>
+  `).join('');
+  return `
+    <div class="card spike-card">
+      <h4><span class="swatch" style="background:${c.hex}"></span>${r.fullName}</h4>
+      ${rows}
     </div>
   `;
 }).join('');

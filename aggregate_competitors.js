@@ -80,6 +80,17 @@ function processRepo(headline) {
   const starsPerDayLife = ageDays > 0 ? (headline.stargazers_count / ageDays) : 0;
   const starsPerDay30 = last30 / 30;
 
+  // Top spike weeks (ranked by stars gained)
+  const topSpikes = calendarWeeks
+    .map((week, i) => ({
+      weekIso: week,
+      stars: calendarSeries[i],
+      weeksSinceGenesis: Math.floor((new Date(week).getTime() - genesisMs) / (7 * 86400000)),
+      pctOfTotal: expected ? (calendarSeries[i] / expected) * 100 : 0,
+    }))
+    .sort((a, b) => b.stars - a.stars)
+    .slice(0, 5);
+
   return {
     fullName: headline.full_name,
     description: headline.description,
@@ -103,6 +114,7 @@ function processRepo(headline) {
       calendar: { weeks: calendarWeeks, weekly: calendarSeries, cumulative: calendarCumulative },
       sinceGenesis: { weeklyIndex: sinceGenesisWeekly.map((_, i) => i), weekly: sinceGenesisWeekly, cumulative: sinceGenesisCumulative },
     },
+    topSpikes,
   };
 }
 
