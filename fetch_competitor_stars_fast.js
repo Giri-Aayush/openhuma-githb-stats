@@ -79,8 +79,13 @@ async function main() {
       continue;
     }
     if (body.errors) {
-      console.error(`[${slug}] GraphQL errors:`, JSON.stringify(body.errors));
-      process.exit(2);
+      // Transient GraphQL errors (NOT_FOUND on a repo that obviously exists,
+      // intermittent 5xx-as-200, etc.) — retry with backoff instead of dying.
+      console.error(`[${slug}] GraphQL errors page ${page}:`, JSON.stringify(body.errors));
+      console.error(`[${slug}] sleeping 30s and retrying...`);
+      await new Promise(r => setTimeout(r, 30000));
+      page--;
+      continue;
     }
     const sg = body.data.repository.stargazers;
     const lines = sg.edges.map(e => JSON.stringify({ starredAt: e.starredAt, login: e.node.login })).join('\n');
