@@ -10,11 +10,10 @@ data/stargazer_profiles.json
 data/refresh.log
 data/snapshots.log
 
-# Competitor raw star history (large, regeneratable via fetch_competitor_stars.js)
-data/competitors/*.jsonl
+# Competitor backfill state (regenerated/resumed across runs)
 data/competitors/*.cursor
 data/competitors/*.log
-# Keep data/competitors/headlines.json + data/competitors/metrics.json
+# Keep JSONL files committed — CI does incremental updates and needs prior history
 
 # Keep data/metrics.json (small, drives the dashboard build)
 # Keep data/snapshots.jsonl (append-only history — the whole point of snapshotting)

@@ -32,6 +32,12 @@
   .sub a { color: var(--c3); text-decoration: none; }
   .back-link { color: var(--c3); text-decoration: none; font-size: 13px; }
   .back-link:hover { text-decoration: underline; }
+  .freshness {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 14px; min-width: 230px; text-align: right;
+  }
+  .freshness .line1 { font-size: 13px; color: var(--text); font-weight: 500; }
+  .freshness .line2 { font-size: 11px; color: var(--muted); margin-top: 3px; }
 
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -86,6 +92,10 @@
         <a href="index.html" class="back-link">← back to main dashboard</a>
         · generated <span id="genAt"></span>
       </div>
+    </div>
+    <div class="freshness">
+      <div class="line1">Updated <span id="freshAgo"></span></div>
+      <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 4h</div>
     </div>
   </div>
 </header>
@@ -159,6 +169,42 @@
 const DATA = __COMPETITOR_METRICS__;
 
 document.getElementById('genAt').textContent = new Date(DATA.generatedAt).toLocaleString();
+
+// Relative "updated X ago"
+{
+  function timeAgo(iso) {
+    const s = Math.round((Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 60)    return `${s}s ago`;
+    if (s < 3600)  return `${Math.round(s/60)}m ago`;
+    if (s < 86400) return `${Math.round(s/3600)}h ago`;
+    return `${Math.round(s/86400)}d ago`;
+  }
+  document.getElementById('freshAgo').textContent = timeAgo(DATA.generatedAt);
+}
+
+// Countdown to next CI refresh
+{
+  const CI_HOURS_UTC = [0, 4, 8, 12, 16, 20];
+  const el = document.getElementById('countdown');
+  function msToNextRun() {
+    const now = new Date();
+    const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+    for (const h of CI_HOURS_UTC) {
+      const t = new Date(today.getTime() + h * 3600000);
+      if (t > now) return t - now;
+    }
+    return new Date(today.getTime() + 24 * 3600000) - now;
+  }
+  function fmt(ms) {
+    const s = Math.floor(ms / 1000);
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    return h > 0 ? `${h}h ${m}m ${s % 60}s` : `${m}m ${s % 60}s`;
+  }
+  function tick() { el.textContent = fmt(msToNextRun()); }
+  tick();
+  setInterval(tick, 1000);
+}
 
 const COLOR_BY_NAME = {
   'tinyhumansai/openhuman': { line: 'var(--c1)', hex: '#6ee7b7', fill: 'rgba(110,231,183,.10)' },
