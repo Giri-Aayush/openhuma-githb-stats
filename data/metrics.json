@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-20T13:01:09.315Z",
+  "generatedAt": "2026-05-20T13:35:24.598Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1390,
-    "stars": 22996,
-    "forks": 2111,
+    "prs": 1403,
+    "stars": 23177,
+    "forks": 2131,
     "uniqueContributors": 84,
     "externalContributors": 79,
-    "externalPrAuthors": 108,
-    "issuesNonPr": 837,
+    "externalPrAuthors": 110,
+    "issuesNonPr": 838,
     "externalIssueAuthors": 110,
     "weeks": 14,
-    "stargazersWithCompany": 3875,
-    "tier1Stargazers": 231
+    "stargazersWithCompany": 3898,
+    "tier1Stargazers": 235
   },
   "forkBreakdown": {
-    "total": 2111,
-    "contributing": 110,
+    "total": 2131,
+    "contributing": 112,
     "standalone": 47,
-    "driveBy": 1954,
+    "driveBy": 1972,
     "samples": {
       "contributing": [
         {
@@ -260,7 +260,7 @@
       114,
       179,
       283,
-      345
+      358
     ],
     "prsExternal": [
       0,
@@ -276,7 +276,7 @@
       59,
       76,
       139,
-      253
+      265
     ],
     "prsFounders": [
       0,
@@ -292,7 +292,7 @@
       55,
       103,
       144,
-      92
+      93
     ],
     "stars": [
       0,
@@ -308,7 +308,7 @@
       172,
       144,
       7280,
-      15294
+      15475
     ],
     "newContributors": [
       0,
@@ -356,7 +356,7 @@
       21,
       12,
       566,
-      1421
+      1441
     ],
     "goodForks": [
       0,
@@ -372,7 +372,7 @@
       2,
       2,
       31,
-      65
+      67
     ]
   },
   "daily": {
@@ -468,7 +468,7 @@
       39,
       85,
       74,
-      48
+      61
     ],
     "prsExternal": [
       0,
@@ -562,7 +562,7 @@
       28,
       61,
       54,
-      44
+      56
     ],
     "prsFounders": [
       0,
@@ -656,7 +656,7 @@
       11,
       24,
       20,
-      4
+      5
     ],
     "stars": [
       0,
@@ -750,7 +750,7 @@
       2419,
       4033,
       4040,
-      1825
+      2006
     ],
     "newContributors": [
       0,
@@ -1032,7 +1032,7 @@
       209,
       362,
       376,
-      177
+      197
     ],
     "goodForks": [
       0,
@@ -1125,8 +1125,8 @@
       4,
       13,
       22,
-      16,
-      3
+      17,
+      4
     ]
   },
   "cumulative": {
@@ -1144,7 +1144,7 @@
       583,
       762,
       1045,
-      1390
+      1403
     ],
     "stars": [
       0,
@@ -1160,7 +1160,7 @@
       278,
       422,
       7702,
-      22996
+      23177
     ],
     "contributors": [
       0,
@@ -1208,7 +1208,7 @@
       112,
       124,
       690,
-      2111
+      2131
     ],
     "goodForks": [
       0,
@@ -1224,7 +1224,7 @@
       12,
       14,
       45,
-      110
+      112
     ]
   },
   "dailyCumulative": {
@@ -1320,7 +1320,7 @@
       1183,
       1268,
       1342,
-      1390
+      1403
     ],
     "prsExternal": [
       0,
@@ -1414,7 +1414,7 @@
       556,
       617,
       671,
-      715
+      727
     ],
     "prsFounders": [
       0,
@@ -1508,7 +1508,7 @@
       627,
       651,
       671,
-      675
+      676
     ],
     "stars": [
       0,
@@ -1602,7 +1602,7 @@
       13098,
       17131,
       21171,
-      22996
+      23177
     ],
     "newContributors": [
       0,
@@ -1884,7 +1884,7 @@
       1196,
       1558,
       1934,
-      2111
+      2131
     ],
     "goodForks": [
       0,
@@ -1977,8 +1977,8 @@
       56,
       69,
       91,
-      107,
-      110
+      108,
+      112
     ]
   },
   "momentum": {
@@ -2168,7 +2168,7 @@
       2419,
       4033,
       4040,
-      1825
+      2006
     ],
     "rolling7DayAvg": [
       0,
@@ -2262,10 +2262,10 @@
       1756.857142857143,
       2245,
       2648.8571428571427,
-      2515.8571428571427
+      2541.714285714286
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 15294,
+    "spikeStars": 15475,
     "preSpikeAvg": 592.4615384615385,
     "postSpikeAvg": null,
     "retentionPct": null,
@@ -2284,7 +2284,7 @@
       616.6666666666667,
       -16.27906976744186,
       4955.555555555556,
-      110.08241758241759
+      112.56868131868131
     ],
     "wowPrsPct": [
       null,
@@ -2300,11 +2300,47 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      21.908127208480565
+      26.501766784452297
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "mgumowsk",
+        "name": "Mariusz Gumowski",
+        "company": "Intel Corp",
+        "location": null,
+        "bio": "",
+        "starredAt": "2026-05-20T12:56:21Z",
+        "url": "https://github.com/mgumowsk"
+      },
+      {
+        "login": "wangzzu",
+        "name": "Matt Wang",
+        "company": "ByteDance",
+        "location": "Hangzhou",
+        "bio": "",
+        "starredAt": "2026-05-20T11:46:00Z",
+        "url": "https://github.com/wangzzu"
+      },
+      {
+        "login": "aimeeoracle",
+        "name": "AimeeJo",
+        "company": "Oracle Grove Extracts",
+        "location": null,
+        "bio": "",
+        "starredAt": "2026-05-20T11:25:11Z",
+        "url": "https://github.com/aimeeoracle"
+      },
+      {
+        "login": "HenriPodolski",
+        "name": "Henri Podolski",
+        "company": "IBM iX",
+        "location": "Berlin",
+        "bio": "",
+        "starredAt": "2026-05-20T11:20:38Z",
+        "url": "https://github.com/HenriPodolski"
+      },
       {
         "login": "deusyu",
         "name": "Rainman",
@@ -4408,7 +4444,7 @@
       },
       {
         "company": "bytedance",
-        "count": 15
+        "count": 16
       },
       {
         "company": "none",
@@ -4510,19 +4546,19 @@
     "topLocations": [
       {
         "location": "China",
-        "count": 190
+        "count": 192
       },
       {
         "location": "India",
-        "count": 133
+        "count": 136
       },
       {
         "location": "Beijing",
-        "count": 104
+        "count": 106
       },
       {
         "location": "Germany",
-        "count": 82
+        "count": 83
       },
       {
         "location": "Shanghai",
@@ -4533,16 +4569,16 @@
         "count": 58
       },
       {
+        "location": "Beijing, China",
+        "count": 57
+      },
+      {
         "location": "France",
         "count": 56
       },
       {
-        "location": "Beijing, China",
-        "count": 56
-      },
-      {
         "location": "Brazil",
-        "count": 54
+        "count": 55
       },
       {
         "location": "Earth",
@@ -4558,7 +4594,7 @@
       },
       {
         "location": "Bangalore",
-        "count": 46
+        "count": 47
       },
       {
         "location": "London",
@@ -4574,7 +4610,7 @@
       },
       {
         "location": "United States",
-        "count": 41
+        "count": 42
       },
       {
         "location": "Canada",
@@ -4586,7 +4622,7 @@
       },
       {
         "location": "Berlin",
-        "count": 35
+        "count": 36
       }
     ]
   }
