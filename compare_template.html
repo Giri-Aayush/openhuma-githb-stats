@@ -38,6 +38,16 @@
   }
   .freshness .line1 { font-size: 13px; color: var(--text); font-weight: 500; }
   .freshness .line2 { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .toggle {
+    display: inline-flex; gap: 4px; background: var(--panel2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 3px;
+    font-size: 12px; flex-shrink: 0;
+  }
+  .toggle button {
+    background: transparent; color: var(--muted); border: 0;
+    padding: 4px 10px; border-radius: 6px; cursor: pointer;
+  }
+  .toggle button.active { background: #2a3242; color: var(--text); }
 
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -112,6 +122,10 @@
       <h3>Cumulative stars — aligned to age, not calendar</h3>
       <div class="desc">Each line starts at week 0 (its own genesis). Shows growth velocity at the same age. <span id="cutoffHint"></span></div>
     </div>
+    <div class="toggle" data-target="sinceGenesis">
+      <button data-scale="log" class="active">Log</button>
+      <button data-scale="linear">Linear</button>
+    </div>
   </div>
   <div class="chart-body"><canvas id="sinceGenesisChart"></canvas></div>
 </div>
@@ -122,6 +136,10 @@
     <div>
       <h3>Cumulative stars — wall-clock view</h3>
       <div class="desc">Shows absolute timing — when each repo launched and when they were trending.</div>
+    </div>
+    <div class="toggle" data-target="calendar">
+      <button data-scale="log" class="active">Log</button>
+      <button data-scale="linear">Linear</button>
     </div>
   </div>
   <div class="chart-body"><canvas id="calendarChart"></canvas></div>
@@ -291,7 +309,7 @@ document.getElementById('cutoffHint').innerHTML = partial.length
   ? `<span class="badge warn">Historical backfill in progress for ${partial.map(p => p.fullName).join(', ')}</span>`
   : '';
 
-new Chart(document.getElementById('sinceGenesisChart').getContext('2d'), {
+const sinceGenesisChart = new Chart(document.getElementById('sinceGenesisChart').getContext('2d'), {
   type: 'line',
   data: { labels: sgLabels, datasets: sgDatasets },
   options: baseOpts({
@@ -322,7 +340,7 @@ const calDatasets = DATA.repos.map(r => {
   };
 });
 
-new Chart(document.getElementById('calendarChart').getContext('2d'), {
+const calendarChart = new Chart(document.getElementById('calendarChart').getContext('2d'), {
   type: 'line',
   data: { labels: allCalendarWeeks, datasets: calDatasets },
   options: baseOpts({
@@ -332,6 +350,25 @@ new Chart(document.getElementById('calendarChart').getContext('2d'), {
     },
   }),
 });
+
+// Log/Linear toggle for the two large cumulative charts
+const SCALE_CHARTS = { sinceGenesis: sinceGenesisChart, calendar: calendarChart };
+for (const group of document.querySelectorAll('.toggle')) {
+  const target = group.dataset.target;
+  const chart = SCALE_CHARTS[target];
+  if (!chart) continue;
+  for (const btn of group.querySelectorAll('button')) {
+    btn.addEventListener('click', () => {
+      for (const b of group.querySelectorAll('button')) b.classList.remove('active');
+      btn.classList.add('active');
+      // Switch the Y axis type. Linear scale needs beginAtZero, log scale does not.
+      const scale = btn.dataset.scale;
+      chart.options.scales.y.type = scale === 'log' ? 'logarithmic' : 'linear';
+      chart.options.scales.y.beginAtZero = scale === 'linear';
+      chart.update();
+    });
+  }
+}
 
 // ----- "Same age" comparison: where each repo was at openhuman's current age
 const us = DATA.repos.find(r => r.fullName === 'tinyhumansai/openhuman');
