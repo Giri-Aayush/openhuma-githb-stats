@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-19T22:20:44.802Z",
+  "generatedAt": "2026-05-20T03:02:50.932Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,25 +10,30 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1339,
-    "stars": 20973,
-    "forks": 1914,
-    "uniqueContributors": 69,
-    "externalContributors": 64,
-    "externalPrAuthors": 104,
-    "issuesNonPr": 814,
-    "externalIssueAuthors": 101,
+    "prs": 1346,
+    "stars": 21604,
+    "forks": 1985,
+    "uniqueContributors": 79,
+    "externalContributors": 74,
+    "externalPrAuthors": 105,
+    "issuesNonPr": 818,
+    "externalIssueAuthors": 104,
     "weeks": 14,
-    "stargazersWithCompany": 3562,
-    "tier1Stargazers": 214
+    "stargazersWithCompany": 3660,
+    "tier1Stargazers": 219
   },
   "forkBreakdown": {
-    "total": 1914,
-    "contributing": 105,
-    "standalone": 49,
-    "driveBy": 1760,
+    "total": 1985,
+    "contributing": 106,
+    "standalone": 50,
+    "driveBy": 1829,
     "samples": {
       "contributing": [
+        {
+          "owner": "leighstillard",
+          "stars": 0,
+          "url": "https://github.com/leighstillard/openhuman"
+        },
         {
           "owner": "Kymi808",
           "stars": 0,
@@ -73,14 +78,14 @@
           "owner": "xiekailian",
           "stars": 0,
           "url": "https://github.com/xiekailian/openhuman"
-        },
-        {
-          "owner": "xilema2",
-          "stars": 0,
-          "url": "https://github.com/xilema2/openhuman"
         }
       ],
       "standalone": [
+        {
+          "owner": "internetcityhd",
+          "stars": 1,
+          "url": "https://github.com/internetcityhd/openhuman"
+        },
         {
           "owner": "harishpiyer",
           "stars": 1,
@@ -125,11 +130,6 @@
           "owner": "MantisWare",
           "stars": 1,
           "url": "https://github.com/MantisWare/openhuman"
-        },
-        {
-          "owner": "jackypanster",
-          "stars": 1,
-          "url": "https://github.com/jackypanster/openhuman"
         }
       ],
       "driveby": []
@@ -242,7 +242,8 @@
     "2026-05-16",
     "2026-05-17",
     "2026-05-18",
-    "2026-05-19"
+    "2026-05-19",
+    "2026-05-20"
   ],
   "weekly": {
     "prs": [
@@ -259,7 +260,7 @@
       114,
       179,
       283,
-      294
+      301
     ],
     "prsExternal": [
       0,
@@ -275,7 +276,7 @@
       59,
       76,
       139,
-      208
+      212
     ],
     "prsFounders": [
       0,
@@ -291,7 +292,7 @@
       55,
       103,
       144,
-      86
+      89
     ],
     "stars": [
       0,
@@ -306,8 +307,8 @@
       24,
       172,
       144,
-      7247,
-      13304
+      7246,
+      13936
     ],
     "newContributors": [
       0,
@@ -323,7 +324,7 @@
       3,
       2,
       11,
-      41
+      51
     ],
     "newExternalContributors": [
       0,
@@ -339,7 +340,7 @@
       3,
       2,
       11,
-      41
+      51
     ],
     "forks": [
       0,
@@ -355,7 +356,7 @@
       20,
       12,
       561,
-      1230
+      1301
     ],
     "goodForks": [
       0,
@@ -371,7 +372,7 @@
       2,
       2,
       30,
-      61
+      62
     ]
   },
   "daily": {
@@ -466,7 +467,8 @@
       45,
       39,
       85,
-      71
+      74,
+      4
     ],
     "prsExternal": [
       0,
@@ -559,7 +561,8 @@
       23,
       28,
       61,
-      53
+      54,
+      3
     ],
     "prsFounders": [
       0,
@@ -652,7 +655,8 @@
       22,
       11,
       24,
-      18
+      20,
+      1
     ],
     "stars": [
       0,
@@ -740,12 +744,13 @@
       614,
       1208,
       2742,
-      2306,
+      2305,
       1290,
-      1664,
+      1663,
       2421,
       4035,
-      3894
+      4047,
+      480
     ],
     "newContributors": [
       0,
@@ -838,7 +843,8 @@
       3,
       11,
       7,
-      8
+      12,
+      6
     ],
     "newExternalContributors": [
       0,
@@ -931,7 +937,8 @@
       3,
       11,
       7,
-      8
+      12,
+      6
     ],
     "forks": [
       0,
@@ -1024,7 +1031,8 @@
       160,
       210,
       362,
-      363
+      378,
+      56
     ],
     "goodForks": [
       0,
@@ -1117,7 +1125,8 @@
       4,
       13,
       22,
-      15
+      16,
+      0
     ]
   },
   "cumulative": {
@@ -1135,7 +1144,7 @@
       583,
       762,
       1045,
-      1339
+      1346
     ],
     "stars": [
       0,
@@ -1150,8 +1159,8 @@
       106,
       278,
       422,
-      7669,
-      20973
+      7668,
+      21604
     ],
     "contributors": [
       0,
@@ -1167,7 +1176,7 @@
       10,
       12,
       23,
-      64
+      74
     ],
     "externalContributors": [
       0,
@@ -1183,7 +1192,7 @@
       10,
       12,
       23,
-      64
+      74
     ],
     "forks": [
       0,
@@ -1199,7 +1208,7 @@
       111,
       123,
       684,
-      1914
+      1985
     ],
     "goodForks": [
       0,
@@ -1215,7 +1224,7 @@
       12,
       14,
       44,
-      105
+      106
     ]
   },
   "dailyCumulative": {
@@ -1310,7 +1319,8 @@
       1144,
       1183,
       1268,
-      1339
+      1342,
+      1346
     ],
     "prsExternal": [
       0,
@@ -1403,7 +1413,8 @@
       528,
       556,
       617,
-      670
+      671,
+      674
     ],
     "prsFounders": [
       0,
@@ -1496,7 +1507,8 @@
       616,
       627,
       651,
-      669
+      671,
+      672
     ],
     "stars": [
       0,
@@ -1584,12 +1596,13 @@
       1413,
       2621,
       5363,
-      7669,
-      8959,
-      10623,
-      13044,
-      17079,
-      20973
+      7668,
+      8958,
+      10621,
+      13042,
+      17077,
+      21124,
+      21604
     ],
     "newContributors": [
       0,
@@ -1682,7 +1695,8 @@
       38,
       49,
       56,
-      64
+      68,
+      74
     ],
     "newExternalContributors": [
       0,
@@ -1775,7 +1789,8 @@
       38,
       49,
       56,
-      64
+      68,
+      74
     ],
     "forks": [
       0,
@@ -1868,7 +1883,8 @@
       979,
       1189,
       1551,
-      1914
+      1929,
+      1985
     ],
     "goodForks": [
       0,
@@ -1961,7 +1977,8 @@
       55,
       68,
       90,
-      105
+      106,
+      106
     ]
   },
   "momentum": {
@@ -2056,7 +2073,8 @@
       "2026-05-16",
       "2026-05-17",
       "2026-05-18",
-      "2026-05-19"
+      "2026-05-19",
+      "2026-05-20"
     ],
     "dailyStars": [
       0,
@@ -2144,12 +2162,13 @@
       614,
       1208,
       2742,
-      2306,
+      2305,
       1290,
-      1664,
+      1663,
       2421,
       4035,
-      3894
+      4047,
+      480
     ],
     "rolling7DayAvg": [
       0,
@@ -2237,16 +2256,17 @@
       157.42857142857142,
       326.57142857142856,
       715.4285714285714,
-      1035.2857142857142,
-      1217.7142857142858,
-      1442.142857142857,
-      1749.2857142857142,
-      2238,
-      2621.714285714286
+      1035.142857142857,
+      1217.5714285714287,
+      1441.857142857143,
+      1749,
+      2237.714285714286,
+      2643.285714285714,
+      2320.1428571428573
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 13304,
-    "preSpikeAvg": 589.9230769230769,
+    "spikeStars": 13936,
+    "preSpikeAvg": 589.8461538461538,
     "postSpikeAvg": null,
     "retentionPct": null,
     "liftVsPreSpike": null,
@@ -2263,8 +2283,8 @@
       118.18181818181819,
       616.6666666666667,
       -16.27906976744186,
-      4932.638888888889,
-      83.57941217055334
+      4931.944444444444,
+      92.32680099365167
     ],
     "wowPrsPct": [
       null,
@@ -2280,11 +2300,56 @@
       -20.27972027972028,
       57.01754385964912,
       58.10055865921788,
-      3.8869257950530036
+      6.36042402826855
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "hill007299",
+        "name": "Qingshan Lin",
+        "company": "alibaba",
+        "location": "hangzhou",
+        "bio": "Co-founder of Apache RocketMQ &\r\nDirector of Alibaba messaging team",
+        "starredAt": "2026-05-20T02:38:25Z",
+        "url": "https://github.com/hill007299"
+      },
+      {
+        "login": "limerickgds",
+        "name": "limerick",
+        "company": "ByteDance",
+        "location": null,
+        "bio": "",
+        "starredAt": "2026-05-20T02:27:38Z",
+        "url": "https://github.com/limerickgds"
+      },
+      {
+        "login": "manthanmtg",
+        "name": "Manthan Bidarahalli Yuvaraj",
+        "company": "linkedin",
+        "location": "Bengaluru",
+        "bio": "",
+        "starredAt": "2026-05-19T23:36:43Z",
+        "url": "https://github.com/manthanmtg"
+      },
+      {
+        "login": "jigarshah-platsec",
+        "name": "Jigar Shah",
+        "company": "squareup",
+        "location": "CA, USA",
+        "bio": "A real human seeking joyful time everyday!\r\n\r\nPassionate infrastructure security software engineer.",
+        "starredAt": "2026-05-19T23:14:04Z",
+        "url": "https://github.com/jigarshah-platsec"
+      },
+      {
+        "login": "eliottness",
+        "name": "Eliott B",
+        "company": "Datadog",
+        "location": "Paris, France",
+        "bio": "",
+        "starredAt": "2026-05-19T22:56:52Z",
+        "url": "https://github.com/eliottness"
+      },
       {
         "login": "Dharld",
         "name": "Dharld",
@@ -4219,15 +4284,15 @@
       },
       {
         "company": "alibaba",
-        "count": 19
+        "count": 20
       },
       {
         "company": "zhejiang university",
-        "count": 16
+        "count": 17
       },
       {
         "company": "freelancer",
-        "count": 15
+        "count": 16
       },
       {
         "company": "microsoft",
@@ -4235,7 +4300,7 @@
       },
       {
         "company": "bytedance",
-        "count": 13
+        "count": 14
       },
       {
         "company": "none",
@@ -4246,15 +4311,15 @@
         "count": 10
       },
       {
+        "company": "freelance",
+        "count": 9
+      },
+      {
         "company": "china",
         "count": 9
       },
       {
         "company": "home",
-        "count": 8
-      },
-      {
-        "company": "freelance",
         "count": 8
       },
       {
@@ -4283,6 +4348,10 @@
       },
       {
         "company": "university of science and technology of china",
+        "count": 5
+      },
+      {
+        "company": "didi",
         "count": 5
       },
       {
@@ -4328,24 +4397,20 @@
       {
         "company": "accenture",
         "count": 4
-      },
-      {
-        "company": "self-employed",
-        "count": 4
       }
     ],
     "topLocations": [
       {
         "location": "China",
-        "count": 176
+        "count": 180
       },
       {
         "location": "India",
-        "count": 124
+        "count": 125
       },
       {
         "location": "Beijing",
-        "count": 87
+        "count": 93
       },
       {
         "location": "Germany",
@@ -4353,34 +4418,42 @@
       },
       {
         "location": "Shanghai",
-        "count": 65
+        "count": 68
       },
       {
         "location": "Italy",
         "count": 57
       },
       {
+        "location": "Beijing, China",
+        "count": 53
+      },
+      {
         "location": "France",
         "count": 52
       },
       {
-        "location": "Beijing, China",
+        "location": "Earth",
         "count": 52
       },
       {
-        "location": "Earth",
-        "count": 50
+        "location": "Brazil",
+        "count": 51
       },
       {
         "location": "Singapore",
         "count": 48
       },
       {
-        "location": "Brazil",
+        "location": "Indonesia",
         "count": 47
       },
       {
-        "location": "Indonesia",
+        "location": "Bangalore",
+        "count": 44
+      },
+      {
+        "location": "Taiwan",
         "count": 44
       },
       {
@@ -4388,24 +4461,16 @@
         "count": 43
       },
       {
-        "location": "Bangalore",
-        "count": 43
-      },
-      {
-        "location": "Taiwan",
-        "count": 43
-      },
-      {
         "location": "United States",
-        "count": 37
+        "count": 40
       },
       {
         "location": "beijing",
-        "count": 37
+        "count": 40
       },
       {
         "location": "Canada",
-        "count": 36
+        "count": 38
       },
       {
         "location": "Shanghai, China",
