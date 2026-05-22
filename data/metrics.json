@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-22T02:30:26.969Z",
+  "generatedAt": "2026-05-22T08:51:23.000Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1492,
-    "stars": 25087,
-    "forks": 2341,
+    "prs": 1498,
+    "stars": 25424,
+    "forks": 2389,
     "uniqueContributors": 97,
     "externalContributors": 92,
     "externalPrAuthors": 120,
-    "issuesNonPr": 873,
-    "externalIssueAuthors": 132,
+    "issuesNonPr": 878,
+    "externalIssueAuthors": 134,
     "weeks": 15,
-    "stargazersWithCompany": 4140,
-    "tier1Stargazers": 258
+    "stargazersWithCompany": 4185,
+    "tier1Stargazers": 263
   },
   "forkBreakdown": {
-    "total": 2341,
+    "total": 2389,
     "contributing": 121,
     "standalone": 53,
-    "driveBy": 2167,
+    "driveBy": 2215,
     "samples": {
       "contributing": [
         {
@@ -264,7 +264,7 @@
       179,
       283,
       442,
-      5
+      11
     ],
     "prsExternal": [
       0,
@@ -281,7 +281,7 @@
       76,
       139,
       329,
-      5
+      10
     ],
     "prsFounders": [
       0,
@@ -298,7 +298,7 @@
       103,
       144,
       113,
-      0
+      1
     ],
     "stars": [
       0,
@@ -314,8 +314,8 @@
       172,
       144,
       7280,
-      17237,
-      148
+      17236,
+      486
     ],
     "newContributors": [
       0,
@@ -366,7 +366,7 @@
       12,
       566,
       1632,
-      19
+      67
     ],
     "goodForks": [
       0,
@@ -481,7 +481,7 @@
       74,
       76,
       69,
-      5
+      11
     ],
     "prsExternal": [
       0,
@@ -577,7 +577,7 @@
       54,
       62,
       58,
-      5
+      10
     ],
     "prsFounders": [
       0,
@@ -673,7 +673,7 @@
       20,
       14,
       11,
-      0
+      1
     ],
     "stars": [
       0,
@@ -767,9 +767,9 @@
       2419,
       4033,
       4040,
-      2493,
+      2492,
       1275,
-      148
+      486
     ],
     "newContributors": [
       0,
@@ -1057,7 +1057,7 @@
       376,
       257,
       131,
-      19
+      67
     ],
     "goodForks": [
       0,
@@ -1172,7 +1172,7 @@
       762,
       1045,
       1487,
-      1492
+      1498
     ],
     "stars": [
       0,
@@ -1188,8 +1188,8 @@
       278,
       422,
       7702,
-      24939,
-      25087
+      24938,
+      25424
     ],
     "contributors": [
       0,
@@ -1240,7 +1240,7 @@
       124,
       690,
       2322,
-      2341
+      2389
     ],
     "goodForks": [
       0,
@@ -1355,7 +1355,7 @@
       1342,
       1418,
       1487,
-      1492
+      1498
     ],
     "prsExternal": [
       0,
@@ -1451,7 +1451,7 @@
       671,
       733,
       791,
-      796
+      801
     ],
     "prsFounders": [
       0,
@@ -1547,7 +1547,7 @@
       671,
       685,
       696,
-      696
+      697
     ],
     "stars": [
       0,
@@ -1641,9 +1641,9 @@
       13098,
       17131,
       21171,
-      23664,
-      24939,
-      25087
+      23663,
+      24938,
+      25424
     ],
     "newContributors": [
       0,
@@ -1931,7 +1931,7 @@
       1934,
       2191,
       2322,
-      2341
+      2389
     ],
     "goodForks": [
       0,
@@ -2219,9 +2219,9 @@
       2419,
       4033,
       4040,
-      2493,
+      2492,
       1275,
-      148
+      486
     ],
     "rolling7DayAvg": [
       0,
@@ -2315,16 +2315,16 @@
       1756.857142857143,
       2245,
       2648.8571428571427,
-      2611.285714285714,
-      2462.4285714285716,
-      2298.5714285714284
+      2611.1428571428573,
+      2462.285714285714,
+      2346.714285714286
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 17237,
+    "spikeStars": 17236,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 148,
-    "retentionPct": 0.8586180889946047,
-    "liftVsPreSpike": 0.2498052453908076,
+    "postSpikeAvg": 486,
+    "retentionPct": 2.8196797400789047,
+    "liftVsPreSpike": 0.8203064139184627,
     "wowStarsPct": [
       null,
       null,
@@ -2339,8 +2339,8 @@
       616.6666666666667,
       -16.27906976744186,
       4955.555555555556,
-      136.77197802197801,
-      -99.1413819110054
+      136.75824175824175,
+      -97.18032025992109
     ],
     "wowPrsPct": [
       null,
@@ -2357,11 +2357,56 @@
       57.01754385964912,
       58.10055865921788,
       56.18374558303887,
-      -98.86877828054298
+      -97.51131221719457
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "luyongfugx",
+        "name": null,
+        "company": "tencent",
+        "location": "beijing",
+        "bio": null,
+        "starredAt": "2026-05-22T04:00:38Z",
+        "url": "https://github.com/luyongfugx"
+      },
+      {
+        "login": "cjraft",
+        "name": "cjraft",
+        "company": "Bytedance.Inc",
+        "location": "Beijing",
+        "bio": "",
+        "starredAt": "2026-05-22T03:55:00Z",
+        "url": "https://github.com/cjraft"
+      },
+      {
+        "login": "Deerdev",
+        "name": "DeerDev",
+        "company": "Bytedance Inc.",
+        "location": "ShangHai, China",
+        "bio": "",
+        "starredAt": "2026-05-22T03:44:16Z",
+        "url": "https://github.com/Deerdev"
+      },
+      {
+        "login": "duochizhacai",
+        "name": "duochizhacai",
+        "company": "Bytedance",
+        "location": "Beijing China",
+        "bio": "",
+        "starredAt": "2026-05-22T03:42:12Z",
+        "url": "https://github.com/duochizhacai"
+      },
+      {
+        "login": "mintukumar0000",
+        "name": "Mintu kumar sah kalwar",
+        "company": "Notionxyz",
+        "location": "Nepal",
+        "bio": "Shaping the future with AI—where imagination meets innovation.\r\nFounder of notionxyz, exploring AI/ML to shape the future of technology.",
+        "starredAt": "2026-05-22T03:11:49Z",
+        "url": "https://github.com/mintukumar0000"
+      },
       {
         "login": "realm520",
         "name": "0xH4rry",
@@ -4688,7 +4733,7 @@
     "topCompanies": [
       {
         "company": "tencent",
-        "count": 32
+        "count": 33
       },
       {
         "company": "alibaba",
@@ -4708,26 +4753,26 @@
       },
       {
         "company": "bytedance",
-        "count": 16
+        "count": 17
       },
       {
         "company": "none",
         "count": 14
       },
       {
+        "company": "home",
+        "count": 11
+      },
+      {
         "company": "baidu",
         "count": 11
       },
       {
-        "company": "student",
-        "count": 10
-      },
-      {
-        "company": "home",
-        "count": 10
-      },
-      {
         "company": "china",
+        "count": 11
+      },
+      {
+        "company": "student",
         "count": 10
       },
       {
@@ -4747,6 +4792,10 @@
         "count": 7
       },
       {
+        "company": "didi",
+        "count": 7
+      },
+      {
         "company": "amazon",
         "count": 7
       },
@@ -4756,10 +4805,6 @@
       },
       {
         "company": "xidian university",
-        "count": 6
-      },
-      {
-        "company": "didi",
         "count": 6
       },
       {
@@ -4783,6 +4828,10 @@
         "count": 5
       },
       {
+        "company": "sichuan university",
+        "count": 5
+      },
+      {
         "company": "wuhan university",
         "count": 5
       },
@@ -4801,24 +4850,20 @@
       {
         "company": "beijing university of posts and telecommunications",
         "count": 5
-      },
-      {
-        "company": "intel",
-        "count": 4
       }
     ],
     "topLocations": [
       {
         "location": "China",
-        "count": 213
+        "count": 220
       },
       {
         "location": "India",
-        "count": 144
+        "count": 145
       },
       {
         "location": "Beijing",
-        "count": 115
+        "count": 119
       },
       {
         "location": "Germany",
@@ -4830,14 +4875,18 @@
       },
       {
         "location": "Italy",
-        "count": 66
+        "count": 67
       },
       {
         "location": "Beijing, China",
-        "count": 63
+        "count": 64
       },
       {
         "location": "France",
+        "count": 59
+      },
+      {
+        "location": "Indonesia",
         "count": 58
       },
       {
@@ -4845,7 +4894,7 @@
         "count": 58
       },
       {
-        "location": "Indonesia",
+        "location": "Earth",
         "count": 57
       },
       {
@@ -4853,16 +4902,12 @@
         "count": 57
       },
       {
-        "location": "Earth",
-        "count": 55
-      },
-      {
         "location": "London",
         "count": 49
       },
       {
         "location": "beijing",
-        "count": 48
+        "count": 49
       },
       {
         "location": "Bangalore",
@@ -4870,11 +4915,11 @@
       },
       {
         "location": "Taiwan",
-        "count": 46
+        "count": 47
       },
       {
         "location": "United States",
-        "count": 45
+        "count": 46
       },
       {
         "location": "Shanghai, China",
@@ -4882,7 +4927,7 @@
       },
       {
         "location": "Canada",
-        "count": 41
+        "count": 42
       },
       {
         "location": "Berlin",
