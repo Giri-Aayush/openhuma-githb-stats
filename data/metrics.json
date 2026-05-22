@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-22T14:18:42.327Z",
+  "generatedAt": "2026-05-22T19:25:06.881Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1504,
-    "stars": 25598,
-    "forks": 2412,
+    "prs": 1510,
+    "stars": 25748,
+    "forks": 2430,
     "uniqueContributors": 99,
     "externalContributors": 94,
-    "externalPrAuthors": 120,
-    "issuesNonPr": 879,
-    "externalIssueAuthors": 134,
+    "externalPrAuthors": 121,
+    "issuesNonPr": 880,
+    "externalIssueAuthors": 135,
     "weeks": 15,
-    "stargazersWithCompany": 4209,
-    "tier1Stargazers": 264
+    "stargazersWithCompany": 4223,
+    "tier1Stargazers": 265
   },
   "forkBreakdown": {
-    "total": 2412,
-    "contributing": 121,
-    "standalone": 53,
-    "driveBy": 2238,
+    "total": 2430,
+    "contributing": 122,
+    "standalone": 54,
+    "driveBy": 2254,
     "samples": {
       "contributing": [
         {
@@ -264,7 +264,7 @@
       179,
       283,
       442,
-      17
+      23
     ],
     "prsExternal": [
       0,
@@ -281,7 +281,7 @@
       76,
       139,
       329,
-      12
+      18
     ],
     "prsFounders": [
       0,
@@ -315,7 +315,7 @@
       144,
       7280,
       17235,
-      661
+      811
     ],
     "newContributors": [
       0,
@@ -366,7 +366,7 @@
       12,
       566,
       1632,
-      90
+      108
     ],
     "goodForks": [
       0,
@@ -383,7 +383,7 @@
       2,
       31,
       76,
-      0
+      1
     ]
   },
   "daily": {
@@ -481,7 +481,7 @@
       74,
       76,
       69,
-      17
+      23
     ],
     "prsExternal": [
       0,
@@ -577,7 +577,7 @@
       54,
       62,
       58,
-      12
+      18
     ],
     "prsFounders": [
       0,
@@ -769,7 +769,7 @@
       4040,
       2492,
       1274,
-      661
+      811
     ],
     "newContributors": [
       0,
@@ -1057,7 +1057,7 @@
       376,
       257,
       131,
-      90
+      108
     ],
     "goodForks": [
       0,
@@ -1153,7 +1153,7 @@
       17,
       7,
       5,
-      0
+      1
     ]
   },
   "cumulative": {
@@ -1172,7 +1172,7 @@
       762,
       1045,
       1487,
-      1504
+      1510
     ],
     "stars": [
       0,
@@ -1189,7 +1189,7 @@
       422,
       7702,
       24937,
-      25598
+      25748
     ],
     "contributors": [
       0,
@@ -1240,7 +1240,7 @@
       124,
       690,
       2322,
-      2412
+      2430
     ],
     "goodForks": [
       0,
@@ -1257,7 +1257,7 @@
       14,
       45,
       121,
-      121
+      122
     ]
   },
   "dailyCumulative": {
@@ -1355,7 +1355,7 @@
       1342,
       1418,
       1487,
-      1504
+      1510
     ],
     "prsExternal": [
       0,
@@ -1451,7 +1451,7 @@
       671,
       733,
       791,
-      803
+      809
     ],
     "prsFounders": [
       0,
@@ -1643,7 +1643,7 @@
       21171,
       23663,
       24937,
-      25598
+      25748
     ],
     "newContributors": [
       0,
@@ -1931,7 +1931,7 @@
       1934,
       2191,
       2322,
-      2412
+      2430
     ],
     "goodForks": [
       0,
@@ -2027,7 +2027,7 @@
       109,
       116,
       121,
-      121
+      122
     ]
   },
   "momentum": {
@@ -2221,7 +2221,7 @@
       4040,
       2492,
       1274,
-      661
+      811
     ],
     "rolling7DayAvg": [
       0,
@@ -2317,14 +2317,14 @@
       2648.8571428571427,
       2611.1428571428573,
       2462.1428571428573,
-      2371.5714285714284
+      2393
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17235,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 661,
-    "retentionPct": 3.8352190310414853,
-    "liftVsPreSpike": 1.115684237860296,
+    "postSpikeAvg": 811,
+    "retentionPct": 4.70554105018857,
+    "liftVsPreSpike": 1.368865229810439,
     "wowStarsPct": [
       null,
       null,
@@ -2340,7 +2340,7 @@
       -16.27906976744186,
       4955.555555555556,
       136.7445054945055,
-      -96.16478096895852
+      -95.29445894981143
     ],
     "wowPrsPct": [
       null,
@@ -2357,19 +2357,28 @@
       57.01754385964912,
       58.10055865921788,
       56.18374558303887,
-      -96.15384615384616
+      -94.79638009049773
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
       {
-        "login": "cxjwin",
-        "name": "SmartCai",
-        "company": "Tencent",
+        "login": "raidery",
+        "name": "Raider",
+        "company": "IBM",
         "location": "China",
-        "bio": "",
-        "starredAt": "2026-05-22T11:31:19Z",
-        "url": "https://github.com/cxjwin"
+        "bio": "Machine Learning & Artificial Intelligence.\r\n",
+        "starredAt": "2026-05-22T17:31:40Z",
+        "url": "https://github.com/raidery"
+      },
+      {
+        "login": "ChunelFeng",
+        "name": "Chunel",
+        "company": "Ex Alibaba",
+        "location": "HangZhou",
+        "bio": "码坛皮条客，团队背锅侠，AI绝缘体，BUG收割机。销售型程序员，狗币价位风向标，零代码编程践行者，ctrlcv开发布道师。领导难以启齿的过去，同事不堪回首的曾经，产品挥之不去的噩梦，测试心里永远无法抹去的痛",
+        "starredAt": "2026-05-22T15:45:44Z",
+        "url": "https://github.com/ChunelFeng"
       },
       {
         "login": "luyongfugx",
@@ -4742,7 +4751,7 @@
     "topCompanies": [
       {
         "company": "tencent",
-        "count": 34
+        "count": 33
       },
       {
         "company": "alibaba",
@@ -4789,6 +4798,10 @@
         "count": 9
       },
       {
+        "company": "ibm",
+        "count": 8
+      },
+      {
         "company": "meituan",
         "count": 8
       },
@@ -4798,10 +4811,6 @@
       },
       {
         "company": "xidian university",
-        "count": 7
-      },
-      {
-        "company": "ibm",
         "count": 7
       },
       {
@@ -4829,6 +4838,10 @@
         "count": 6
       },
       {
+        "company": "fudan university",
+        "count": 6
+      },
+      {
         "company": "huazhong university of science and technology",
         "count": 6
       },
@@ -4853,10 +4866,6 @@
         "count": 5
       },
       {
-        "company": "fudan university",
-        "count": 5
-      },
-      {
         "company": "beijing university of posts and telecommunications",
         "count": 5
       }
@@ -4864,7 +4873,7 @@
     "topLocations": [
       {
         "location": "China",
-        "count": 221
+        "count": 222
       },
       {
         "location": "India",
@@ -4892,7 +4901,7 @@
       },
       {
         "location": "France",
-        "count": 59
+        "count": 60
       },
       {
         "location": "Indonesia",
@@ -4900,7 +4909,7 @@
       },
       {
         "location": "Brazil",
-        "count": 58
+        "count": 59
       },
       {
         "location": "Singapore",
@@ -4924,7 +4933,7 @@
       },
       {
         "location": "Taiwan",
-        "count": 47
+        "count": 48
       },
       {
         "location": "United States",
