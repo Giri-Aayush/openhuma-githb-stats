@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-22T08:51:23.000Z",
+  "generatedAt": "2026-05-22T14:18:42.327Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1498,
-    "stars": 25424,
-    "forks": 2389,
-    "uniqueContributors": 97,
-    "externalContributors": 92,
+    "prs": 1504,
+    "stars": 25598,
+    "forks": 2412,
+    "uniqueContributors": 99,
+    "externalContributors": 94,
     "externalPrAuthors": 120,
-    "issuesNonPr": 878,
+    "issuesNonPr": 879,
     "externalIssueAuthors": 134,
     "weeks": 15,
-    "stargazersWithCompany": 4185,
-    "tier1Stargazers": 263
+    "stargazersWithCompany": 4209,
+    "tier1Stargazers": 264
   },
   "forkBreakdown": {
-    "total": 2389,
+    "total": 2412,
     "contributing": 121,
     "standalone": 53,
-    "driveBy": 2215,
+    "driveBy": 2238,
     "samples": {
       "contributing": [
         {
@@ -264,7 +264,7 @@
       179,
       283,
       442,
-      11
+      17
     ],
     "prsExternal": [
       0,
@@ -281,7 +281,7 @@
       76,
       139,
       329,
-      10
+      12
     ],
     "prsFounders": [
       0,
@@ -298,7 +298,7 @@
       103,
       144,
       113,
-      1
+      5
     ],
     "stars": [
       0,
@@ -314,8 +314,8 @@
       172,
       144,
       7280,
-      17236,
-      486
+      17235,
+      661
     ],
     "newContributors": [
       0,
@@ -332,7 +332,7 @@
       2,
       11,
       69,
-      0
+      2
     ],
     "newExternalContributors": [
       0,
@@ -349,7 +349,7 @@
       2,
       11,
       69,
-      0
+      2
     ],
     "forks": [
       0,
@@ -366,7 +366,7 @@
       12,
       566,
       1632,
-      67
+      90
     ],
     "goodForks": [
       0,
@@ -481,7 +481,7 @@
       74,
       76,
       69,
-      11
+      17
     ],
     "prsExternal": [
       0,
@@ -577,7 +577,7 @@
       54,
       62,
       58,
-      10
+      12
     ],
     "prsFounders": [
       0,
@@ -673,7 +673,7 @@
       20,
       14,
       11,
-      1
+      5
     ],
     "stars": [
       0,
@@ -768,8 +768,8 @@
       4033,
       4040,
       2492,
-      1275,
-      486
+      1274,
+      661
     ],
     "newContributors": [
       0,
@@ -865,7 +865,7 @@
       12,
       19,
       5,
-      0
+      2
     ],
     "newExternalContributors": [
       0,
@@ -961,7 +961,7 @@
       12,
       19,
       5,
-      0
+      2
     ],
     "forks": [
       0,
@@ -1057,7 +1057,7 @@
       376,
       257,
       131,
-      67
+      90
     ],
     "goodForks": [
       0,
@@ -1172,7 +1172,7 @@
       762,
       1045,
       1487,
-      1498
+      1504
     ],
     "stars": [
       0,
@@ -1188,8 +1188,8 @@
       278,
       422,
       7702,
-      24938,
-      25424
+      24937,
+      25598
     ],
     "contributors": [
       0,
@@ -1206,7 +1206,7 @@
       12,
       23,
       92,
-      92
+      94
     ],
     "externalContributors": [
       0,
@@ -1223,7 +1223,7 @@
       12,
       23,
       92,
-      92
+      94
     ],
     "forks": [
       0,
@@ -1240,7 +1240,7 @@
       124,
       690,
       2322,
-      2389
+      2412
     ],
     "goodForks": [
       0,
@@ -1355,7 +1355,7 @@
       1342,
       1418,
       1487,
-      1498
+      1504
     ],
     "prsExternal": [
       0,
@@ -1451,7 +1451,7 @@
       671,
       733,
       791,
-      801
+      803
     ],
     "prsFounders": [
       0,
@@ -1547,7 +1547,7 @@
       671,
       685,
       696,
-      697
+      701
     ],
     "stars": [
       0,
@@ -1642,8 +1642,8 @@
       17131,
       21171,
       23663,
-      24938,
-      25424
+      24937,
+      25598
     ],
     "newContributors": [
       0,
@@ -1739,7 +1739,7 @@
       68,
       87,
       92,
-      92
+      94
     ],
     "newExternalContributors": [
       0,
@@ -1835,7 +1835,7 @@
       68,
       87,
       92,
-      92
+      94
     ],
     "forks": [
       0,
@@ -1931,7 +1931,7 @@
       1934,
       2191,
       2322,
-      2389
+      2412
     ],
     "goodForks": [
       0,
@@ -2220,8 +2220,8 @@
       4033,
       4040,
       2492,
-      1275,
-      486
+      1274,
+      661
     ],
     "rolling7DayAvg": [
       0,
@@ -2316,15 +2316,15 @@
       2245,
       2648.8571428571427,
       2611.1428571428573,
-      2462.285714285714,
-      2346.714285714286
+      2462.1428571428573,
+      2371.5714285714284
     ],
     "spikeWeek": "2026-05-15",
-    "spikeStars": 17236,
+    "spikeStars": 17235,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 486,
-    "retentionPct": 2.8196797400789047,
-    "liftVsPreSpike": 0.8203064139184627,
+    "postSpikeAvg": 661,
+    "retentionPct": 3.8352190310414853,
+    "liftVsPreSpike": 1.115684237860296,
     "wowStarsPct": [
       null,
       null,
@@ -2339,8 +2339,8 @@
       616.6666666666667,
       -16.27906976744186,
       4955.555555555556,
-      136.75824175824175,
-      -97.18032025992109
+      136.7445054945055,
+      -96.16478096895852
     ],
     "wowPrsPct": [
       null,
@@ -2357,11 +2357,20 @@
       57.01754385964912,
       58.10055865921788,
       56.18374558303887,
-      -97.51131221719457
+      -96.15384615384616
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "cxjwin",
+        "name": "SmartCai",
+        "company": "Tencent",
+        "location": "China",
+        "bio": "",
+        "starredAt": "2026-05-22T11:31:19Z",
+        "url": "https://github.com/cxjwin"
+      },
       {
         "login": "luyongfugx",
         "name": null,
@@ -4733,7 +4742,7 @@
     "topCompanies": [
       {
         "company": "tencent",
-        "count": 33
+        "count": 34
       },
       {
         "company": "alibaba",
@@ -4788,6 +4797,10 @@
         "count": 8
       },
       {
+        "company": "xidian university",
+        "count": 7
+      },
+      {
         "company": "ibm",
         "count": 7
       },
@@ -4804,7 +4817,7 @@
         "count": 7
       },
       {
-        "company": "xidian university",
+        "company": "sichuan university",
         "count": 6
       },
       {
@@ -4825,10 +4838,6 @@
       },
       {
         "company": "university of science and technology of china",
-        "count": 5
-      },
-      {
-        "company": "sichuan university",
         "count": 5
       },
       {
@@ -4855,7 +4864,7 @@
     "topLocations": [
       {
         "location": "China",
-        "count": 220
+        "count": 221
       },
       {
         "location": "India",
@@ -4863,7 +4872,7 @@
       },
       {
         "location": "Beijing",
-        "count": 119
+        "count": 121
       },
       {
         "location": "Germany",
@@ -4871,7 +4880,7 @@
       },
       {
         "location": "Shanghai",
-        "count": 85
+        "count": 86
       },
       {
         "location": "Italy",
@@ -4887,10 +4896,14 @@
       },
       {
         "location": "Indonesia",
-        "count": 58
+        "count": 59
       },
       {
         "location": "Brazil",
+        "count": 58
+      },
+      {
+        "location": "Singapore",
         "count": 58
       },
       {
@@ -4898,20 +4911,16 @@
         "count": 57
       },
       {
-        "location": "Singapore",
-        "count": 57
-      },
-      {
         "location": "London",
-        "count": 49
+        "count": 50
       },
       {
         "location": "beijing",
-        "count": 49
+        "count": 50
       },
       {
         "location": "Bangalore",
-        "count": 47
+        "count": 48
       },
       {
         "location": "Taiwan",
