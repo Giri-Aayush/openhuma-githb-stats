@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-23T02:07:02.689Z",
+  "generatedAt": "2026-05-23T13:02:57.106Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1520,
-    "stars": 25869,
-    "forks": 2444,
-    "uniqueContributors": 101,
-    "externalContributors": 96,
-    "externalPrAuthors": 121,
-    "issuesNonPr": 880,
-    "externalIssueAuthors": 135,
+    "prs": 1543,
+    "stars": 26191,
+    "forks": 2476,
+    "uniqueContributors": 103,
+    "externalContributors": 98,
+    "externalPrAuthors": 124,
+    "issuesNonPr": 882,
+    "externalIssueAuthors": 137,
     "weeks": 15,
-    "stargazersWithCompany": 4245,
-    "tier1Stargazers": 266
+    "stargazersWithCompany": 4294,
+    "tier1Stargazers": 268
   },
   "forkBreakdown": {
-    "total": 2444,
-    "contributing": 122,
+    "total": 2476,
+    "contributing": 125,
     "standalone": 54,
-    "driveBy": 2268,
+    "driveBy": 2297,
     "samples": {
       "contributing": [
         {
@@ -265,7 +265,7 @@
       179,
       283,
       442,
-      33
+      56
     ],
     "prsExternal": [
       0,
@@ -282,7 +282,7 @@
       76,
       139,
       329,
-      26
+      38
     ],
     "prsFounders": [
       0,
@@ -299,7 +299,7 @@
       103,
       144,
       113,
-      7
+      18
     ],
     "stars": [
       0,
@@ -316,7 +316,7 @@
       144,
       7280,
       17235,
-      932
+      1254
     ],
     "newContributors": [
       0,
@@ -333,7 +333,7 @@
       2,
       11,
       69,
-      4
+      6
     ],
     "newExternalContributors": [
       0,
@@ -350,7 +350,7 @@
       2,
       11,
       69,
-      4
+      6
     ],
     "forks": [
       0,
@@ -367,7 +367,7 @@
       12,
       566,
       1632,
-      122
+      154
     ],
     "goodForks": [
       0,
@@ -383,8 +383,8 @@
       2,
       2,
       31,
-      76,
-      1
+      77,
+      3
     ]
   },
   "daily": {
@@ -483,7 +483,7 @@
       76,
       69,
       32,
-      1
+      24
     ],
     "prsExternal": [
       0,
@@ -580,7 +580,7 @@
       62,
       58,
       26,
-      0
+      12
     ],
     "prsFounders": [
       0,
@@ -677,7 +677,7 @@
       14,
       11,
       6,
-      1
+      12
     ],
     "stars": [
       0,
@@ -774,7 +774,7 @@
       2492,
       1274,
       897,
-      35
+      357
     ],
     "newContributors": [
       0,
@@ -871,7 +871,7 @@
       19,
       5,
       3,
-      1
+      3
     ],
     "newExternalContributors": [
       0,
@@ -968,7 +968,7 @@
       19,
       5,
       3,
-      1
+      3
     ],
     "forks": [
       0,
@@ -1065,7 +1065,7 @@
       257,
       131,
       119,
-      3
+      35
     ],
     "goodForks": [
       0,
@@ -1158,11 +1158,11 @@
       4,
       14,
       22,
-      17,
+      18,
       7,
       5,
       1,
-      0
+      2
     ]
   },
   "cumulative": {
@@ -1181,7 +1181,7 @@
       762,
       1045,
       1487,
-      1520
+      1543
     ],
     "stars": [
       0,
@@ -1198,7 +1198,7 @@
       422,
       7702,
       24937,
-      25869
+      26191
     ],
     "contributors": [
       0,
@@ -1215,7 +1215,7 @@
       12,
       23,
       92,
-      96
+      98
     ],
     "externalContributors": [
       0,
@@ -1232,7 +1232,7 @@
       12,
       23,
       92,
-      96
+      98
     ],
     "forks": [
       0,
@@ -1249,7 +1249,7 @@
       124,
       690,
       2322,
-      2444
+      2476
     ],
     "goodForks": [
       0,
@@ -1265,8 +1265,8 @@
       12,
       14,
       45,
-      121,
-      122
+      122,
+      125
     ]
   },
   "dailyCumulative": {
@@ -1365,7 +1365,7 @@
       1418,
       1487,
       1519,
-      1520
+      1543
     ],
     "prsExternal": [
       0,
@@ -1462,7 +1462,7 @@
       733,
       791,
       817,
-      817
+      829
     ],
     "prsFounders": [
       0,
@@ -1559,7 +1559,7 @@
       685,
       696,
       702,
-      703
+      714
     ],
     "stars": [
       0,
@@ -1656,7 +1656,7 @@
       23663,
       24937,
       25834,
-      25869
+      26191
     ],
     "newContributors": [
       0,
@@ -1753,7 +1753,7 @@
       87,
       92,
       95,
-      96
+      98
     ],
     "newExternalContributors": [
       0,
@@ -1850,7 +1850,7 @@
       87,
       92,
       95,
-      96
+      98
     ],
     "forks": [
       0,
@@ -1947,7 +1947,7 @@
       2191,
       2322,
       2441,
-      2444
+      2476
     ],
     "goodForks": [
       0,
@@ -2040,11 +2040,11 @@
       56,
       70,
       92,
-      109,
-      116,
-      121,
+      110,
+      117,
       122,
-      122
+      123,
+      125
     ]
   },
   "momentum": {
@@ -2240,7 +2240,7 @@
       2492,
       1274,
       897,
-      35
+      357
     ],
     "rolling7DayAvg": [
       0,
@@ -2337,14 +2337,14 @@
       2611.1428571428573,
       2462.1428571428573,
       2405.285714285714,
-      2170
+      2216
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17235,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 932,
-    "retentionPct": 5.407600812300551,
-    "liftVsPreSpike": 1.5730978966502207,
+    "postSpikeAvg": 1254,
+    "retentionPct": 7.275892080069626,
+    "liftVsPreSpike": 2.116593092703194,
     "wowStarsPct": [
       null,
       null,
@@ -2360,7 +2360,7 @@
       -16.27906976744186,
       4955.555555555556,
       136.7445054945055,
-      -94.59239918769946
+      -92.72410791993038
     ],
     "wowPrsPct": [
       null,
@@ -2377,11 +2377,29 @@
       57.01754385964912,
       58.10055865921788,
       56.18374558303887,
-      -92.53393665158372
+      -87.33031674208145
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "eagle-a",
+        "name": "eagle-a",
+        "company": "Harbin Engineering University，School of Intelligent Science and Engineering",
+        "location": null,
+        "bio": "being quiet, mindful, and reflective\r\n",
+        "starredAt": "2026-05-23T11:16:46Z",
+        "url": "https://github.com/eagle-a"
+      },
+      {
+        "login": "tears710",
+        "name": "Zar Lee",
+        "company": "Alibaba",
+        "location": null,
+        "bio": "progress",
+        "starredAt": "2026-05-23T06:09:06Z",
+        "url": "https://github.com/tears710"
+      },
       {
         "login": "azkrishpy",
         "name": "Krish",
@@ -4784,7 +4802,7 @@
       },
       {
         "company": "alibaba",
-        "count": 27
+        "count": 28
       },
       {
         "company": "microsoft",
@@ -4804,18 +4822,18 @@
       },
       {
         "company": "none",
-        "count": 14
+        "count": 15
       },
       {
         "company": "home",
         "count": 12
       },
       {
-        "company": "baidu",
-        "count": 11
+        "company": "china",
+        "count": 12
       },
       {
-        "company": "china",
+        "company": "baidu",
         "count": 11
       },
       {
@@ -4902,7 +4920,7 @@
     "topLocations": [
       {
         "location": "China",
-        "count": 224
+        "count": 227
       },
       {
         "location": "India",
@@ -4910,15 +4928,15 @@
       },
       {
         "location": "Beijing",
-        "count": 121
+        "count": 122
       },
       {
         "location": "Germany",
-        "count": 88
+        "count": 89
       },
       {
         "location": "Shanghai",
-        "count": 86
+        "count": 87
       },
       {
         "location": "Italy",
@@ -4926,7 +4944,7 @@
       },
       {
         "location": "Beijing, China",
-        "count": 64
+        "count": 67
       },
       {
         "location": "France",
@@ -4942,7 +4960,7 @@
       },
       {
         "location": "Singapore",
-        "count": 58
+        "count": 59
       },
       {
         "location": "Earth",
@@ -4970,11 +4988,11 @@
       },
       {
         "location": "Shanghai, China",
-        "count": 43
+        "count": 44
       },
       {
         "location": "Canada",
-        "count": 42
+        "count": 43
       },
       {
         "location": "Berlin",
