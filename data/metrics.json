@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-29T14:44:20.190Z",
+  "generatedAt": "2026-05-29T20:12:51.879Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1837,
-    "stars": 29697,
-    "forks": 2886,
-    "uniqueContributors": 119,
-    "externalContributors": 114,
+    "prs": 1863,
+    "stars": 29746,
+    "forks": 2895,
+    "uniqueContributors": 120,
+    "externalContributors": 115,
     "externalPrAuthors": 140,
-    "issuesNonPr": 992,
+    "issuesNonPr": 995,
     "externalIssueAuthors": 163,
     "weeks": 16,
-    "stargazersWithCompany": 4862,
-    "tier1Stargazers": 297
+    "stargazersWithCompany": 4874,
+    "tier1Stargazers": 298
   },
   "forkBreakdown": {
-    "total": 2886,
+    "total": 2895,
     "contributing": 141,
     "standalone": 70,
-    "driveBy": 2675,
+    "driveBy": 2684,
     "samples": {
       "contributing": [
         {
@@ -273,7 +273,7 @@
       283,
       442,
       304,
-      46
+      72
     ],
     "prsExternal": [
       0,
@@ -291,7 +291,7 @@
       139,
       329,
       184,
-      28
+      49
     ],
     "prsFounders": [
       0,
@@ -309,7 +309,7 @@
       144,
       113,
       120,
-      18
+      23
     ],
     "stars": [
       0,
@@ -327,7 +327,7 @@
       7280,
       17225,
       4561,
-      209
+      258
     ],
     "newContributors": [
       0,
@@ -345,7 +345,7 @@
       11,
       69,
       20,
-      2
+      3
     ],
     "newExternalContributors": [
       0,
@@ -363,7 +363,7 @@
       11,
       69,
       20,
-      2
+      3
     ],
     "forks": [
       0,
@@ -381,7 +381,7 @@
       566,
       1631,
       543,
-      22
+      31
     ],
     "goodForks": [
       0,
@@ -504,7 +504,7 @@
       51,
       54,
       63,
-      46
+      72
     ],
     "prsExternal": [
       0,
@@ -607,7 +607,7 @@
       43,
       24,
       34,
-      28
+      49
     ],
     "prsFounders": [
       0,
@@ -710,7 +710,7 @@
       8,
       30,
       29,
-      18
+      23
     ],
     "stars": [
       0,
@@ -813,7 +813,7 @@
       553,
       556,
       435,
-      209
+      258
     ],
     "newContributors": [
       0,
@@ -916,7 +916,7 @@
       1,
       1,
       4,
-      2
+      3
     ],
     "newExternalContributors": [
       0,
@@ -1019,7 +1019,7 @@
       1,
       1,
       4,
-      2
+      3
     ],
     "forks": [
       0,
@@ -1122,7 +1122,7 @@
       67,
       80,
       52,
-      22
+      31
     ],
     "goodForks": [
       0,
@@ -1245,7 +1245,7 @@
       1045,
       1487,
       1791,
-      1837
+      1863
     ],
     "stars": [
       0,
@@ -1263,7 +1263,7 @@
       7702,
       24927,
       29488,
-      29697
+      29746
     ],
     "contributors": [
       0,
@@ -1281,7 +1281,7 @@
       23,
       92,
       112,
-      114
+      115
     ],
     "externalContributors": [
       0,
@@ -1299,7 +1299,7 @@
       23,
       92,
       112,
-      114
+      115
     ],
     "forks": [
       0,
@@ -1317,7 +1317,7 @@
       690,
       2321,
       2864,
-      2886
+      2895
     ],
     "goodForks": [
       0,
@@ -1440,7 +1440,7 @@
       1674,
       1728,
       1791,
-      1837
+      1863
     ],
     "prsExternal": [
       0,
@@ -1543,7 +1543,7 @@
       917,
       941,
       975,
-      1003
+      1024
     ],
     "prsFounders": [
       0,
@@ -1646,7 +1646,7 @@
       757,
       787,
       816,
-      834
+      839
     ],
     "stars": [
       0,
@@ -1749,7 +1749,7 @@
       28497,
       29053,
       29488,
-      29697
+      29746
     ],
     "newContributors": [
       0,
@@ -1852,7 +1852,7 @@
       107,
       108,
       112,
-      114
+      115
     ],
     "newExternalContributors": [
       0,
@@ -1955,7 +1955,7 @@
       107,
       108,
       112,
-      114
+      115
     ],
     "forks": [
       0,
@@ -2058,7 +2058,7 @@
       2732,
       2812,
       2864,
-      2886
+      2895
     ],
     "goodForks": [
       0,
@@ -2369,7 +2369,7 @@
       553,
       556,
       435,
-      209
+      258
     ],
     "rolling7DayAvg": [
       0,
@@ -2472,14 +2472,14 @@
       1046.5714285714287,
       770.2857142857143,
       651.5714285714286,
-      554
+      561
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17225,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 2385,
-    "retentionPct": 13.846153846153847,
-    "liftVsPreSpike": 4.025577772007271,
+    "postSpikeAvg": 2409.5,
+    "retentionPct": 13.988388969521045,
+    "liftVsPreSpike": 4.066930667359127,
     "wowStarsPct": [
       null,
       null,
@@ -2496,7 +2496,7 @@
       4955.555555555556,
       136.60714285714286,
       -73.5210449927431,
-      -95.41767156325366
+      -94.34334575750933
     ],
     "wowPrsPct": [
       null,
@@ -2514,11 +2514,20 @@
       58.10055865921788,
       56.18374558303887,
       -31.221719457013574,
-      -84.86842105263158
+      -76.31578947368422
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "SARAMALI15792",
+        "name": "saram ali ",
+        "company": "https://github.com/panaversity",
+        "location": "pakistan,Islamabad",
+        "bio": "AI Engineer | Designing agentic systems that automate complexity and enable smarter decisions",
+        "starredAt": "2026-05-29T19:20:17Z",
+        "url": "https://github.com/SARAMALI15792"
+      },
       {
         "login": "links1111",
         "name": "lixiang",
@@ -5220,7 +5229,7 @@
       },
       {
         "company": "none",
-        "count": 16
+        "count": 17
       },
       {
         "company": "home",
@@ -5334,7 +5343,7 @@
       },
       {
         "location": "Shanghai",
-        "count": 99
+        "count": 100
       },
       {
         "location": "Beijing, China",
@@ -5357,12 +5366,12 @@
         "count": 65
       },
       {
-        "location": "Earth",
+        "location": "Indonesia",
         "count": 63
       },
       {
-        "location": "Indonesia",
-        "count": 62
+        "location": "Earth",
+        "count": 63
       },
       {
         "location": "London",
