@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-05-31T02:36:34.287Z",
+  "generatedAt": "2026-05-31T08:37:44.886Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 1915,
-    "stars": 30039,
-    "forks": 2934,
+    "prs": 1939,
+    "stars": 30091,
+    "forks": 2942,
     "uniqueContributors": 122,
     "externalContributors": 117,
-    "externalPrAuthors": 141,
-    "issuesNonPr": 1007,
-    "externalIssueAuthors": 165,
+    "externalPrAuthors": 142,
+    "issuesNonPr": 1017,
+    "externalIssueAuthors": 167,
     "weeks": 16,
-    "stargazersWithCompany": 4931,
-    "tier1Stargazers": 299
+    "stargazersWithCompany": 4944,
+    "tier1Stargazers": 301
   },
   "forkBreakdown": {
-    "total": 2934,
-    "contributing": 142,
+    "total": 2942,
+    "contributing": 144,
     "standalone": 71,
-    "driveBy": 2721,
+    "driveBy": 2727,
     "samples": {
       "contributing": [
         {
@@ -275,7 +275,7 @@
       283,
       442,
       304,
-      124
+      148
     ],
     "prsExternal": [
       0,
@@ -293,7 +293,7 @@
       139,
       329,
       184,
-      79
+      93
     ],
     "prsFounders": [
       0,
@@ -311,7 +311,7 @@
       144,
       113,
       120,
-      45
+      55
     ],
     "stars": [
       0,
@@ -329,7 +329,7 @@
       7280,
       17222,
       4556,
-      559
+      611
     ],
     "newContributors": [
       0,
@@ -383,7 +383,7 @@
       566,
       1630,
       542,
-      72
+      80
     ],
     "goodForks": [
       0,
@@ -399,9 +399,9 @@
       2,
       2,
       32,
-      80,
+      81,
       15,
-      1
+      2
     ]
   },
   "daily": {
@@ -508,7 +508,7 @@
       63,
       83,
       36,
-      5
+      29
     ],
     "prsExternal": [
       0,
@@ -613,7 +613,7 @@
       34,
       55,
       20,
-      4
+      18
     ],
     "prsFounders": [
       0,
@@ -718,7 +718,7 @@
       29,
       28,
       16,
-      1
+      11
     ],
     "stars": [
       0,
@@ -823,7 +823,7 @@
       435,
       285,
       252,
-      22
+      74
     ],
     "newContributors": [
       0,
@@ -1138,7 +1138,7 @@
       51,
       34,
       34,
-      4
+      12
     ],
     "goodForks": [
       0,
@@ -1232,7 +1232,7 @@
       14,
       22,
       19,
-      8,
+      9,
       5,
       1,
       1,
@@ -1243,7 +1243,7 @@
       1,
       0,
       1,
-      0
+      1
     ]
   },
   "cumulative": {
@@ -1263,7 +1263,7 @@
       1045,
       1487,
       1791,
-      1915
+      1939
     ],
     "stars": [
       0,
@@ -1281,7 +1281,7 @@
       7702,
       24924,
       29480,
-      30039
+      30091
     ],
     "contributors": [
       0,
@@ -1335,7 +1335,7 @@
       690,
       2320,
       2862,
-      2934
+      2942
     ],
     "goodForks": [
       0,
@@ -1351,9 +1351,9 @@
       12,
       14,
       46,
-      126,
-      141,
-      142
+      127,
+      142,
+      144
     ]
   },
   "dailyCumulative": {
@@ -1460,7 +1460,7 @@
       1791,
       1874,
       1910,
-      1915
+      1939
     ],
     "prsExternal": [
       0,
@@ -1565,7 +1565,7 @@
       975,
       1030,
       1050,
-      1054
+      1068
     ],
     "prsFounders": [
       0,
@@ -1670,7 +1670,7 @@
       816,
       844,
       860,
-      861
+      871
     ],
     "stars": [
       0,
@@ -1775,7 +1775,7 @@
       29480,
       29765,
       30017,
-      30039
+      30091
     ],
     "newContributors": [
       0,
@@ -2090,7 +2090,7 @@
       2862,
       2896,
       2930,
-      2934
+      2942
     ],
     "goodForks": [
       0,
@@ -2184,18 +2184,18 @@
       72,
       94,
       113,
-      121,
-      126,
+      122,
       127,
       128,
-      133,
+      129,
       134,
-      137,
-      140,
-      141,
+      135,
+      138,
       141,
       142,
-      142
+      142,
+      143,
+      144
     ]
   },
   "momentum": {
@@ -2407,7 +2407,7 @@
       435,
       285,
       252,
-      22
+      74
     ],
     "rolling7DayAvg": [
       0,
@@ -2512,14 +2512,14 @@
       650.8571428571429,
       564.1428571428571,
       506.42857142857144,
-      393.7142857142857
+      401.14285714285717
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17222,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 2557.5,
-    "retentionPct": 14.850191615375682,
-    "liftVsPreSpike": 4.316735912749935,
+    "postSpikeAvg": 2583.5,
+    "retentionPct": 15.001161305307164,
+    "liftVsPreSpike": 4.360620618021294,
     "wowStarsPct": [
       null,
       null,
@@ -2536,7 +2536,7 @@
       4955.555555555556,
       136.56593406593407,
       -73.54546510277552,
-      -87.73046532045655
+      -86.5891132572432
     ],
     "wowPrsPct": [
       null,
@@ -2554,11 +2554,29 @@
       58.10055865921788,
       56.18374558303887,
       -31.221719457013574,
-      -59.210526315789465
+      -51.31578947368421
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "NicoBOD",
+        "name": "Nicolas BODAINE",
+        "company": "https://github.com/TutoTech/",
+        "location": null,
+        "bio": "Intégrateur de solutions d'automatisation IA | Formateur en administration système/réseau, cloud & cybersécurité | Co-fondateur de l'association @TutoTech",
+        "starredAt": "2026-05-31T05:59:51Z",
+        "url": "https://github.com/NicoBOD"
+      },
+      {
+        "login": "strategist922",
+        "name": "James Chang",
+        "company": "Microsoft",
+        "location": "Taipei, Taiwan",
+        "bio": "PhD Student,\r\nDepartment of Computer Science and Technology\r\nTsinghua University, China",
+        "starredAt": "2026-05-31T03:50:18Z",
+        "url": "https://github.com/strategist922"
+      },
       {
         "login": "jielou",
         "name": "Jie Lou",
@@ -5266,11 +5284,11 @@
       },
       {
         "company": "microsoft",
-        "count": 18
+        "count": 19
       },
       {
         "company": "freelancer",
-        "count": 17
+        "count": 18
       },
       {
         "company": "zhejiang university",
@@ -5281,12 +5299,12 @@
         "count": 17
       },
       {
-        "company": "home",
+        "company": "student",
         "count": 13
       },
       {
-        "company": "student",
-        "count": 12
+        "company": "home",
+        "count": 13
       },
       {
         "company": "baidu",
@@ -5380,11 +5398,11 @@
       },
       {
         "location": "India",
-        "count": 160
+        "count": 161
       },
       {
         "location": "Beijing",
-        "count": 138
+        "count": 139
       },
       {
         "location": "Germany",
@@ -5412,7 +5430,7 @@
       },
       {
         "location": "Singapore",
-        "count": 65
+        "count": 66
       },
       {
         "location": "Indonesia",
@@ -5452,7 +5470,7 @@
       },
       {
         "location": "china",
-        "count": 43
+        "count": 44
       }
     ]
   }
