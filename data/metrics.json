@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-04T09:49:19.827Z",
+  "generatedAt": "2026-06-04T14:41:44.821Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 2103,
-    "stars": 31001,
-    "forks": 3077,
+    "prs": 2114,
+    "stars": 31042,
+    "forks": 3085,
     "uniqueContributors": 127,
     "externalContributors": 122,
     "externalPrAuthors": 150,
-    "issuesNonPr": 1120,
-    "externalIssueAuthors": 182,
+    "issuesNonPr": 1129,
+    "externalIssueAuthors": 183,
     "weeks": 16,
-    "stargazersWithCompany": 5111,
+    "stargazersWithCompany": 5119,
     "tier1Stargazers": 307
   },
   "forkBreakdown": {
-    "total": 3077,
+    "total": 3085,
     "contributing": 151,
-    "standalone": 74,
-    "driveBy": 2852,
+    "standalone": 75,
+    "driveBy": 2859,
     "samples": {
       "contributing": [
         {
@@ -279,7 +279,7 @@
       283,
       442,
       304,
-      312
+      323
     ],
     "prsExternal": [
       0,
@@ -297,7 +297,7 @@
       139,
       329,
       184,
-      186
+      191
     ],
     "prsFounders": [
       0,
@@ -315,7 +315,7 @@
       144,
       113,
       120,
-      126
+      132
     ],
     "stars": [
       0,
@@ -333,7 +333,7 @@
       7280,
       17221,
       4543,
-      1535
+      1576
     ],
     "newContributors": [
       0,
@@ -387,7 +387,7 @@
       566,
       1629,
       541,
-      217
+      225
     ],
     "goodForks": [
       0,
@@ -516,7 +516,7 @@
       43,
       50,
       46,
-      21
+      32
     ],
     "prsExternal": [
       0,
@@ -625,7 +625,7 @@
       33,
       30,
       19,
-      8
+      13
     ],
     "prsFounders": [
       0,
@@ -734,7 +734,7 @@
       10,
       20,
       27,
-      13
+      19
     ],
     "stars": [
       0,
@@ -843,7 +843,7 @@
       289,
       188,
       189,
-      84
+      125
     ],
     "newContributors": [
       0,
@@ -1170,7 +1170,7 @@
       37,
       32,
       27,
-      13
+      21
     ],
     "goodForks": [
       0,
@@ -1299,7 +1299,7 @@
       1045,
       1487,
       1791,
-      2103
+      2114
     ],
     "stars": [
       0,
@@ -1317,7 +1317,7 @@
       7702,
       24923,
       29466,
-      31001
+      31042
     ],
     "contributors": [
       0,
@@ -1371,7 +1371,7 @@
       690,
       2319,
       2860,
-      3077
+      3085
     ],
     "goodForks": [
       0,
@@ -1500,7 +1500,7 @@
       1986,
       2036,
       2082,
-      2103
+      2114
     ],
     "prsExternal": [
       0,
@@ -1609,7 +1609,7 @@
       1104,
       1134,
       1153,
-      1161
+      1166
     ],
     "prsFounders": [
       0,
@@ -1718,7 +1718,7 @@
       882,
       902,
       929,
-      942
+      948
     ],
     "stars": [
       0,
@@ -1827,7 +1827,7 @@
       30540,
       30728,
       30917,
-      31001
+      31042
     ],
     "newContributors": [
       0,
@@ -2154,7 +2154,7 @@
       3005,
       3037,
       3064,
-      3077
+      3085
     ],
     "goodForks": [
       0,
@@ -2483,7 +2483,7 @@
       289,
       188,
       189,
-      84
+      125
     ],
     "rolling7DayAvg": [
       0,
@@ -2592,14 +2592,14 @@
       373.42857142857144,
       321.7142857142857,
       269.42857142857144,
-      219.28571428571428
+      225.14285714285714
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17221,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 3039,
-    "retentionPct": 17.647058823529413,
-    "liftVsPreSpike": 5.129446896909894,
+    "postSpikeAvg": 3059.5,
+    "retentionPct": 17.766099529644038,
+    "liftVsPreSpike": 5.164048299143079,
     "wowStarsPct": [
       null,
       null,
@@ -2616,7 +2616,7 @@
       4955.555555555556,
       136.5521978021978,
       -73.61941815225596,
-      -66.21175434734756
+      -65.30926700418226
     ],
     "wowPrsPct": [
       null,
@@ -2634,7 +2634,7 @@
       58.10055865921788,
       56.18374558303887,
       -31.221719457013574,
-      2.631578947368421
+      6.25
     ]
   },
   "pipeline": {
@@ -5560,7 +5560,7 @@
       },
       {
         "location": "Italy",
-        "count": 72
+        "count": 73
       },
       {
         "location": "Singapore",
@@ -5603,8 +5603,8 @@
         "count": 48
       },
       {
-        "location": "Berlin",
-        "count": 44
+        "location": "Vietnam",
+        "count": 45
       }
     ]
   }
