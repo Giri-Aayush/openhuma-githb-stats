@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-10T14:59:03.209Z",
+  "generatedAt": "2026-06-10T20:17:27.885Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 2261,
-    "stars": 31682,
-    "forks": 3182,
+    "prs": 2264,
+    "stars": 31715,
+    "forks": 3185,
     "uniqueContributors": 128,
     "externalContributors": 123,
     "externalPrAuthors": 151,
     "issuesNonPr": 1197,
     "externalIssueAuthors": 189,
     "weeks": 17,
-    "stargazersWithCompany": 5207,
+    "stargazersWithCompany": 5214,
     "tier1Stargazers": 309
   },
   "forkBreakdown": {
-    "total": 3182,
+    "total": 3185,
     "contributing": 151,
     "standalone": 78,
-    "driveBy": 2953,
+    "driveBy": 2956,
     "samples": {
       "contributing": [
         {
@@ -287,7 +287,7 @@
       442,
       304,
       336,
-      134
+      137
     ],
     "prsExternal": [
       0,
@@ -306,7 +306,7 @@
       329,
       184,
       197,
-      71
+      73
     ],
     "prsFounders": [
       0,
@@ -325,7 +325,7 @@
       113,
       120,
       139,
-      63
+      64
     ],
     "stars": [
       0,
@@ -344,7 +344,7 @@
       17215,
       4529,
       1630,
-      606
+      639
     ],
     "newContributors": [
       0,
@@ -401,7 +401,7 @@
       1629,
       540,
       231,
-      92
+      95
     ],
     "goodForks": [
       0,
@@ -537,7 +537,7 @@
       9,
       21,
       26,
-      16
+      19
     ],
     "prsExternal": [
       0,
@@ -652,7 +652,7 @@
       5,
       18,
       13,
-      7
+      9
     ],
     "prsFounders": [
       0,
@@ -767,7 +767,7 @@
       4,
       3,
       13,
-      9
+      10
     ],
     "stars": [
       0,
@@ -882,7 +882,7 @@
       95,
       133,
       88,
-      69
+      102
     ],
     "newContributors": [
       0,
@@ -1227,7 +1227,7 @@
       16,
       21,
       9,
-      7
+      10
     ],
     "goodForks": [
       0,
@@ -1363,7 +1363,7 @@
       1487,
       1791,
       2127,
-      2261
+      2264
     ],
     "stars": [
       0,
@@ -1382,7 +1382,7 @@
       24917,
       29446,
       31076,
-      31682
+      31715
     ],
     "contributors": [
       0,
@@ -1439,7 +1439,7 @@
       2319,
       2859,
       3090,
-      3182
+      3185
     ],
     "goodForks": [
       0,
@@ -1575,7 +1575,7 @@
       2198,
       2219,
       2245,
-      2261
+      2264
     ],
     "prsExternal": [
       0,
@@ -1690,7 +1690,7 @@
       1205,
       1223,
       1236,
-      1243
+      1245
     ],
     "prsFounders": [
       0,
@@ -1805,7 +1805,7 @@
       993,
       996,
       1009,
-      1018
+      1019
     ],
     "stars": [
       0,
@@ -1920,7 +1920,7 @@
       31392,
       31525,
       31613,
-      31682
+      31715
     ],
     "newContributors": [
       0,
@@ -2265,7 +2265,7 @@
       3145,
       3166,
       3175,
-      3182
+      3185
     ],
     "goodForks": [
       0,
@@ -2612,7 +2612,7 @@
       95,
       133,
       88,
-      69
+      102
     ],
     "rolling7DayAvg": [
       0,
@@ -2727,14 +2727,14 @@
       165.85714285714286,
       143.71428571428572,
       129.57142857142858,
-      112.42857142857143
+      117.14285714285714
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17215,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 2255,
-    "retentionPct": 13.099041533546327,
-    "liftVsPreSpike": 3.8061542456504807,
+    "postSpikeAvg": 2266,
+    "retentionPct": 13.162939297124602,
+    "liftVsPreSpike": 3.8247208517268243,
     "wowStarsPct": [
       null,
       null,
@@ -2752,7 +2752,7 @@
       136.46978021978023,
       -73.69154806854488,
       -64.00971516891147,
-      -62.82208588957056
+      -60.79754601226994
     ],
     "wowPrsPct": [
       null,
@@ -2771,7 +2771,7 @@
       56.18374558303887,
       -31.221719457013574,
       10.526315789473683,
-      -60.11904761904761
+      -59.226190476190474
     ]
   },
   "pipeline": {
@@ -5731,7 +5731,7 @@
       },
       {
         "location": "United States",
-        "count": 62
+        "count": 63
       },
       {
         "location": "London",
@@ -5747,7 +5747,7 @@
       },
       {
         "location": "Bangalore",
-        "count": 51
+        "count": 52
       },
       {
         "location": "Shanghai, China",
