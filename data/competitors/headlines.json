@@ -1,32 +1,32 @@
 [
   {
     "full_name": "openclaw/openclaw",
-    "stargazers_count": 378100,
-    "forks_count": 79066,
-    "subscribers_count": 1808,
-    "open_issues_count": 8028,
+    "stargazers_count": 378170,
+    "forks_count": 79089,
+    "subscribers_count": 1811,
+    "open_issues_count": 8015,
     "created_at": "2025-11-24T10:16:47Z",
-    "pushed_at": "2026-06-11T10:06:40Z",
+    "pushed_at": "2026-06-11T15:26:20Z",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
   },
   {
     "full_name": "NousResearch/hermes-agent",
-    "stargazers_count": 190466,
-    "forks_count": 33031,
-    "subscribers_count": 746,
-    "open_issues_count": 19915,
+    "stargazers_count": 190733,
+    "forks_count": 33090,
+    "subscribers_count": 749,
+    "open_issues_count": 19902,
     "created_at": "2025-07-22T22:22:28Z",
-    "pushed_at": "2026-06-11T10:04:35Z",
+    "pushed_at": "2026-06-11T15:25:45Z",
     "description": "The agent that grows with you"
   },
   {
     "full_name": "tinyhumansai/openhuman",
-    "stargazers_count": 31465,
-    "forks_count": 3062,
+    "stargazers_count": 31504,
+    "forks_count": 3065,
     "subscribers_count": 164,
-    "open_issues_count": 144,
+    "open_issues_count": 145,
     "created_at": "2026-02-18T20:01:27Z",
-    "pushed_at": "2026-06-11T09:41:40Z",
+    "pushed_at": "2026-06-11T13:34:30Z",
     "description": "Your Personal AI super intelligence. Private, Simple and extremely powerful."
   }
 ]
