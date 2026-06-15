@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-15T17:02:48.710Z",
+  "generatedAt": "2026-06-15T20:50:36.210Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 2342,
-    "stars": 32634,
-    "forks": 3255,
+    "prs": 2344,
+    "stars": 32655,
+    "forks": 3257,
     "uniqueContributors": 129,
     "externalContributors": 124,
     "externalPrAuthors": 158,
-    "issuesNonPr": 1220,
+    "issuesNonPr": 1221,
     "externalIssueAuthors": 191,
     "weeks": 18,
-    "stargazersWithCompany": 5333,
+    "stargazersWithCompany": 5335,
     "tier1Stargazers": 314
   },
   "forkBreakdown": {
-    "total": 3255,
+    "total": 3257,
     "contributing": 158,
-    "standalone": 84,
-    "driveBy": 3013,
+    "standalone": 85,
+    "driveBy": 3014,
     "samples": {
       "contributing": [
         {
@@ -294,7 +294,7 @@
       304,
       336,
       150,
-      65
+      67
     ],
     "prsExternal": [
       0,
@@ -314,7 +314,7 @@
       184,
       197,
       82,
-      47
+      49
     ],
     "prsFounders": [
       0,
@@ -354,7 +354,7 @@
       4524,
       1626,
       847,
-      723
+      744
     ],
     "newContributors": [
       0,
@@ -414,7 +414,7 @@
       539,
       229,
       111,
-      58
+      60
     ],
     "goodForks": [
       0,
@@ -556,7 +556,7 @@
       27,
       14,
       15,
-      9
+      11
     ],
     "prsExternal": [
       0,
@@ -676,7 +676,7 @@
       16,
       10,
       12,
-      9
+      11
     ],
     "prsFounders": [
       0,
@@ -916,7 +916,7 @@
       223,
       183,
       188,
-      129
+      150
     ],
     "newContributors": [
       0,
@@ -1276,7 +1276,7 @@
       9,
       18,
       21,
-      10
+      12
     ],
     "goodForks": [
       0,
@@ -1418,7 +1418,7 @@
       1791,
       2127,
       2277,
-      2342
+      2344
     ],
     "stars": [
       0,
@@ -1438,7 +1438,7 @@
       29438,
       31064,
       31911,
-      32634
+      32655
     ],
     "contributors": [
       0,
@@ -1498,7 +1498,7 @@
       2857,
       3086,
       3197,
-      3255
+      3257
     ],
     "goodForks": [
       0,
@@ -1640,7 +1640,7 @@
       2304,
       2318,
       2333,
-      2342
+      2344
     ],
     "prsExternal": [
       0,
@@ -1760,7 +1760,7 @@
       1270,
       1280,
       1292,
-      1301
+      1303
     ],
     "prsFounders": [
       0,
@@ -2000,7 +2000,7 @@
       32134,
       32317,
       32505,
-      32634
+      32655
     ],
     "newContributors": [
       0,
@@ -2360,7 +2360,7 @@
       3206,
       3224,
       3245,
-      3255
+      3257
     ],
     "goodForks": [
       0,
@@ -2722,7 +2722,7 @@
       223,
       183,
       188,
-      129
+      150
     ],
     "rolling7DayAvg": [
       0,
@@ -2842,14 +2842,14 @@
       133.42857142857142,
       147.57142857142858,
       161,
-      160.42857142857142
+      163.42857142857142
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17212,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1930,
-    "retentionPct": 11.213107134557285,
-    "liftVsPreSpike": 3.257595429758504,
+    "postSpikeAvg": 1935.25,
+    "retentionPct": 11.243609109923309,
+    "liftVsPreSpike": 3.2664567644767595,
     "wowStarsPct": [
       null,
       null,
@@ -2868,7 +2868,7 @@
       -73.71601208459214,
       -64.05835543766578,
       -47.9089790897909,
-      -14.639905548996456
+      -12.160566706021251
     ],
     "wowPrsPct": [
       null,
@@ -2888,7 +2888,7 @@
       -31.221719457013574,
       10.526315789473683,
       -55.35714285714286,
-      -56.666666666666664
+      -55.333333333333336
     ]
   },
   "pipeline": {
@@ -5857,7 +5857,7 @@
       },
       {
         "location": "Germany",
-        "count": 111
+        "count": 112
       },
       {
         "location": "Shanghai",
