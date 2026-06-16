@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-16T10:59:35.922Z",
+  "generatedAt": "2026-06-16T16:29:51.700Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -10,23 +10,23 @@
     "CodeGhost21"
   ],
   "totals": {
-    "prs": 2353,
-    "stars": 32770,
-    "forks": 3265,
+    "prs": 2359,
+    "stars": 32808,
+    "forks": 3270,
     "uniqueContributors": 133,
     "externalContributors": 128,
     "externalPrAuthors": 158,
-    "issuesNonPr": 1225,
-    "externalIssueAuthors": 191,
+    "issuesNonPr": 1236,
+    "externalIssueAuthors": 192,
     "weeks": 18,
-    "stargazersWithCompany": 5349,
+    "stargazersWithCompany": 5355,
     "tier1Stargazers": 317
   },
   "forkBreakdown": {
-    "total": 3265,
+    "total": 3270,
     "contributing": 158,
-    "standalone": 85,
-    "driveBy": 3022,
+    "standalone": 84,
+    "driveBy": 3028,
     "samples": {
       "contributing": [
         {
@@ -295,7 +295,7 @@
       304,
       336,
       150,
-      76
+      82
     ],
     "prsExternal": [
       0,
@@ -315,7 +315,7 @@
       184,
       197,
       82,
-      58
+      64
     ],
     "prsFounders": [
       0,
@@ -355,7 +355,7 @@
       4522,
       1626,
       845,
-      863
+      901
     ],
     "newContributors": [
       0,
@@ -415,7 +415,7 @@
       539,
       229,
       111,
-      68
+      73
     ],
     "goodForks": [
       0,
@@ -558,7 +558,7 @@
       14,
       15,
       15,
-      5
+      11
     ],
     "prsExternal": [
       0,
@@ -679,7 +679,7 @@
       10,
       12,
       15,
-      5
+      11
     ],
     "prsFounders": [
       0,
@@ -921,7 +921,7 @@
       183,
       188,
       164,
-      105
+      143
     ],
     "newContributors": [
       0,
@@ -1284,7 +1284,7 @@
       18,
       21,
       13,
-      7
+      12
     ],
     "goodForks": [
       0,
@@ -1427,7 +1427,7 @@
       1791,
       2127,
       2277,
-      2353
+      2359
     ],
     "stars": [
       0,
@@ -1447,7 +1447,7 @@
       29436,
       31062,
       31907,
-      32770
+      32808
     ],
     "contributors": [
       0,
@@ -1507,7 +1507,7 @@
       2857,
       3086,
       3197,
-      3265
+      3270
     ],
     "goodForks": [
       0,
@@ -1650,7 +1650,7 @@
       2318,
       2333,
       2348,
-      2353
+      2359
     ],
     "prsExternal": [
       0,
@@ -1771,7 +1771,7 @@
       1280,
       1292,
       1307,
-      1312
+      1318
     ],
     "prsFounders": [
       0,
@@ -2013,7 +2013,7 @@
       32313,
       32501,
       32665,
-      32770
+      32808
     ],
     "newContributors": [
       0,
@@ -2376,7 +2376,7 @@
       3224,
       3245,
       3258,
-      3265
+      3270
     ],
     "goodForks": [
       0,
@@ -2741,7 +2741,7 @@
       183,
       188,
       164,
-      105
+      143
     ],
     "rolling7DayAvg": [
       0,
@@ -2862,14 +2862,14 @@
       147.42857142857142,
       160.85714285714286,
       165.28571428571428,
-      167.71428571428572
+      173.14285714285714
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17212,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1964,
-    "retentionPct": 11.410643736927724,
-    "liftVsPreSpike": 3.314983121267203,
+    "postSpikeAvg": 1973.5,
+    "retentionPct": 11.465837787590054,
+    "liftVsPreSpike": 3.3310179174240457,
     "wowStarsPct": [
       null,
       null,
@@ -2888,7 +2888,7 @@
       -73.72763188473158,
       -64.04245908889872,
       -48.031980319803196,
-      2.130177514792899
+      6.627218934911243
     ],
     "wowPrsPct": [
       null,
@@ -2908,7 +2908,7 @@
       -31.221719457013574,
       10.526315789473683,
       -55.35714285714286,
-      -49.333333333333336
+      -45.33333333333333
     ]
   },
   "pipeline": {
@@ -5943,12 +5943,12 @@
         "count": 65
       },
       {
-        "location": "beijing",
+        "location": "United States",
         "count": 64
       },
       {
-        "location": "United States",
-        "count": 63
+        "location": "beijing",
+        "count": 64
       },
       {
         "location": "Taiwan",
