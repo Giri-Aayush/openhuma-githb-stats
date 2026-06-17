@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T20:43:56.475Z",
+  "generatedAt": "2026-06-17T02:50:03.283Z",
   "repos": [
     {
       "fullName": "tinyhumansai/openhuman",
@@ -7,20 +7,20 @@
       "createdAt": "2026-02-18T20:01:27Z",
       "ageDays": 118,
       "current": {
-        "stars": 32421,
-        "forks": 3135,
+        "stars": 32455,
+        "forks": 3137,
         "watchers": 170,
-        "openIssues": 142
+        "openIssues": 147
       },
       "velocity": {
-        "lifetime": 274.7542372881356,
-        "last30Days": 666.6,
-        "forkRatio": 0.0966965855464051
+        "lifetime": 275.04237288135596,
+        "last30Days": 640.1,
+        "forkRatio": 0.0966569095670929
       },
       "history": {
         "dataReady": true,
-        "starsCollected": 32839,
-        "starsExpected": 32421,
+        "starsCollected": 32874,
+        "starsExpected": 32455,
         "calendar": {
           "weeks": [
             "2026-03-13",
@@ -52,7 +52,7 @@
             4522,
             1626,
             845,
-            932
+            967
           ],
           "cumulative": [
             13,
@@ -68,7 +68,7 @@
             29436,
             31062,
             31907,
-            32839
+            32874
           ]
         },
         "sinceGenesis": {
@@ -110,7 +110,7 @@
             4522,
             1626,
             845,
-            932
+            967
           ],
           "cumulative": [
             0,
@@ -130,7 +130,7 @@
             29436,
             31062,
             31907,
-            32839
+            32874
           ]
         }
       },
@@ -139,31 +139,31 @@
           "weekIso": "2026-05-15",
           "stars": 17212,
           "weeksSinceGenesis": 13,
-          "pctOfTotal": 53.08904722247926
+          "pctOfTotal": 53.03343090432907
         },
         {
           "weekIso": "2026-05-08",
           "stars": 7280,
           "weeksSinceGenesis": 12,
-          "pctOfTotal": 22.45458190678881
+          "pctOfTotal": 22.431058388537974
         },
         {
           "weekIso": "2026-05-22",
           "stars": 4522,
           "weeksSinceGenesis": 14,
-          "pctOfTotal": 13.947749915178434
+          "pctOfTotal": 13.933138191341857
         },
         {
           "weekIso": "2026-05-29",
           "stars": 1626,
           "weeksSinceGenesis": 15,
-          "pctOfTotal": 5.01526788192838
+          "pctOfTotal": 5.010013865352026
         },
         {
           "weekIso": "2026-06-12",
-          "stars": 932,
+          "stars": 967,
           "weeksSinceGenesis": 17,
-          "pctOfTotal": 2.8746799913636223
+          "pctOfTotal": 2.9795100908950856
         }
       ]
     },
@@ -173,20 +173,20 @@
       "createdAt": "2025-11-24T10:16:47Z",
       "ageDays": 204,
       "current": {
-        "stars": 379037,
-        "forks": 79329,
-        "watchers": 1814,
-        "openIssues": 6218
+        "stars": 379067,
+        "forks": 79331,
+        "watchers": 1813,
+        "openIssues": 6224
       },
       "velocity": {
-        "lifetime": 1858.0245098039215,
-        "last30Days": 314.3333333333333,
-        "forkRatio": 0.20929091355197513
+        "lifetime": 1858.171568627451,
+        "last30Days": 312.8666666666667,
+        "forkRatio": 0.20927962602917163
       },
       "history": {
         "dataReady": true,
-        "starsCollected": 381734,
-        "starsExpected": 379037,
+        "starsCollected": 381780,
+        "starsExpected": 379067,
         "calendar": {
           "weeks": [
             "2025-11-21",
@@ -250,7 +250,7 @@
             2333,
             2294,
             1954,
-            1197
+            1243
           ],
           "cumulative": [
             141,
@@ -282,7 +282,7 @@
             376289,
             378583,
             380537,
-            381734
+            381780
           ]
         },
         "sinceGenesis": {
@@ -348,7 +348,7 @@
             2333,
             2294,
             1954,
-            1197
+            1243
           ],
           "cumulative": [
             141,
@@ -380,7 +380,7 @@
             376289,
             378583,
             380537,
-            381734
+            381780
           ]
         }
       },
@@ -389,31 +389,31 @@
           "weekIso": "2026-01-23",
           "stars": 92387,
           "weeksSinceGenesis": 9,
-          "pctOfTotal": 24.374137617171936
+          "pctOfTotal": 24.37220860692173
         },
         {
           "weekIso": "2026-01-30",
           "stars": 62564,
           "weeksSinceGenesis": 10,
-          "pctOfTotal": 16.506040307410622
+          "pctOfTotal": 16.50473399161626
         },
         {
           "weekIso": "2026-03-06",
           "stars": 42275,
           "weeksSinceGenesis": 15,
-          "pctOfTotal": 11.153264720858386
+          "pctOfTotal": 11.152382032727724
         },
         {
           "weekIso": "2026-02-27",
           "stars": 32524,
           "weeksSinceGenesis": 14,
-          "pctOfTotal": 8.58069265005791
+          "pctOfTotal": 8.580013559608195
         },
         {
           "weekIso": "2026-02-13",
           "stars": 22760,
           "weeksSinceGenesis": 12,
-          "pctOfTotal": 6.004690834931682
+          "pctOfTotal": 6.004215613598651
         }
       ]
     },
@@ -421,22 +421,22 @@
       "fullName": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "createdAt": "2025-07-22T22:22:28Z",
-      "ageDays": 328,
+      "ageDays": 329,
       "current": {
-        "stars": 195267,
-        "forks": 34283,
-        "watchers": 773,
-        "openIssues": 21153
+        "stars": 195448,
+        "forks": 34331,
+        "watchers": 772,
+        "openIssues": 21264
       },
       "velocity": {
-        "lifetime": 595.3262195121952,
-        "last30Days": 1402.2,
-        "forkRatio": 0.17556986075476144
+        "lifetime": 594.0668693009119,
+        "last30Days": 1396.1666666666667,
+        "forkRatio": 0.17565285907248987
       },
       "history": {
         "dataReady": true,
-        "starsCollected": 196571,
-        "starsExpected": 195267,
+        "starsCollected": 196761,
+        "starsExpected": 195448,
         "calendar": {
           "weeks": [
             "2025-08-29",
@@ -478,7 +478,7 @@
             10426,
             9750,
             10363,
-            4478
+            4668
           ],
           "cumulative": [
             1,
@@ -499,7 +499,7 @@
             171980,
             181730,
             192093,
-            196571
+            196761
           ]
         },
         "sinceGenesis": {
@@ -601,7 +601,7 @@
             10426,
             9750,
             10363,
-            4478
+            4668
           ],
           "cumulative": [
             0,
@@ -651,7 +651,7 @@
             171980,
             181730,
             192093,
-            196571
+            196761
           ]
         }
       },
@@ -660,31 +660,31 @@
           "weekIso": "2026-04-10",
           "stars": 49051,
           "weeksSinceGenesis": 38,
-          "pctOfTotal": 25.11996394680105
+          "pctOfTotal": 25.096700912774754
         },
         {
           "weekIso": "2026-04-03",
           "stars": 21188,
           "weeksSinceGenesis": 37,
-          "pctOfTotal": 10.85078379859372
+          "pctOfTotal": 10.840735131595105
         },
         {
           "weekIso": "2026-04-17",
           "stars": 19707,
           "weeksSinceGenesis": 39,
-          "pctOfTotal": 10.092335110387316
+          "pctOfTotal": 10.0829888256723
         },
         {
           "weekIso": "2026-04-24",
           "stars": 13885,
           "weeksSinceGenesis": 40,
-          "pctOfTotal": 7.110776526499614
+          "pctOfTotal": 7.104191396176988
         },
         {
           "weekIso": "2026-05-08",
           "stars": 13054,
           "weeksSinceGenesis": 42,
-          "pctOfTotal": 6.685205385446594
+          "pctOfTotal": 6.679014366992756
         }
       ]
     }
