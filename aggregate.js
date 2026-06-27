@@ -249,6 +249,41 @@ const onlyIssues = issuesAndPrs.filter(i => !i.is_pr);
 const issueAuthorLogins = new Set(onlyIssues.map(i => i.user).filter(Boolean));
 const externalIssueAuthors = [...issueAuthorLogins].filter(l => !FOUNDERS.has(l));
 
+// --- DevRel weekly team report -----------------------------------
+// The handful of numbers reported to the team each week. Each metric carries
+// its cumulative total plus the latest-week delta so whichever the team logs
+// (running total or weekly net) is visible at a glance.
+const lastWeek = weeks[weeks.length - 1];
+
+// tiny.place is tracked via the competitor pipeline (stars only). Read its
+// current cumulative count from the fresh headlines, and the weekly delta from
+// the star history if it has been backfilled. Gracefully degrade if missing.
+function tinyPlaceSnapshot() {
+  const repo = 'tinyhumansai/tiny.place';
+  let stars = null, weekDelta = null;
+  try {
+    const headlines = JSON.parse(fs.readFileSync('data/competitors/headlines.json', 'utf8'));
+    const tp = headlines.find(h => h.full_name === repo);
+    if (tp) stars = tp.stargazers_count;
+  } catch { /* headlines not generated yet */ }
+  try {
+    const tpStars = readJsonl('data/competitors/tinyhumansai_tiny.place_stars.jsonl');
+    if (stars == null) stars = tpStars.length;
+    weekDelta = tpStars.filter(s => s.starredAt && weekKey(s.starredAt) === lastWeek).length;
+  } catch { /* star history not backfilled yet */ }
+  return { repo, url: `https://github.com/${repo}`, stars, weekDelta };
+}
+
+const externalPrsTotal = weeks.reduce((a, w) => a + prsByWeekExternal[w], 0);
+const devrel = {
+  weekStart: lastWeek,
+  stars:                { total: stars.length,            weekDelta: starByWeek[lastWeek] || 0 },
+  externalContributors: { total: Object.keys(firstSeenWeek).filter(l => !FOUNDERS.has(l) && !l.includes('[bot]')).length,
+                          weekNew: newExternalContribByWeek[lastWeek] || 0 },
+  contributorPRs:       { total: externalPrsTotal,        weekNew: prsByWeekExternal[lastWeek] || 0 },
+  tinyPlace:            tinyPlaceSnapshot(),
+};
+
 // --- build output -------------------------------------------------
 const out = {
   repo: 'tinyhumansai/openhuman',
@@ -256,6 +291,7 @@ const out = {
   genesisCode: GENESIS_CODE,
   generatedAt: new Date().toISOString(),
   founders: [...FOUNDERS],
+  devrel,
   totals: {
     prs: prs.length,
     stars: stars.length,
@@ -338,6 +374,7 @@ const out = {
 
 fs.writeFileSync('data/metrics.json', JSON.stringify(out, null, 2));
 console.log('Wrote data/metrics.json');
+console.log('DevRel weekly report:', JSON.stringify(out.devrel));
 console.log('Totals:', out.totals);
 console.log('Forks:', out.forkBreakdown);
 console.log('Tier-1 stargazers:', out.pipeline.tier1Stargazers.length);

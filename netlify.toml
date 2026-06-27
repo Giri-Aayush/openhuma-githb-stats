@@ -1,0 +1,8 @@
+# Static dashboard published from the repo root. GitHub Actions commits fresh
+# index.html / data on each refresh, and Netlify auto-deploys on push to main.
+# The "Sync now" button calls the function below to trigger a refresh on demand.
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"

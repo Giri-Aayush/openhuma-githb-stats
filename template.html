@@ -101,6 +101,26 @@
   .legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); margin-top: 8px; }
   .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
 
+  .btn {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 7px 14px; font-size: 13px; font-weight: 500; cursor: pointer;
+  }
+  .btn:hover { background: #2a3242; }
+  .btn:active { transform: translateY(1px); }
+  .btn[disabled] { opacity: .55; cursor: default; }
+  .btn.ok { border-color: var(--good); color: var(--good); }
+  .sync-btn { margin-top: 8px; width: 100%; }
+
+  .devrel {
+    background: linear-gradient(180deg, #171c27, #12161f);
+    border: 1px solid #2c3548; border-radius: 14px; padding: 18px 18px 20px;
+  }
+  .devrel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .devrel-title { font-size: 15px; font-weight: 600; color: var(--text); }
+  .devrel-sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .devrel .grid { gap: 14px; }
+  .devrel .kpi .value { font-size: 30px; }
+
   footer { margin-top: 32px; color: var(--muted); font-size: 12px; }
   @media (max-width: 1000px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
@@ -125,9 +145,27 @@
     <div class="freshness">
       <div class="line1"><span class="fresh-dot" id="freshDot"></span>Updated <span id="freshAgo" title=""></span></div>
       <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 6h</div>
+      <button class="btn sync-btn" id="syncBtn">⟳ Sync now</button>
     </div>
   </div>
 </header>
+
+<!-- ============================================================== -->
+<section class="devrel">
+  <div class="devrel-head">
+    <div>
+      <div class="devrel-title">DevRel — weekly team report</div>
+      <div class="devrel-sub">The numbers reported to the team each week · week of <span id="drWeek">—</span></div>
+    </div>
+    <button class="btn" id="copyBtn">Copy weekly numbers</button>
+  </div>
+  <div class="grid">
+    <div class="card kpi good"><div class="label">GitHub Stars (cumulative)</div><div class="value" id="drStars">–</div><div class="hint" id="drStarsHint"></div></div>
+    <div class="card kpi info"><div class="label">External Contributors</div><div class="value" id="drContrib">–</div><div class="hint" id="drContribHint"></div></div>
+    <div class="card kpi info"><div class="label">Contributor PRs (external)</div><div class="value" id="drPRs">–</div><div class="hint" id="drPRsHint"></div></div>
+    <div class="card kpi warn"><div class="label">Tiny.Place Stars (cumulative)</div><div class="value" id="drTinyPlace">–</div><div class="hint" id="drTinyPlaceHint"></div></div>
+  </div>
+</section>
 
 <!-- ============================================================== -->
 <h2 class="section">Top-line</h2>
@@ -311,6 +349,68 @@ document.getElementById('kpiForkRatio').textContent = `${pct(goodForkPct)} contr
 document.getElementById('kpiGoodForks').textContent = fmt(DATA.forkBreakdown.contributing);
 document.getElementById('kpiExtContrib').textContent= fmt(DATA.totals.externalContributors);
 document.getElementById('kpiExtIssue').textContent  = fmt(DATA.totals.externalIssueAuthors);
+
+// ===== DevRel weekly team report =====
+{
+  const d = DATA.devrel || {};
+  const sign = n => (n == null ? '' : (n >= 0 ? '+' : '') + fmt(n));
+  document.getElementById('drWeek').textContent = d.weekStart || '—';
+
+  document.getElementById('drStars').textContent       = fmt(d.stars.total);
+  document.getElementById('drStarsHint').textContent   = `${sign(d.stars.weekDelta)} this week`;
+  document.getElementById('drContrib').textContent     = fmt(d.externalContributors.total);
+  document.getElementById('drContribHint').textContent = `${sign(d.externalContributors.weekNew)} new this week`;
+  document.getElementById('drPRs').textContent         = fmt(d.contributorPRs.total);
+  document.getElementById('drPRsHint').textContent     = `${sign(d.contributorPRs.weekNew)} this week`;
+
+  const tp = d.tinyPlace || {};
+  document.getElementById('drTinyPlace').textContent   = tp.stars == null ? '—' : fmt(tp.stars);
+  document.getElementById('drTinyPlaceHint').textContent = tp.weekDelta == null
+    ? 'tinyhumansai/tiny.place' : `${sign(tp.weekDelta)} this week`;
+
+  // Copy a clean text block for pasting into the weekly team update.
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.addEventListener('click', async () => {
+    const lines = [
+      `DevRel weekly — week of ${d.weekStart}`,
+      `GitHub Stars (cumulative): ${fmt(d.stars.total)} (${sign(d.stars.weekDelta)} this week)`,
+      `External Contributors: ${fmt(d.externalContributors.total)} (${sign(d.externalContributors.weekNew)} new this week)`,
+      `Contributor PRs (external): ${fmt(d.contributorPRs.total)} (${sign(d.contributorPRs.weekNew)} this week)`,
+      `Tiny.Place Stars (cumulative): ${tp.stars == null ? 'n/a' : fmt(tp.stars)}${tp.weekDelta == null ? '' : ` (${sign(tp.weekDelta)} this week)`}`,
+    ];
+    try {
+      await navigator.clipboard.writeText(lines.join('\n'));
+      copyBtn.textContent = '✓ Copied'; copyBtn.classList.add('ok');
+      setTimeout(() => { copyBtn.textContent = 'Copy weekly numbers'; copyBtn.classList.remove('ok'); }, 2000);
+    } catch { copyBtn.textContent = 'Copy failed'; }
+  });
+}
+
+// ===== Sync now: trigger an on-demand refresh via the Netlify function =====
+{
+  const btn = document.getElementById('syncBtn');
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    btn.textContent = '⟳ Syncing…';
+    try {
+      const res = await fetch('/.netlify/functions/sync', { method: 'POST' });
+      if (res.ok) {
+        btn.textContent = '✓ Sync started'; btn.classList.add('ok');
+        // CI refresh runs ~2–4 min then redeploys; reload to pick up fresh data.
+        setTimeout(() => location.reload(), 4 * 60 * 1000);
+      } else {
+        const t = await res.text().catch(() => '');
+        console.error('sync failed', res.status, t);
+        btn.textContent = res.status === 404 ? '✗ Not configured' : '✗ Failed';
+        setTimeout(() => { btn.textContent = '⟳ Sync now'; btn.disabled = false; }, 5000);
+      }
+    } catch (e) {
+      console.error('sync error', e);
+      btn.textContent = '✗ Error';
+      setTimeout(() => { btn.textContent = '⟳ Sync now'; btn.disabled = false; }, 5000);
+    }
+  });
+}
 
 // ===== palette =====
 const C = {

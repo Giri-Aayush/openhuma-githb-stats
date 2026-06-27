@@ -9,6 +9,27 @@
     "M3gA-Mind",
     "CodeGhost21"
   ],
+  "devrel": {
+    "weekStart": "2026-06-26",
+    "stars": {
+      "total": 33651,
+      "weekDelta": 209
+    },
+    "externalContributors": {
+      "total": 136,
+      "weekNew": 0
+    },
+    "contributorPRs": {
+      "total": 1468,
+      "weekNew": 18
+    },
+    "tinyPlace": {
+      "repo": "tinyhumansai/tiny.place",
+      "url": "https://github.com/tinyhumansai/tiny.place",
+      "stars": 377,
+      "weekDelta": 2
+    }
+  },
   "totals": {
     "prs": 2652,
     "stars": 33651,

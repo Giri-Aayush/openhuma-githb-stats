@@ -27,6 +27,7 @@ mkdir -p data/competitors
   gh api repos/openclaw/openclaw 2>/dev/null              | jq '{full_name, stargazers_count, forks_count, subscribers_count, open_issues_count, created_at, pushed_at, description}'
   gh api repos/NousResearch/hermes-agent 2>/dev/null      | jq '{full_name, stargazers_count, forks_count, subscribers_count, open_issues_count, created_at, pushed_at, description}'
   gh api repos/tinyhumansai/openhuman 2>/dev/null         | jq '{full_name, stargazers_count, forks_count, subscribers_count, open_issues_count, created_at, pushed_at, description}'
+  gh api repos/tinyhumansai/tiny.place 2>/dev/null        | jq '{full_name, stargazers_count, forks_count, subscribers_count, open_issues_count, created_at, pushed_at, description}'
 } | node -e "
 const chunks = require('fs').readFileSync(0, 'utf8').split(/\n(?=\{)/).filter(s => s.trim());
 require('fs').writeFileSync('data/competitors/headlines.json', JSON.stringify(chunks.map(JSON.parse), null, 2));
@@ -36,6 +37,7 @@ echo "--- incremental competitor star refresh" | tee -a "$LOG"
 node fetch_competitor_stars_incremental.js openclaw openclaw       | tee -a "$LOG" || echo "openclaw incremental skipped"
 node fetch_competitor_stars_incremental.js NousResearch hermes-agent | tee -a "$LOG" || echo "hermes incremental skipped"
 node fetch_competitor_stars_incremental.js tinyhumansai openhuman    | tee -a "$LOG" || echo "openhuman incremental skipped"
+node fetch_competitor_stars_incremental.js tinyhumansai tiny.place   | tee -a "$LOG" || echo "tiny.place incremental skipped"
 
 # 5. Aggregate + rebuild both pages.
 echo "--- aggregating metrics" | tee -a "$LOG"
