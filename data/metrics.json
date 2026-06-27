@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-27T09:55:52.399Z",
+  "generatedAt": "2026-06-27T10:01:53.215Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -20,8 +20,8 @@
       "weekNew": 0
     },
     "contributorPRs": {
-      "total": 1468,
-      "weekNew": 18
+      "total": 1469,
+      "weekNew": 19
     },
     "tinyPlace": {
       "repo": "tinyhumansai/tiny.place",
@@ -31,7 +31,7 @@
     }
   },
   "totals": {
-    "prs": 2652,
+    "prs": 2653,
     "stars": 33666,
     "forks": 3363,
     "uniqueContributors": 141,
@@ -331,7 +331,7 @@
       150,
       116,
       207,
-      52
+      53
     ],
     "prsExternal": [
       0,
@@ -353,7 +353,7 @@
       82,
       93,
       103,
-      18
+      19
     ],
     "prsFounders": [
       0,
@@ -619,7 +619,7 @@
       38,
       35,
       49,
-      3
+      4
     ],
     "prsExternal": [
       0,
@@ -751,7 +751,7 @@
       17,
       13,
       15,
-      3
+      4
     ],
     "prsFounders": [
       0,
@@ -1567,7 +1567,7 @@
       2277,
       2393,
       2600,
-      2652
+      2653
     ],
     "stars": [
       0,
@@ -1811,7 +1811,7 @@
       2565,
       2600,
       2649,
-      2652
+      2653
     ],
     "prsExternal": [
       0,
@@ -1943,7 +1943,7 @@
       1437,
       1450,
       1465,
-      1468
+      1469
     ],
     "prsFounders": [
       0,
@@ -3183,7 +3183,7 @@
       -55.35714285714286,
       -22.666666666666664,
       78.44827586206897,
-      -74.8792270531401
+      -74.39613526570048
     ]
   },
   "pipeline": {
