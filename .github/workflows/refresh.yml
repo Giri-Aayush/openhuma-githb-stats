@@ -2,7 +2,7 @@ name: Refresh dashboard
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours (00, 06, 12, 18 UTC)
+    - cron: '0 */3 * * *'   # every 3 hours (00, 03, 06, 09, 12, 15, 18, 21 UTC)
   workflow_dispatch: {}      # allow manual trigger from the Actions tab
   push:
     branches: [main]

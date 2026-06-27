@@ -144,7 +144,7 @@
     </div>
     <div class="freshness">
       <div class="line1"><span class="fresh-dot" id="freshDot"></span>Updated <span id="freshAgo" title=""></span></div>
-      <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 6h</div>
+      <div class="line2">Next refresh in <span id="countdown">—</span> · auto every 3h</div>
       <button class="btn sync-btn" id="syncBtn">⟳ Sync now</button>
     </div>
   </div>
@@ -6722,7 +6722,7 @@ function timeAgo(iso) {
 
 // Countdown to next CI refresh (cron: 00, 04, 08, 12, 16, 20 UTC)
 {
-  const CI_HOURS_UTC = [0, 6, 12, 18];
+  const CI_HOURS_UTC = [0, 3, 6, 9, 12, 15, 18, 21];
   const el = document.getElementById('countdown');
   function msToNextRun() {
     const now = new Date();
