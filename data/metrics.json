@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-28T13:13:16.803Z",
+  "generatedAt": "2026-06-28T16:06:34.971Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -12,16 +12,16 @@
   "devrel": {
     "weekStart": "2026-06-26",
     "stars": {
-      "total": 34045,
-      "weekDelta": 610
+      "total": 34097,
+      "weekDelta": 663
     },
     "externalContributors": {
       "total": 136,
       "weekNew": 0
     },
     "contributorPRs": {
-      "total": 1474,
-      "weekNew": 24
+      "total": 1476,
+      "weekNew": 26
     },
     "tinyPlace": {
       "repo": "tinyhumansai/tiny.place",
@@ -31,23 +31,23 @@
     }
   },
   "totals": {
-    "prs": 2658,
-    "stars": 34045,
-    "forks": 3407,
+    "prs": 2660,
+    "stars": 34097,
+    "forks": 3409,
     "uniqueContributors": 141,
     "externalContributors": 136,
     "externalPrAuthors": 168,
     "issuesNonPr": 1429,
     "externalIssueAuthors": 205,
     "weeks": 20,
-    "stargazersWithCompany": 5554,
-    "tier1Stargazers": 335
+    "stargazersWithCompany": 5563,
+    "tier1Stargazers": 338
   },
   "forkBreakdown": {
-    "total": 3407,
+    "total": 3409,
     "contributing": 167,
     "standalone": 92,
-    "driveBy": 3148,
+    "driveBy": 3150,
     "samples": {
       "contributing": [
         {
@@ -332,7 +332,7 @@
       150,
       116,
       207,
-      58
+      60
     ],
     "prsExternal": [
       0,
@@ -354,7 +354,7 @@
       82,
       93,
       103,
-      24
+      26
     ],
     "prsFounders": [
       0,
@@ -393,12 +393,12 @@
       144,
       7280,
       17205,
-      4503,
+      4502,
       1611,
       842,
       1142,
       430,
-      610
+      663
     ],
     "newContributors": [
       0,
@@ -464,7 +464,7 @@
       109,
       88,
       65,
-      66
+      68
     ],
     "goodForks": [
       0,
@@ -621,7 +621,7 @@
       35,
       49,
       6,
-      3
+      5
     ],
     "prsExternal": [
       0,
@@ -754,7 +754,7 @@
       13,
       15,
       6,
-      3
+      5
     ],
     "prsFounders": [
       0,
@@ -985,7 +985,7 @@
       1248,
       880,
       644,
-      803,
+      802,
       648,
       548,
       549,
@@ -1019,8 +1019,8 @@
       61,
       53,
       74,
-      350,
-      186
+      349,
+      240
     ],
     "newContributors": [
       0,
@@ -1419,7 +1419,7 @@
       9,
       4,
       42,
-      20
+      22
     ],
     "goodForks": [
       0,
@@ -1576,7 +1576,7 @@
       2277,
       2393,
       2600,
-      2658
+      2660
     ],
     "stars": [
       0,
@@ -1593,12 +1593,12 @@
       422,
       7702,
       24907,
-      29410,
-      31021,
-      31863,
-      33005,
-      33435,
-      34045
+      29409,
+      31020,
+      31862,
+      33004,
+      33434,
+      34097
     ],
     "contributors": [
       0,
@@ -1664,7 +1664,7 @@
       3188,
       3276,
       3341,
-      3407
+      3409
     ],
     "goodForks": [
       0,
@@ -1821,7 +1821,7 @@
       2600,
       2649,
       2655,
-      2658
+      2660
     ],
     "prsExternal": [
       0,
@@ -1954,7 +1954,7 @@
       1450,
       1465,
       1471,
-      1474
+      1476
     ],
     "prsFounders": [
       0,
@@ -2185,42 +2185,42 @@
       24907,
       25787,
       26431,
-      27234,
-      27882,
-      28430,
-      28979,
-      29410,
-      29692,
-      29936,
-      30188,
-      30473,
-      30657,
-      30841,
-      31021,
-      31156,
-      31239,
-      31333,
-      31466,
-      31553,
-      31676,
-      31863,
-      32084,
-      32266,
-      32451,
-      32612,
-      32803,
-      32922,
-      33005,
-      33068,
-      33137,
-      33175,
-      33244,
-      33321,
-      33382,
-      33435,
-      33509,
-      33859,
-      34045
+      27233,
+      27881,
+      28429,
+      28978,
+      29409,
+      29691,
+      29935,
+      30187,
+      30472,
+      30656,
+      30840,
+      31020,
+      31155,
+      31238,
+      31332,
+      31465,
+      31552,
+      31675,
+      31862,
+      32083,
+      32265,
+      32450,
+      32611,
+      32802,
+      32921,
+      33004,
+      33067,
+      33136,
+      33174,
+      33243,
+      33320,
+      33381,
+      33434,
+      33508,
+      33857,
+      34097
     ],
     "newContributors": [
       0,
@@ -2619,7 +2619,7 @@
       3341,
       3345,
       3387,
-      3407
+      3409
     ],
     "goodForks": [
       0,
@@ -2985,7 +2985,7 @@
       1248,
       880,
       644,
-      803,
+      802,
       648,
       548,
       549,
@@ -3019,8 +3019,8 @@
       61,
       53,
       74,
-      350,
-      186
+      349,
+      240
     ],
     "rolling7DayAvg": [
       0,
@@ -3118,13 +3118,13 @@
       2457.8571428571427,
       2398.5714285714284,
       2250.285714285714,
-      2019.4285714285713,
-      1535.857142857143,
-      1037,
-      760,
-      643.2857142857143,
-      557.8571428571429,
-      500.7142857142857,
+      2019.2857142857142,
+      1535.7142857142858,
+      1036.857142857143,
+      759.8571428571429,
+      643.1428571428571,
+      557.7142857142857,
+      500.57142857142856,
       422,
       370.14285714285717,
       318.14285714285717,
@@ -3152,15 +3152,15 @@
       65.71428571428571,
       61.42857142857143,
       63,
-      103.14285714285714,
-      124.28571428571429
+      103,
+      131.85714285714286
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17205,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1523,
-    "retentionPct": 8.852077884335948,
-    "liftVsPreSpike": 2.5706310049337833,
+    "postSpikeAvg": 1531.6666666666667,
+    "retentionPct": 8.90245083793471,
+    "liftVsPreSpike": 2.5852592400242362,
     "wowStarsPct": [
       null,
       null,
@@ -3176,12 +3176,12 @@
       -16.27906976744186,
       4955.555555555556,
       136.33241758241758,
-      -73.82737576285963,
-      -64.2238507661559,
+      -73.83318802673642,
+      -64.21590404264771,
       -47.73432650527623,
       35.62945368171022,
       -62.34676007005254,
-      41.86046511627907
+      54.18604651162791
     ],
     "wowPrsPct": [
       null,
@@ -3203,11 +3203,38 @@
       -55.35714285714286,
       -22.666666666666664,
       78.44827586206897,
-      -71.98067632850241
+      -71.01449275362319
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "SamLeatherdale",
+        "name": "Sam Leatherdale",
+        "company": "Atlassian",
+        "location": "Sydney, Australia",
+        "bio": "Software Engineer at @Atlassian by day, transport app developer by night.",
+        "starredAt": "2026-06-28T14:49:43Z",
+        "url": "https://github.com/SamLeatherdale"
+      },
+      {
+        "login": "samihoda",
+        "name": "Sami Hoda",
+        "company": "Amazon Web Services",
+        "location": null,
+        "bio": "Amazonian Sr. Solutions Architect, Public Sector - Former Life: Head, Product Management / Development – IT\r\nLeadership – Innovation Management",
+        "starredAt": "2026-06-28T14:27:04Z",
+        "url": "https://github.com/samihoda"
+      },
+      {
+        "login": "nimishbongale",
+        "name": "Nimish Bongale",
+        "company": "jpmorganchase",
+        "location": "Bangalore, India",
+        "bio": "Senior AI Engineer @jpmorganchase | GSoC @cern • GSoD @creativecommons",
+        "starredAt": "2026-06-28T14:19:57Z",
+        "url": "https://github.com/nimishbongale"
+      },
       {
         "login": "skochy",
         "name": "Samuel Koch",
@@ -6349,7 +6376,7 @@
     "topLocations": [
       {
         "location": "China",
-        "count": 261
+        "count": 262
       },
       {
         "location": "India",
@@ -6381,7 +6408,7 @@
       },
       {
         "location": "Singapore",
-        "count": 75
+        "count": 76
       },
       {
         "location": "Brazil",
@@ -6389,7 +6416,7 @@
       },
       {
         "location": "Indonesia",
-        "count": 70
+        "count": 71
       },
       {
         "location": "London",
