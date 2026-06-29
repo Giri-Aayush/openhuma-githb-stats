@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-06-29T02:10:34.184Z",
+  "generatedAt": "2026-06-29T07:25:27.009Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -12,42 +12,42 @@
   "devrel": {
     "weekStart": "2026-06-26",
     "stars": {
-      "total": 34209,
-      "weekDelta": 779
+      "total": 34261,
+      "weekDelta": 831
     },
     "externalContributors": {
       "total": 136,
       "weekNew": 0
     },
     "contributorPRs": {
-      "total": 1482,
-      "weekNew": 32
+      "total": 1483,
+      "weekNew": 33
     },
     "tinyPlace": {
       "repo": "tinyhumansai/tiny.place",
       "url": "https://github.com/tinyhumansai/tiny.place",
-      "stars": 379,
-      "weekDelta": 4
+      "stars": 381,
+      "weekDelta": 6
     }
   },
   "totals": {
-    "prs": 2670,
-    "stars": 34209,
-    "forks": 3417,
+    "prs": 2671,
+    "stars": 34261,
+    "forks": 3420,
     "uniqueContributors": 141,
     "externalContributors": 136,
     "externalPrAuthors": 168,
-    "issuesNonPr": 1443,
+    "issuesNonPr": 1453,
     "externalIssueAuthors": 206,
     "weeks": 20,
-    "stargazersWithCompany": 5579,
-    "tier1Stargazers": 338
+    "stargazersWithCompany": 5590,
+    "tier1Stargazers": 339
   },
   "forkBreakdown": {
-    "total": 3417,
+    "total": 3420,
     "contributing": 167,
     "standalone": 93,
-    "driveBy": 3157,
+    "driveBy": 3160,
     "samples": {
       "contributing": [
         {
@@ -333,7 +333,7 @@
       150,
       116,
       207,
-      70
+      71
     ],
     "prsExternal": [
       0,
@@ -355,7 +355,7 @@
       82,
       93,
       103,
-      32
+      33
     ],
     "prsFounders": [
       0,
@@ -399,7 +399,7 @@
       842,
       1140,
       430,
-      779
+      831
     ],
     "newContributors": [
       0,
@@ -465,7 +465,7 @@
       109,
       88,
       65,
-      76
+      79
     ],
     "goodForks": [
       0,
@@ -623,7 +623,7 @@
       49,
       6,
       11,
-      4
+      5
     ],
     "prsExternal": [
       0,
@@ -757,7 +757,7 @@
       15,
       6,
       9,
-      2
+      3
     ],
     "prsFounders": [
       0,
@@ -1025,7 +1025,7 @@
       74,
       348,
       343,
-      14
+      66
     ],
     "newContributors": [
       0,
@@ -1427,7 +1427,7 @@
       4,
       42,
       28,
-      2
+      5
     ],
     "goodForks": [
       0,
@@ -1585,7 +1585,7 @@
       2277,
       2393,
       2600,
-      2670
+      2671
     ],
     "stars": [
       0,
@@ -1607,7 +1607,7 @@
       31860,
       33000,
       33430,
-      34209
+      34261
     ],
     "contributors": [
       0,
@@ -1673,7 +1673,7 @@
       3188,
       3276,
       3341,
-      3417
+      3420
     ],
     "goodForks": [
       0,
@@ -1831,7 +1831,7 @@
       2649,
       2655,
       2666,
-      2670
+      2671
     ],
     "prsExternal": [
       0,
@@ -1965,7 +1965,7 @@
       1465,
       1471,
       1480,
-      1482
+      1483
     ],
     "prsFounders": [
       0,
@@ -2233,7 +2233,7 @@
       33504,
       33852,
       34195,
-      34209
+      34261
     ],
     "newContributors": [
       0,
@@ -2635,7 +2635,7 @@
       3345,
       3387,
       3415,
-      3417
+      3420
     ],
     "goodForks": [
       0,
@@ -3039,7 +3039,7 @@
       74,
       348,
       343,
-      14
+      66
     ],
     "rolling7DayAvg": [
       0,
@@ -3173,14 +3173,14 @@
       63,
       102.85714285714286,
       146.42857142857142,
-      138.57142857142858
+      146
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17205,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1550.3333333333333,
-    "retentionPct": 9.010946430301269,
-    "liftVsPreSpike": 2.6167662079113647,
+    "postSpikeAvg": 1559,
+    "retentionPct": 9.06131938390003,
+    "liftVsPreSpike": 2.6313944430018177,
     "wowStarsPct": [
       null,
       null,
@@ -3201,7 +3201,7 @@
       -47.73432650527623,
       35.39192399049881,
       -62.28070175438597,
-      81.16279069767441
+      93.25581395348837
     ],
     "wowPrsPct": [
       null,
@@ -3223,11 +3223,20 @@
       -55.35714285714286,
       -22.666666666666664,
       78.44827586206897,
-      -66.18357487922705
+      -65.70048309178745
     ]
   },
   "pipeline": {
     "tier1Stargazers": [
+      {
+        "login": "j-abed",
+        "name": "Jason",
+        "company": "Microsoft",
+        "location": "New York",
+        "bio": "I architect solutions to problems... I try to do so for more than I create.\r\n@microsoft \r\n#NYU|Stern Alum",
+        "starredAt": "2026-06-29T02:34:19Z",
+        "url": "https://github.com/j-abed"
+      },
       {
         "login": "SamLeatherdale",
         "name": "Sam Leatherdale",
@@ -6286,7 +6295,7 @@
       },
       {
         "company": "microsoft",
-        "count": 22
+        "count": 23
       },
       {
         "company": "none",
@@ -6424,19 +6433,19 @@
       },
       {
         "location": "Italy",
-        "count": 77
+        "count": 78
       },
       {
         "location": "Singapore",
         "count": 76
       },
       {
-        "location": "Brazil",
+        "location": "Indonesia",
         "count": 74
       },
       {
-        "location": "Indonesia",
-        "count": 72
+        "location": "Brazil",
+        "count": 74
       },
       {
         "location": "London",
@@ -6448,7 +6457,7 @@
       },
       {
         "location": "United States",
-        "count": 65
+        "count": 66
       },
       {
         "location": "beijing",
