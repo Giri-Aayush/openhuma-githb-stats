@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-07-01T14:08:30.447Z",
+  "generatedAt": "2026-07-01T17:10:36.201Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -12,8 +12,8 @@
   "devrel": {
     "weekStart": "2026-06-26",
     "stars": {
-      "total": 34565,
-      "weekDelta": 1146
+      "total": 34573,
+      "weekDelta": 1154
     },
     "externalContributors": {
       "total": 138,
@@ -32,15 +32,15 @@
   },
   "totals": {
     "prs": 2711,
-    "stars": 34565,
+    "stars": 34573,
     "forks": 3463,
     "uniqueContributors": 143,
     "externalContributors": 138,
     "externalPrAuthors": 171,
-    "issuesNonPr": 1485,
-    "externalIssueAuthors": 206,
+    "issuesNonPr": 1486,
+    "externalIssueAuthors": 207,
     "weeks": 20,
-    "stargazersWithCompany": 5646,
+    "stargazersWithCompany": 5647,
     "tier1Stargazers": 342
   },
   "forkBreakdown": {
@@ -401,7 +401,7 @@
       841,
       1137,
       430,
-      1146
+      1154
     ],
     "newContributors": [
       0,
@@ -1035,7 +1035,7 @@
       343,
       190,
       145,
-      46
+      54
     ],
     "newContributors": [
       0,
@@ -1625,7 +1625,7 @@
       31852,
       32989,
       33419,
-      34565
+      34573
     ],
     "contributors": [
       0,
@@ -2259,7 +2259,7 @@
       34184,
       34374,
       34519,
-      34565
+      34573
     ],
     "newContributors": [
       0,
@@ -3077,7 +3077,7 @@
       343,
       190,
       145,
-      46
+      54
     ],
     "rolling7DayAvg": [
       0,
@@ -3213,14 +3213,14 @@
       146.42857142857142,
       163.71428571428572,
       173.42857142857142,
-      171.28571428571428
+      172.42857142857142
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17205,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1609.6666666666667,
-    "retentionPct": 9.35580742032355,
-    "liftVsPreSpike": 2.7169133558383107,
+    "postSpikeAvg": 1611,
+    "retentionPct": 9.363557105492589,
+    "liftVsPreSpike": 2.7191638535445337,
     "wowStarsPct": [
       null,
       null,
@@ -3241,7 +3241,7 @@
       -47.731510254816655,
       35.1961950059453,
       -62.18117854001759,
-      166.51162790697674
+      168.37209302325581
     ],
     "wowPrsPct": [
       null,
@@ -6437,12 +6437,12 @@
         "count": 7
       },
       {
-        "company": "sichuan university",
+        "company": "fudan university",
         "count": 7
       },
       {
-        "company": "fudan university",
-        "count": 7
+        "company": "sichuan university",
+        "count": 6
       },
       {
         "company": "shenzhen university",
@@ -6480,7 +6480,7 @@
       },
       {
         "location": "Beijing",
-        "count": 153
+        "count": 154
       },
       {
         "location": "Germany",
