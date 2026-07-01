@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-07-01T19:32:23.811Z",
+  "generatedAt": "2026-07-01T22:16:36.801Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -12,8 +12,8 @@
   "devrel": {
     "weekStart": "2026-06-26",
     "stars": {
-      "total": 34577,
-      "weekDelta": 1158
+      "total": 34581,
+      "weekDelta": 1162
     },
     "externalContributors": {
       "total": 138,
@@ -32,22 +32,22 @@
   },
   "totals": {
     "prs": 2718,
-    "stars": 34577,
-    "forks": 3465,
+    "stars": 34581,
+    "forks": 3467,
     "uniqueContributors": 143,
     "externalContributors": 138,
     "externalPrAuthors": 171,
-    "issuesNonPr": 1487,
-    "externalIssueAuthors": 207,
+    "issuesNonPr": 1492,
+    "externalIssueAuthors": 208,
     "weeks": 20,
-    "stargazersWithCompany": 5647,
+    "stargazersWithCompany": 5648,
     "tier1Stargazers": 342
   },
   "forkBreakdown": {
-    "total": 3465,
+    "total": 3467,
     "contributing": 170,
     "standalone": 94,
-    "driveBy": 3201,
+    "driveBy": 3203,
     "samples": {
       "contributing": [
         {
@@ -401,7 +401,7 @@
       841,
       1137,
       430,
-      1158
+      1162
     ],
     "newContributors": [
       0,
@@ -467,7 +467,7 @@
       109,
       88,
       65,
-      125
+      127
     ],
     "goodForks": [
       0,
@@ -1035,7 +1035,7 @@
       343,
       190,
       145,
-      58
+      62
     ],
     "newContributors": [
       0,
@@ -1443,7 +1443,7 @@
       28,
       16,
       28,
-      8
+      10
     ],
     "goodForks": [
       0,
@@ -1625,7 +1625,7 @@
       31852,
       32989,
       33419,
-      34577
+      34581
     ],
     "contributors": [
       0,
@@ -1691,7 +1691,7 @@
       3187,
       3275,
       3340,
-      3465
+      3467
     ],
     "goodForks": [
       0,
@@ -2259,7 +2259,7 @@
       34184,
       34374,
       34519,
-      34577
+      34581
     ],
     "newContributors": [
       0,
@@ -2667,7 +2667,7 @@
       3413,
       3429,
       3457,
-      3465
+      3467
     ],
     "goodForks": [
       0,
@@ -3077,7 +3077,7 @@
       343,
       190,
       145,
-      58
+      62
     ],
     "rolling7DayAvg": [
       0,
@@ -3213,14 +3213,14 @@
       146.42857142857142,
       163.71428571428572,
       173.42857142857142,
-      173
+      173.57142857142858
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17205,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1611.6666666666667,
-    "retentionPct": 9.36743194807711,
-    "liftVsPreSpike": 2.7202891023976457,
+    "postSpikeAvg": 1612.3333333333333,
+    "retentionPct": 9.37130679066163,
+    "liftVsPreSpike": 2.721414351250757,
     "wowStarsPct": [
       null,
       null,
@@ -3241,7 +3241,7 @@
       -47.731510254816655,
       35.1961950059453,
       -62.18117854001759,
-      169.30232558139537
+      170.2325581395349
     ],
     "wowPrsPct": [
       null,
@@ -6519,11 +6519,11 @@
         "count": 69
       },
       {
-        "location": "United States",
-        "count": 67
+        "location": "Earth",
+        "count": 68
       },
       {
-        "location": "Earth",
+        "location": "United States",
         "count": 67
       },
       {
