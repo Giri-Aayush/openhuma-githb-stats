@@ -2,7 +2,7 @@
   "repo": "tinyhumansai/openhuman",
   "genesisPublic": "2026-02-18",
   "genesisCode": "2026-01-26",
-  "generatedAt": "2026-07-02T02:04:06.138Z",
+  "generatedAt": "2026-07-02T06:33:31.607Z",
   "founders": [
     "senamakel",
     "graycyrus",
@@ -12,8 +12,8 @@
   "devrel": {
     "weekStart": "2026-06-26",
     "stars": {
-      "total": 34584,
-      "weekDelta": 1165
+      "total": 34593,
+      "weekDelta": 1174
     },
     "externalContributors": {
       "total": 138,
@@ -31,23 +31,23 @@
     }
   },
   "totals": {
-    "prs": 2718,
-    "stars": 34584,
-    "forks": 3467,
+    "prs": 2720,
+    "stars": 34593,
+    "forks": 3469,
     "uniqueContributors": 143,
     "externalContributors": 138,
     "externalPrAuthors": 171,
     "issuesNonPr": 1492,
     "externalIssueAuthors": 208,
     "weeks": 20,
-    "stargazersWithCompany": 5648,
+    "stargazersWithCompany": 5650,
     "tier1Stargazers": 342
   },
   "forkBreakdown": {
-    "total": 3467,
+    "total": 3469,
     "contributing": 170,
     "standalone": 94,
-    "driveBy": 3203,
+    "driveBy": 3205,
     "samples": {
       "contributing": [
         {
@@ -336,7 +336,7 @@
       150,
       105,
       204,
-      143
+      145
     ],
     "prsExternal": [
       0,
@@ -380,7 +380,7 @@
       68,
       23,
       104,
-      64
+      66
     ],
     "stars": [
       0,
@@ -402,7 +402,7 @@
       841,
       1137,
       430,
-      1165
+      1174
     ],
     "newContributors": [
       0,
@@ -468,7 +468,7 @@
       109,
       88,
       65,
-      127
+      129
     ],
     "goodForks": [
       0,
@@ -629,7 +629,7 @@
       24,
       39,
       15,
-      0
+      2
     ],
     "prsExternal": [
       0,
@@ -903,7 +903,7 @@
       6,
       17,
       5,
-      0
+      2
     ],
     "stars": [
       0,
@@ -1040,7 +1040,7 @@
       190,
       145,
       63,
-      2
+      11
     ],
     "newContributors": [
       0,
@@ -1451,7 +1451,7 @@
       16,
       28,
       10,
-      0
+      2
     ],
     "goodForks": [
       0,
@@ -1612,7 +1612,7 @@
       2266,
       2371,
       2575,
-      2718
+      2720
     ],
     "stars": [
       0,
@@ -1634,7 +1634,7 @@
       31852,
       32989,
       33419,
-      34584
+      34593
     ],
     "contributors": [
       0,
@@ -1700,7 +1700,7 @@
       3187,
       3275,
       3340,
-      3467
+      3469
     ],
     "goodForks": [
       0,
@@ -1861,7 +1861,7 @@
       2664,
       2703,
       2718,
-      2718
+      2720
     ],
     "prsExternal": [
       0,
@@ -2135,7 +2135,7 @@
       1192,
       1209,
       1214,
-      1214
+      1216
     ],
     "stars": [
       0,
@@ -2272,7 +2272,7 @@
       34374,
       34519,
       34582,
-      34584
+      34593
     ],
     "newContributors": [
       0,
@@ -2683,7 +2683,7 @@
       3429,
       3457,
       3467,
-      3467
+      3469
     ],
     "goodForks": [
       0,
@@ -3096,7 +3096,7 @@
       190,
       145,
       63,
-      2
+      11
     ],
     "rolling7DayAvg": [
       0,
@@ -3233,14 +3233,14 @@
       163.71428571428572,
       173.42857142857142,
       173.71428571428572,
-      166.42857142857142
+      167.71428571428572
     ],
     "spikeWeek": "2026-05-15",
     "spikeStars": 17205,
     "preSpikeAvg": 592.4615384615385,
-    "postSpikeAvg": 1612.8333333333333,
-    "retentionPct": 9.374212922600018,
-    "liftVsPreSpike": 2.722258287890591,
+    "postSpikeAvg": 1614.3333333333333,
+    "retentionPct": 9.382931318415189,
+    "liftVsPreSpike": 2.7247900978100925,
     "wowStarsPct": [
       null,
       null,
@@ -3261,7 +3261,7 @@
       -47.731510254816655,
       35.1961950059453,
       -62.18117854001759,
-      170.93023255813952
+      173.02325581395348
     ],
     "wowPrsPct": [
       null,
@@ -3283,7 +3283,7 @@
       -54.81927710843374,
       -30,
       94.28571428571428,
-      -29.901960784313726
+      -28.921568627450984
     ]
   },
   "pipeline": {
